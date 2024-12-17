@@ -1,0 +1,9 @@
+[2,3,4] => [ [2,3], [2,4], [3,4] ]
+
+multimi(l1..n,K)=1. [], k=0
+		 2. l1 (+) multimi(l2..n, k-1), k>0
+		 3. multimi(l2..n, k), k>0	
+
+
+setMultimi(l1..n,K) = 1. [] , n=0 sau k=0
+		      2. U multimi(l1..n,k) , altfel	
