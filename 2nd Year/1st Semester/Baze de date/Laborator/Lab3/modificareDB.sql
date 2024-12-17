@@ -1,5 +1,6 @@
 USE LLAB2;
 
+
 --Modificare tipul unei coloane
 GO
 CREATE PROCEDURE versiune1
