@@ -1,0 +1,1 @@
+C:\Users\munte\IdeaProjects\Sem8\build\classes\java\main\module-info.class;C:\Users\munte\IdeaProjects\Sem8\build\classes\java\main\org\example\sem8\HelloApplication.class;C:\Users\munte\IdeaProjects\Sem8\build\classes\java\main\org\example\sem8\HelloController.class
