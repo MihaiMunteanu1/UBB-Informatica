@@ -1,5 +1,6 @@
 USE LLAB2;
 
+
 if exists (select * from dbo.sysobjects where id = object_id(N'[FK_TestRunTables_Tables]') and OBJECTPROPERTY(id, N'IsForeignKey') = 1)
 ALTER TABLE [TestRunTables] DROP CONSTRAINT FK_TestRunTables_Tables
 GO
