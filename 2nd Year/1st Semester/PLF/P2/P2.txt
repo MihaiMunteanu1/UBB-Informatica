@@ -1,0 +1,41 @@
+inverseaza(l1..n, Col)={ Col , daca n=0
+		       {inverseaza(l2..n, l1 (+) Col ), altfel
+		      
+
+
+produs_aux(l1..n,C,P)={ [], daca n=0 si C=0
+		      { [C], daca n=0 si C!=0	
+		      { (l1*P + C)mod 10 (+) produs_aux(l2..n, (l1*P+C)/10), P), daca n > 0
+		         
+
+produs(L,P)=inverseaza(produs_aux(inverseaza(L),0,P)) 
+	    
+           
+
+
+---------------------------------------------------------
+
+
+inlocuire_aux(l1..n,I)={ [], daca n=0
+		       {produs(l1,I) (+) inlocuire_aux(l2..n,I+1), daca n>0 si l1 e lista
+		       { l1 (+) inlocuire_aux(l2..n,I) , daca n>0 si l1 nu e lista	
+
+
+inlocuire(l1..n)=inlocuire_aux(l1..n,1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
