@@ -1,0 +1,6 @@
+a,Usoara,4
+b,Medie,7
+c,Grea,11
+d,Usoara,5
+e,Medie,8
+f,Grea,12

@@ -1,0 +1,4 @@
+﻿a,Andrei,25,Junior
+b,Bogdan,35,Medium
+c,Cristi,55,Senior
+d,Dan,60,Senior
