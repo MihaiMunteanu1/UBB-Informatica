@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/algo_lab1_ex2/cmake-build-debug/CMakeFiles/algo_lab1_ex2.dir
+C:/Users/munte/CLionProjects/algo_lab1_ex2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/algo_lab1_ex2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
