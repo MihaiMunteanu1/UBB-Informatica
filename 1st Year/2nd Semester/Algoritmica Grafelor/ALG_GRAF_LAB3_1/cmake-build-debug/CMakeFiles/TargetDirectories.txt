@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/ALG_GRAF_LAB3_1/cmake-build-debug/CMakeFiles/ALG_GRAF_LAB3_1.dir
+C:/Users/munte/CLionProjects/ALG_GRAF_LAB3_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/ALG_GRAF_LAB3_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
