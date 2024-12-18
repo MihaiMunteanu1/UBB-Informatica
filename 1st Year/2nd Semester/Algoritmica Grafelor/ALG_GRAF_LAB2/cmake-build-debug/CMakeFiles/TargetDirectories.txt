@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/lab2grafuri_bun/cmake-build-debug/CMakeFiles/lab2grafuri_bun.dir
+C:/Users/munte/CLionProjects/lab2grafuri_bun/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/lab2grafuri_bun/cmake-build-debug/CMakeFiles/rebuild_cache.dir
