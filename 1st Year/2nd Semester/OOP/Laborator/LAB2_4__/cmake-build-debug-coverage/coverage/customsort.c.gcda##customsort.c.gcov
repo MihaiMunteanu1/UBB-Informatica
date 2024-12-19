@@ -1,0 +1,40 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/LAB2_4__/customsort.c
+        -:    0:Graph:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\customsort.c.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\customsort.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "customsort.h"
+function sort called 2 returned 100% blocks executed 100%
+        2:    2:void sort(List* l, CompareFct cmpF) {
+        -:    3:    int i, j;
+        9:    4:    for (i = 0; i < size(l); i++) {
+        2:    4-block  0
+        7:    4-block  1
+        9:    4-block  2
+call    0 returned 9
+branch  1 taken 7
+branch  2 taken 2 (fallthrough)
+       16:    5:        for (j = i + 1; j < size(l); j++) {
+        7:    5-block  0
+        9:    5-block  1
+       16:    5-block  2
+call    0 returned 16
+branch  1 taken 9
+branch  2 taken 7 (fallthrough)
+        9:    6:            void* p1 = get(l, i);
+        9:    6-block  0
+call    0 returned 9
+        9:    7:            void* p2 = get(l, j);
+call    0 returned 9
+        9:    8:            if (cmpF(p1, p2) > 0) {
+call    0 returned 9
+branch  1 taken 4 (fallthrough)
+branch  2 taken 5
+        4:    9:                setElem(l, i, p2);
+        4:    9-block  0
+call    0 returned 4
+        4:   10:                setElem(l, j, p1);
+call    0 returned 4
+        -:   11:            }
+        -:   12:        }
+        -:   13:    }
+        2:   14:}

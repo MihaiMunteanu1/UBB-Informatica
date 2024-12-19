@@ -1,0 +1,461 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/LAB2_4__/repository.c
+        -:    0:Graph:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\repository.c.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\repository.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "repository.h"
+        -:    2:#include <stdlib.h>
+        -:    3:#include <assert.h>
+        -:    4:#include <string.h>
+        -:    5:/*
+        -:    6: * Creeaza o lista goala
+        -:    7: * return: lista
+        -:    8: */
+function createEmpty called 79 returned 100% blocks executed 100%
+       79:    9:List* createEmpty(DestroyFct f)
+        -:   10:{
+       79:   11:    List* l=malloc(sizeof(List));
+       79:   12:    l->length = 0;
+       79:   13:    l->capacitate=1;
+       79:   14:    l->elements= malloc(sizeof(ElemType)*l->capacitate);
+       79:   15:    l->dfnc=f;
+       79:   16:    return l;
+       79:   16-block  0
+        -:   17:}
+        -:   18:
+        -:   19:/*
+        -:   20: * Distruge o lista
+        -:   21: */
+function destroy called 79 returned 100% blocks executed 100%
+       79:   22:void destroy(List* l)
+        -:   23:{
+      219:   24:    for(int i=0; i<l->length; i++)
+       79:   24-block  0
+      219:   24-block  1
+branch  0 taken 140
+branch  1 taken 79 (fallthrough)
+        -:   25:    {
+      140:   26:        l->dfnc(l->elements[i]);
+      140:   26-block  0
+call    0 returned 140
+        -:   27:    }
+       79:   28:    l->length=0;
+       79:   29:    free(l->elements);
+       79:   30:    free(l);
+       79:   31:}
+        -:   32:/*
+        -:   33: * Adauga in lista l elementul el
+        -:   34: * param l: lista
+        -:   35: * param el: elementul ce se introduce in lista
+        -:   36: */
+function add called 146 returned 100% blocks executed 100%
+      146:   37:void add(List* l, ElemType el)
+        -:   38:{
+      146:   39:    if(l->length == l->capacitate)
+      146:   39-block  0
+branch  0 taken 75 (fallthrough)
+branch  1 taken 71
+        -:   40:    {
+       75:   41:        int newCapacitate = l->capacitate * 2;
+       75:   42:        ElemType* newElements = malloc(sizeof(ElemType) * newCapacitate);
+      182:   43:        for(int i=0; i<l->length; i++)
+       75:   43-block  0
+      182:   43-block  1
+branch  0 taken 107
+branch  1 taken 75 (fallthrough)
+        -:   44:        {
+      107:   45:            newElements[i]=l->elements[i];
+      107:   45-block  0
+        -:   46:        }
+       75:   47:        free(l->elements);
+       75:   48:        l->elements = newElements;
+       75:   49:        l->capacitate = newCapacitate;
+       75:   49-block  0
+        -:   50:    }
+        -:   51:
+      146:   52:    l->elements[l->length] = el;
+      146:   53:    l->length++;
+      146:   54:}
+        -:   55:
+        -:   56:/*
+        -:   57: * Inlocuieste in lista l, elementul de pe pozitia poz cu el
+        -:   58: * param l: lista
+        -:   59: * param el: elementul ce se introduce in lista
+        -:   60: * param poz (int): pozitia din lista in care se introduce elementul el
+        -:   61: */
+function delete called 6 returned 100% blocks executed 100%
+        6:   62:ElemType delete(List* l, int poz)
+        -:   63:{
+        6:   64:    ElemType el = l->elements[poz];
+        7:   65:    for(int i=poz; i<l->length-1; i++)
+        6:   65-block  0
+        7:   65-block  1
+branch  0 taken 1
+branch  1 taken 6 (fallthrough)
+        -:   66:    {
+        1:   67:        l->elements[i]= l->elements[i+1];
+        1:   67-block  0
+        -:   68:    }
+        6:   69:    l->length--;
+        6:   70:    return el;
+        6:   70-block  0
+        -:   71:}
+        -:   72:
+        -:   73:/*
+        -:   74: * Returneaza elementul de pe pozitia poz
+        -:   75: * param l: lista
+        -:   76: * param poz: pozitia elementului ce se returneaza
+        -:   77: * return: Elementul de pe pozitia poz
+        -:   78: */
+function get called 130 returned 100% blocks executed 100%
+      130:   79:ElemType get(List* l, int poz)
+        -:   80:{
+      130:   81:    return l->elements[poz];
+      130:   81-block  0
+        -:   82:}
+        -:   83:
+        -:   84:/*
+        -:   85: * Returneaza lungimea listei l
+        -:   86: * param l: lista
+        -:   87: * return: lungimea listei l
+        -:   88: */
+function size called 59 returned 100% blocks executed 100%
+       59:   89:int size(List* l)
+        -:   90:{
+       59:   91:    return l->length;
+       59:   91-block  0
+        -:   92:}
+        -:   93:/*
+        -:   94: * Face o copie a listei
+        -:   95: * return List care contine aceleasi elemente ca l
+        -:   96: */
+function copyList called 43 returned 100% blocks executed 100%
+       43:   97:List* copyList(List* l,CopyFct copyFct)
+        -:   98:{
+       43:   99:    List* l_copy = createEmpty(l->dfnc);
+       43:   99-block  0
+call    0 returned 43
+      106:  100:    for(int i=0; i<l->length; i++)
+      106:  100-block  0
+branch  0 taken 63
+branch  1 taken 43 (fallthrough)
+        -:  101:    {
+       63:  102:        ElemType el = get(l, i);
+       63:  102-block  0
+call    0 returned 63
+       63:  103:        add(l_copy, copyFct(el));
+call    0 returned 63
+call    1 returned 63
+        -:  104:    }
+       43:  105:    return l_copy;
+       43:  105-block  0
+        -:  106:}
+        -:  107:
+function setElem called 11 returned 100% blocks executed 100%
+       11:  108:ElemType setElem(List* l, int poz, ElemType el) {
+       11:  109:    ElemType replaced = l->elements[poz];
+       11:  110:    l->elements[poz] = el;
+       11:  111:    return replaced;
+       11:  111-block  0
+        -:  112:}
+        -:  113:
+function testCreateVector called 1 returned 100% blocks executed 86%
+        1:  114:void testCreateVector() {
+        1:  115:    List* l = createEmpty(destroyOferta);
+        1:  115-block  0
+call    0 returned 1
+       1*:  116:    assert(size(l) == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  116-block  0
+call    3 never executed
+        1:  116-block  1
+        1:  117:    destroy(l);
+        1:  117-block  0
+call    0 returned 1
+        -:  118:
+        1:  119:}
+function testIterate called 1 returned 100% blocks executed 81%
+        1:  120:void testIterate() {
+        1:  121:    List* l = createEmpty(destroyOferta);
+        1:  121-block  0
+call    0 returned 1
+        1:  122:    Oferta* a1 = creeazaOferta("teren",1000, "zorilor", 30000);
+call    0 returned 1
+        1:  123:    Oferta* a2 = creeazaOferta("apartament",100, "bunaziua", 40000);
+call    0 returned 1
+        1:  124:    Oferta* a3 = creeazaOferta("casa",250, "iris", 500000);
+call    0 returned 1
+        -:  125:
+        -:  126:
+        1:  127:    add(l, a1);
+call    0 returned 1
+        1:  128:    add(l, a2);
+call    0 returned 1
+        1:  129:    add(l, a3);
+call    0 returned 1
+        -:  130:
+       1*:  131:    assert(size(l) == 3);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  131-block  0
+call    3 never executed
+        1:  131-block  1
+        1:  132:    Oferta * a = get(l, 0);
+        1:  132-block  0
+call    0 returned 1
+        -:  133:
+       1*:  134:    assert(strcmp(a->tip, "teren") == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  134-block  0
+call    2 never executed
+        1:  134-block  1
+       1*:  135:    assert(strcmp(a->adresa, "zorilor") == 0);
+        1:  135-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  135-block  1
+call    2 never executed
+        1:  135-block  2
+       1*:  136:    assert(a->suprafata==1000);
+        1:  136-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  136-block  1
+call    2 never executed
+        1:  136-block  2
+       1*:  137:    assert(a->pret==30000);
+        1:  137-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  137-block  1
+call    2 never executed
+        1:  137-block  2
+        -:  138:
+        1:  139:    destroy(l);
+        1:  139-block  0
+call    0 returned 1
+        -:  140:
+        1:  141:}
+        -:  142:
+function testCopy called 1 returned 100% blocks executed 86%
+        1:  143:void testCopy() {
+        1:  144:    List* l1 = createEmpty(destroyOferta);
+        1:  144-block  0
+call    0 returned 1
+        1:  145:    add(l1, creeazaOferta("teren",1000, "zorilor", 30000));
+call    0 returned 1
+call    1 returned 1
+        1:  146:    add(l1,creeazaOferta("apartament",100, "bunaziua", 40000));
+call    0 returned 1
+call    1 returned 1
+        -:  147:
+        -:  148:
+       1*:  149:    assert(size(l1) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  149-block  0
+call    3 never executed
+        1:  149-block  1
+        1:  150:    List* l2 = copyList(l1, copyOferta);
+        1:  150-block  0
+call    0 returned 1
+       1*:  151:    assert(size(l2) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  151-block  0
+call    3 never executed
+        1:  151-block  1
+        1:  152:    Oferta* a = get(l2, 0);
+        1:  152-block  0
+call    0 returned 1
+       1*:  153:    assert(strcmp(a->tip, "teren") == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  153-block  0
+call    2 never executed
+        1:  153-block  1
+        1:  154:    destroy(l1);
+        1:  154-block  0
+call    0 returned 1
+        1:  155:    destroy(l2);
+call    0 returned 1
+        -:  156:
+        1:  157:}
+        -:  158:
+function testDelete called 1 returned 100% blocks executed 79%
+        1:  159:void testDelete() {
+        1:  160:    List* l1 = createEmpty(destroyOferta);
+        1:  160-block  0
+call    0 returned 1
+        1:  161:    add(l1, creeazaOferta("teren",1000, "zorilor", 30000));
+call    0 returned 1
+call    1 returned 1
+        1:  162:    add(l1,creeazaOferta("apartament",100, "bunaziua", 40000));
+call    0 returned 1
+call    1 returned 1
+        -:  163:
+        -:  164:
+       1*:  165:    assert(size(l1) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  165-block  0
+call    3 never executed
+        1:  165-block  1
+        1:  166:    Oferta * a = delete(l1, 0);
+        1:  166-block  0
+call    0 returned 1
+        -:  167:
+       1*:  168:    assert(strcmp(a->tip, "teren") == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  168-block  0
+call    2 never executed
+        1:  168-block  1
+       1*:  169:    assert(strcmp(a->adresa, "zorilor") == 0);
+        1:  169-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  169-block  1
+call    2 never executed
+        1:  169-block  2
+       1*:  170:    assert(a->suprafata==1000);
+        1:  170-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  170-block  1
+call    2 never executed
+        1:  170-block  2
+       1*:  171:    assert(a->pret==30000);
+        1:  171-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  171-block  1
+call    2 never executed
+        1:  171-block  2
+        -:  172:
+        1:  173:    destroyOferta(a);
+        1:  173-block  0
+call    0 returned 1
+        -:  174:
+       1*:  175:    assert(size(l1) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  175-block  0
+call    3 never executed
+        1:  175-block  1
+        1:  176:    destroy(l1);
+        1:  176-block  0
+call    0 returned 1
+        -:  177:
+        1:  178:}
+function testSet called 1 returned 100% blocks executed 80%
+        1:  179:void testSet() {
+        1:  180:    List* l1 = createEmpty(destroyOferta);
+        1:  180-block  0
+call    0 returned 1
+        1:  181:    add(l1,  creeazaOferta("teren",1000, "zorilor", 30000));
+call    0 returned 1
+call    1 returned 1
+       1*:  182:    assert(size(l1) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  182-block  0
+call    3 never executed
+        1:  182-block  1
+        1:  183:    Oferta * replaced = setElem(l1,0,  creeazaOferta("apartament",100, "bunaziua", 40000));
+        1:  183-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  184:    Oferta * a = get(l1, 0);
+call    0 returned 1
+       1*:  185:    assert(strcmp(a->tip, "apartament") == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  185-block  0
+call    2 never executed
+        1:  185-block  1
+       1*:  186:    assert(strcmp(a->adresa, "bunaziua") == 0);
+        1:  186-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  186-block  1
+call    2 never executed
+        1:  186-block  2
+       1*:  187:    assert(a->suprafata==100);
+        1:  187-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  187-block  1
+call    2 never executed
+        1:  187-block  2
+       1*:  188:    assert(a->pret==40000);
+        1:  188-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  188-block  1
+call    2 never executed
+        1:  188-block  2
+        1:  189:    destroyOferta(replaced);
+        1:  189-block  0
+call    0 returned 1
+        1:  190:    destroy(l1);
+call    0 returned 1
+        1:  191:}
+function testListVoid called 1 returned 100% blocks executed 92%
+        1:  192:void testListVoid() {
+        1:  193:    List* ofertaList = createEmpty(destroyOferta);
+        1:  193-block  0
+call    0 returned 1
+        1:  194:    add(ofertaList, creeazaOferta("teren",1000, "zorilor", 30000));
+call    0 returned 1
+call    1 returned 1
+        1:  195:    add(ofertaList, creeazaOferta("apartament",100, "bunaziua", 40000));
+call    0 returned 1
+call    1 returned 1
+        -:  196:
+        1:  197:    List* ofertaList2 = createEmpty(destroyOferta);
+call    0 returned 1
+        1:  198:    add(ofertaList2, creeazaOferta("casa",250, "iris", 600000));
+call    0 returned 1
+call    1 returned 1
+        1:  199:    add(ofertaList2, creeazaOferta("teren",2500, "turzii", 50000));
+call    0 returned 1
+call    1 returned 1
+        1:  200:    add(ofertaList2, creeazaOferta("casa",350, "manastur", 700000));
+call    0 returned 1
+call    1 returned 1
+        -:  201:
+        1:  202:    List* undoList = createEmpty(destroy);
+call    0 returned 1
+        -:  203:
+        1:  204:    add(undoList, ofertaList);
+call    0 returned 1
+       1*:  205:    assert(size(undoList) == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  205-block  0
+call    3 never executed
+        1:  205-block  1
+        1:  206:    add(undoList, ofertaList2);
+        1:  206-block  0
+call    0 returned 1
+       1*:  207:    assert(size(undoList) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  207-block  0
+call    3 never executed
+        1:  207-block  1
+        1:  208:    destroy(undoList);
+        1:  208-block  0
+call    0 returned 1
+        1:  209:}

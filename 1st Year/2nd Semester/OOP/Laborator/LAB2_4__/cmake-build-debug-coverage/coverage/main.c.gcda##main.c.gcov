@@ -1,0 +1,438 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/LAB2_4__/main.c
+        -:    0:Graph:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\main.c.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\LAB2_4__\cmake-build-debug-coverage\CMakeFiles\LAB2_4__.dir\main.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include "service.h"
+function testAll called 1 returned 100% blocks executed 100%
+        1:    3:void testAll()
+        -:    4:{
+        1:    5:    testCreateDestroy();
+        1:    5-block  0
+call    0 returned 1
+        1:    6:    testValideaza();
+call    0 returned 1
+        1:    7:    testCreateVector();
+call    0 returned 1
+        1:    8:    testIterate();
+call    0 returned 1
+        1:    9:    testListVoid();
+call    0 returned 1
+        1:   10:    testSet();
+call    0 returned 1
+        1:   11:    testCopy();
+call    0 returned 1
+        1:   12:    testDelete();
+call    0 returned 1
+        1:   13:    testAddService();
+call    0 returned 1
+        1:   14:    testFindService();
+call    0 returned 1
+        1:   15:    testDeleteService();
+call    0 returned 1
+        1:   16:    testModifyService();
+call    0 returned 1
+        1:   17:    testFilterSuprafataService();
+call    0 returned 1
+        1:   18:    testFilterTipService();
+call    0 returned 1
+        1:   19:    testFilterPretService();
+call    0 returned 1
+        1:   20:    testSortPretService();
+call    0 returned 1
+        1:   21:    testSortTipService();
+call    0 returned 1
+        1:   22:    testUndo();
+call    0 returned 1
+        1:   23:}
+function ui_meniu called 1 returned 100% blocks executed 100%
+        1:   24:void ui_meniu()
+        -:   25:{
+        1:   26:    printf("1. Adaugarea de noi oferte\n");
+        1:   26-block  0
+call    0 returned 1
+        1:   27:    printf("2. Actualizare oferte\n");
+call    0 returned 1
+        1:   28:    printf("3. Stergere oferta\n");
+call    0 returned 1
+        1:   29:    printf("4. Vizualiare oferte\n");
+call    0 returned 1
+        1:   30:    printf("5. Vizualiare oferte ordonate dupa pret/tip\n");
+call    0 returned 1
+        1:   31:    printf("6. Vizualiare oferte filtrate dupa un criteriu\n");
+call    0 returned 1
+        1:   32:    printf("7. Undo\n");
+call    0 returned 1
+        1:   33:    printf("8. Exit\n");
+call    0 returned 1
+        1:   34:}
+function uiAdd called 0 returned 0% blocks executed 0%
+    #####:   35:void uiAdd(ManagerOferte* store)
+        -:   36:{
+        -:   37:    char tip[30], adresa[30];
+        -:   38:    int pret, suprafata;
+    #####:   39:    printf("Tip: ");
+    %%%%%:   39-block  0
+call    0 never executed
+    #####:   40:    scanf("%s", tip);
+call    0 never executed
+    #####:   41:    printf("Suprafata: ");
+call    0 never executed
+    #####:   42:    scanf("%d", &suprafata);
+call    0 never executed
+    #####:   43:    printf("Adresa: ");
+call    0 never executed
+    #####:   44:    scanf("%s", adresa);
+call    0 never executed
+    #####:   45:    printf("Pret: ");
+call    0 never executed
+    #####:   46:    scanf("%d", &pret);
+call    0 never executed
+    #####:   47:    int succes=adaugaOferta(store, tip, suprafata, adresa,pret);
+call    0 never executed
+    #####:   48:    if(!succes)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   49:        printf("Oferta adaugata cu succes!\n");
+    %%%%%:   49-block  0
+call    0 never executed
+        -:   50:    else
+    #####:   51:        printf("Oferta nu este valida!\n");
+    %%%%%:   51-block  0
+call    0 never executed
+    #####:   52:}
+function uiActualizare called 0 returned 0% blocks executed 0%
+    #####:   53:void uiActualizare(ManagerOferte* store)
+        -:   54:{
+        -:   55:    char tip[30], tip_nou[30], adresa_noua[30];
+        -:   56:    int suprafata,suprafata_noua,pret_nou;
+    #####:   57:    printf("De modificat\n");
+    %%%%%:   57-block  0
+call    0 never executed
+    #####:   58:    printf("Tip: ");
+call    0 never executed
+    #####:   59:    scanf("%s", tip);
+call    0 never executed
+    #####:   60:    printf("Suprafata: ");
+call    0 never executed
+    #####:   61:    scanf("%d", &suprafata);
+call    0 never executed
+    #####:   62:    printf("Tip nou: ");
+call    0 never executed
+    #####:   63:    scanf("%s", tip_nou);
+call    0 never executed
+    #####:   64:    printf("Suprafata noua: ");
+call    0 never executed
+    #####:   65:    scanf("%d", &suprafata_noua);
+call    0 never executed
+    #####:   66:    printf("Adresa noua: ");
+call    0 never executed
+    #####:   67:    scanf("%s", adresa_noua);
+call    0 never executed
+    #####:   68:    printf("Pret nou: ");
+call    0 never executed
+    #####:   69:    scanf("%d", &pret_nou);
+call    0 never executed
+    #####:   70:    int succes=modificaOferta(store, tip, suprafata, tip_nou, suprafata_noua, adresa_noua, pret_nou);
+call    0 never executed
+    #####:   71:    if(succes)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   72:        printf("Modificarea s-a efectuat cu succes!\n");
+    %%%%%:   72-block  0
+call    0 never executed
+        -:   73:    else
+    #####:   74:        printf("Modificarea nu s-a efectuat!\n");
+    %%%%%:   74-block  0
+call    0 never executed
+    #####:   75:}
+function uiSterge called 0 returned 0% blocks executed 0%
+    #####:   76:void uiSterge(ManagerOferte* store)
+        -:   77:{
+        -:   78:    char tip[30];
+        -:   79:    int suprafata;
+    #####:   80:    printf("Tipul imobiliarului ofertei de sters: ");
+    %%%%%:   80-block  0
+call    0 never executed
+    #####:   81:    scanf("%s", tip);
+call    0 never executed
+    #####:   82:    printf("Suprafata imobiliarului ofertei de sters: ");
+call    0 never executed
+    #####:   83:    scanf("%d", &suprafata);
+call    0 never executed
+    #####:   84:    int succes=stergeOferta(store, tip, suprafata);
+call    0 never executed
+    #####:   85:    if(succes)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   86:        printf("Oferta stearsa cu succes!\n");
+    %%%%%:   86-block  0
+call    0 never executed
+        -:   87:    else
+    #####:   88:        printf("Nu exista Oferta de acest fel!\n");
+    %%%%%:   88-block  0
+call    0 never executed
+    #####:   89:}
+function uiOferte called 0 returned 0% blocks executed 0%
+    #####:   90:void uiOferte(List* l)
+        -:   91:{
+    #####:   92:    if(l->length==0)
+    %%%%%:   92-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   93:        printf("Nu este nicio oferta!\n");
+    %%%%%:   93-block  0
+call    0 never executed
+        -:   94:    else
+        -:   95:    {
+    #####:   96:        printf("Oferte: \n");
+    %%%%%:   96-block  0
+call    0 never executed
+    #####:   97:        for(int i=0; i<size(l); i++) {
+    %%%%%:   97-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+    #####:   98:            Oferta* a = get(l, i);
+    %%%%%:   98-block  0
+call    0 never executed
+    #####:   99:            printf("Tip: %s | Suprafata: %d | Adresa: %s | Pret: %d\n", a->tip,a->suprafata,a->adresa,a->pret);
+call    0 never executed
+        -:  100:        }
+        -:  101:    }
+    #####:  102:}
+function filterOfertaTip called 0 returned 0% blocks executed 0%
+    #####:  103:void filterOfertaTip(ManagerOferte* store)
+        -:  104:{
+    #####:  105:    printf("Introduceti tipul: ");
+    %%%%%:  105-block  0
+call    0 never executed
+        -:  106:    char filterStr[30];
+    #####:  107:    scanf("%s", filterStr);
+call    0 never executed
+        -:  108:
+    #####:  109:    List* filteredList = filterOferteTip(store, filterStr);
+call    0 never executed
+    #####:  110:    uiOferte(filteredList);
+call    0 never executed
+    #####:  111:    destroy(filteredList);
+call    0 never executed
+    #####:  112:}
+function filterOfertaSuprafata called 0 returned 0% blocks executed 0%
+    #####:  113:void filterOfertaSuprafata(ManagerOferte* store)
+        -:  114:{
+    #####:  115:    printf("Introduceti suprafata: ");
+    %%%%%:  115-block  0
+call    0 never executed
+        -:  116:    int filterStr;
+    #####:  117:    scanf("%d", &filterStr);
+call    0 never executed
+        -:  118:
+    #####:  119:    List* filteredList = filterOferteSuprafata(store, filterStr);
+call    0 never executed
+    #####:  120:    uiOferte(filteredList);
+call    0 never executed
+    #####:  121:    destroy(filteredList);
+call    0 never executed
+    #####:  122:}
+function filterOfertaPret called 0 returned 0% blocks executed 0%
+    #####:  123:void filterOfertaPret(ManagerOferte* store)
+        -:  124:{
+    #####:  125:    printf("Introduceti pretul: ");
+    %%%%%:  125-block  0
+call    0 never executed
+        -:  126:    int filterStr;
+    #####:  127:    scanf("%d", &filterStr);
+call    0 never executed
+        -:  128:
+    #####:  129:    List* filteredList = filterOfertePret(store, filterStr);
+call    0 never executed
+    #####:  130:    uiOferte(filteredList);
+call    0 never executed
+    #####:  131:    destroy(filteredList);
+call    0 never executed
+    #####:  132:}
+function uiSortPretCrescator called 0 returned 0% blocks executed 0%
+    #####:  133:void uiSortPretCrescator(ManagerOferte * store)
+        -:  134:{
+    #####:  135:    List* listaSortata = sortOferteByPret(store);
+    %%%%%:  135-block  0
+call    0 never executed
+    #####:  136:    uiOferte(listaSortata);
+call    0 never executed
+    #####:  137:    destroy(listaSortata);
+call    0 never executed
+    #####:  138:}
+function uiSortTipCrescator called 0 returned 0% blocks executed 0%
+    #####:  139:void uiSortTipCrescator(ManagerOferte * store)
+        -:  140:{
+    #####:  141:    List* listaSortata = sortOferteByTip(store);
+    %%%%%:  141-block  0
+call    0 never executed
+    #####:  142:    uiOferte(listaSortata);
+call    0 never executed
+    #####:  143:    destroy(listaSortata);
+call    0 never executed
+    #####:  144:}
+function uiUndo called 0 returned 0% blocks executed 0%
+    #####:  145:void uiUndo(ManagerOferte* s) {
+    #####:  146:    int successful = undo(s);
+    %%%%%:  146-block  0
+call    0 never executed
+    #####:  147:    if (successful)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  148:        printf("Undo realizat cu succes.\n");
+    %%%%%:  148-block  0
+call    0 never executed
+        -:  149:    else
+    #####:  150:        printf("Nu se mai poate face undo.\n");
+    %%%%%:  150-block  0
+call    0 never executed
+    #####:  151:}
+function run called 1 returned 100% blocks executed 24%
+        1:  152:void run()
+        -:  153:{
+        1:  154:    ManagerOferte store = createManagerOferte();
+        1:  154-block  0
+call    0 returned 1
+        1:  155:    int optiune,ok=1;
+        2:  156:    while(ok)
+        2:  156-block  0
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        -:  157:    {
+        1:  158:        ui_meniu();
+        1:  158-block  0
+call    0 returned 1
+        1:  159:        printf(">>>");
+call    0 returned 1
+        1:  160:        scanf("%d",&optiune);
+call    0 returned 1
+        1:  161:        switch(optiune)
+branch  0 taken 0
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 0
+branch  5 taken 0
+branch  6 taken 0
+branch  7 taken 1
+branch  8 taken 0
+        -:  162:        {
+    #####:  163:            case 1:
+    #####:  164:                uiAdd(&store);
+    %%%%%:  164-block  0
+call    0 never executed
+    #####:  165:                break;
+    #####:  166:            case 2:
+    #####:  167:                uiActualizare(&store);
+    %%%%%:  167-block  0
+call    0 never executed
+    #####:  168:                break;
+    #####:  169:            case 3:
+    #####:  170:                uiSterge(&store);
+    %%%%%:  170-block  0
+call    0 never executed
+    #####:  171:                break;
+    #####:  172:            case 4:
+    #####:  173:                uiOferte(store.allOferte);
+    %%%%%:  173-block  0
+call    0 never executed
+    #####:  174:                break;
+    #####:  175:            case 5:
+    #####:  176:                printf("1. Tip\n2. Pret\n>>>");
+    %%%%%:  176-block  0
+call    0 never executed
+        -:  177:                int optiune2;
+    #####:  178:                scanf("%d",&optiune2);
+call    0 never executed
+    #####:  179:                switch(optiune2)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  180:                {
+    #####:  181:                    case 1:
+    #####:  182:                        uiSortTipCrescator(&store);
+    %%%%%:  182-block  0
+call    0 never executed
+    #####:  183:                        break;
+    #####:  184:                    case 2:
+    #####:  185:                        uiSortPretCrescator(&store);
+    %%%%%:  185-block  0
+call    0 never executed
+    #####:  186:                        break;
+    #####:  187:                    default:
+    #####:  188:                        printf("Optiune invalida\n");
+    %%%%%:  188-block  0
+call    0 never executed
+    #####:  189:                        break;
+        -:  190:                }
+    #####:  191:                break;
+    %%%%%:  191-block  0
+    #####:  192:            case 6:
+    #####:  193:                printf("1. Suprafata\n2. Tip\n3. Pret\n>>>");
+    %%%%%:  193-block  0
+call    0 never executed
+        -:  194:                int optiune22;
+    #####:  195:                scanf("%d",&optiune22);
+call    0 never executed
+    #####:  196:                switch(optiune22)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  197:                {
+    #####:  198:                    case 1:
+    #####:  199:                        filterOfertaSuprafata(&store);
+    %%%%%:  199-block  0
+call    0 never executed
+    #####:  200:                        break;
+    #####:  201:                    case 2:
+    #####:  202:                        filterOfertaTip(&store);
+    %%%%%:  202-block  0
+call    0 never executed
+    #####:  203:                        break;
+    #####:  204:                    case 3:
+    #####:  205:                        filterOfertaPret(&store);
+    %%%%%:  205-block  0
+call    0 never executed
+    #####:  206:                        break;
+    #####:  207:                    default:
+    #####:  208:                        printf("Optiune invalida\n");
+    %%%%%:  208-block  0
+call    0 never executed
+    #####:  209:                        break;
+        -:  210:                }
+    #####:  211:                break;
+    %%%%%:  211-block  0
+    #####:  212:            case 7:
+    #####:  213:                uiUndo(&store);
+    %%%%%:  213-block  0
+call    0 never executed
+    #####:  214:                break;
+        1:  215:            case 8:
+        1:  216:                ok = 0;
+        1:  217:                break;
+        1:  217-block  0
+    #####:  218:            default:
+    #####:  219:                printf("Optiunea nu este valida!\n");
+    %%%%%:  219-block  0
+call    0 never executed
+    #####:  220:                break;
+        -:  221:        }
+        -:  222:    }
+        1:  223:    destroyManagerOferte(&store);
+        1:  223-block  0
+call    0 returned 1
+        1:  224:}
+function main called 1 returned 100% blocks executed 100%
+        1:  225:int main()
+        -:  226:{
+        1:  227:    testAll();
+        1:  227-block  0
+call    0 returned 1
+        1:  228:    run();
+call    0 returned 1
+        1:  229:    return 0;
+        -:  230:}
