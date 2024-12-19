@@ -1,0 +1,103 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/Activitate.cpp
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\Activitate.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\Activitate.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Activitate.h"
+        -:    2:
+        -:    3:/**
+        -:    4: * Functie care returneaza titlu activitatii
+        -:    5: * @return
+        -:    6: */
+function _ZNK10Activitate9get_titluB5cxx11Ev called 100 returned 100% blocks executed 100%
+      100:    7:string Activitate::get_titlu() const {
+      100:    8:    return titlu;
+      100:    8-block  0
+call    0 returned 100
+        -:    9:}
+        -:   10:/**
+        -:   11: * Functie care returneaza descrierea activitatii.
+        -:   12: * @return
+        -:   13: */
+function _ZNK10Activitate13get_descriereB5cxx11Ev called 48 returned 100% blocks executed 100%
+       48:   14:string Activitate::get_descriere() const {
+       48:   15:    return descriere;
+       48:   15-block  0
+call    0 returned 48
+        -:   16:}
+        -:   17:/**
+        -:   18: * Functie care returneaza tipul activitatii.
+        -:   19: * @return
+        -:   20: */
+function _ZNK10Activitate7get_tipB5cxx11Ev called 54 returned 100% blocks executed 100%
+       54:   21:string Activitate::get_tip() const {
+       54:   22:    return tip;
+       54:   22-block  0
+call    0 returned 54
+        -:   23:}
+        -:   24:/**
+        -:   25: * Functie care returneaza durata activitatii.
+        -:   26: * @return
+        -:   27: */
+function _ZNK10Activitate10get_durataEv called 34 returned 100% blocks executed 100%
+       34:   28:int Activitate::get_durata() const {
+       34:   29:    return durata;
+       34:   29-block  0
+        -:   30:}
+        -:   31:/**
+        -:   32: * Functie care valideaza o activitate.
+        -:   33: * @param activitate
+        -:   34: * @return
+        -:   35: */
+function _ZN10Activitate18validareActivitateERKS_ called 36 returned 100% blocks executed 91%
+       36:   36:int Activitate::validareActivitate(const Activitate &activitate){
+       36:   37:    if(activitate.get_titlu().empty())
+       36:   37-block  0
+call    0 returned 36
+branch  1 taken 36 (fallthrough)
+branch  2 taken 0 (throw)
+       36:   37-block  1
+call    3 returned 36
+call    4 returned 36
+branch  5 taken 3 (fallthrough)
+branch  6 taken 33
+    $$$$$:   37-block  2
+call    7 never executed
+        3:   38:        return 1;
+        3:   38-block  0
+       33:   39:    if(activitate.get_descriere().empty())
+       33:   39-block  0
+call    0 returned 33
+branch  1 taken 33 (fallthrough)
+branch  2 taken 0 (throw)
+       33:   39-block  1
+call    3 returned 33
+call    4 returned 33
+branch  5 taken 3 (fallthrough)
+branch  6 taken 30
+    $$$$$:   39-block  2
+call    7 never executed
+        3:   40:        return 2;
+        3:   40-block  0
+       30:   41:    if(activitate.get_tip().empty())
+       30:   41-block  0
+call    0 returned 30
+branch  1 taken 30 (fallthrough)
+branch  2 taken 0 (throw)
+       30:   41-block  1
+call    3 returned 30
+call    4 returned 30
+branch  5 taken 3 (fallthrough)
+branch  6 taken 27
+        3:   42:        return 3;
+        3:   42-block  0
+       27:   43:    if(activitate.get_durata() <= 0)
+       27:   43-block  0
+call    0 returned 27
+branch  1 taken 3 (fallthrough)
+branch  2 taken 24
+        3:   44:        return 4;
+        3:   44-block  0
+       24:   45:    return 0;
+       24:   45-block  0
+        -:   46:}
+        -:   47:

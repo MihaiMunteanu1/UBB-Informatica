@@ -1,0 +1,2787 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/ActivitateService.cpp
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "ActivitateService.h"
+        -:    2:
+        -:    3:/**
+        -:    4: * Functie care adauga o activitate in lista de activitati.c
+        -:    5: * @param titlu
+        -:    6: * @param descriere
+        -:    7: * @param tip
+        -:    8: * @param durata
+        -:    9: */
+function _ZN17ActivitateService14add_activitateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_i called 24 returned 79% blocks executed 62%
+       24:   10:void ActivitateService::add_activitate(const string& titlu,const string& descriere,const string& tip,int durata){
+        -:   11:
+       24:   12:    Activitate a{titlu,descriere,tip,durata};
+       24:   12-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   12-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+       24:   12-block  2
+call    6 returned 24
+branch  7 taken 24 (fallthrough)
+branch  8 taken 0 (throw)
+       24:   12-block  3
+call    9 returned 24
+call   10 returned 24
+call   11 returned 24
+call   12 returned 24
+    $$$$$:   12-block  4
+    $$$$$:   12-block  5
+call   13 never executed
+    $$$$$:   12-block  6
+    $$$$$:   12-block  7
+call   14 never executed
+    $$$$$:   12-block  8
+       24:   13:    switch (Activitate::validareActivitate(a)) {
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   13-block  0
+branch  3 taken 1
+branch  4 taken 1
+branch  5 taken 1
+branch  6 taken 1
+branch  7 taken 20
+        1:   14:        case 1:
+        3:   15:            throw ActivitateException("Titlu invalid!");
+        1:   15-block  0
+call    0 returned 1
+        1:   15-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   15-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   15-block  3
+    $$$$$:   15-block  4
+    $$$$$:   15-block  5
+call    7 never executed
+        1:   16:        case 2:
+        3:   17:            throw ActivitateException("Descriere invalida!");
+        1:   17-block  0
+call    0 returned 1
+        1:   17-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   17-block  3
+    $$$$$:   17-block  4
+    $$$$$:   17-block  5
+call    7 never executed
+        1:   18:        case 3:
+        3:   19:            throw ActivitateException("Tip invalid!");
+        1:   19-block  0
+call    0 returned 1
+        1:   19-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   19-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   19-block  3
+    $$$$$:   19-block  4
+    $$$$$:   19-block  5
+call    7 never executed
+        1:   20:        case 4:
+        3:   21:            throw ActivitateException("Durata invalida!");
+        1:   21-block  0
+call    0 returned 1
+        1:   21-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   21-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   21-block  3
+    $$$$$:   21-block  4
+    $$$$$:   21-block  5
+call    7 never executed
+       20:   22:        default:
+        -:   23:            try{
+       20:   24:                repo.store(a);
+       20:   24-block  0
+call    0 returned 20
+branch  1 taken 19 (fallthrough)
+branch  2 taken 1 (throw)
+        1:   25:            } catch (RepoException& e) {
+        1:   25-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   25-block  1
+call    2 returned 1
+        1:   26:                throw ActivitateException(e.getMessage());
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   26-block  0
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   26-block  1
+    $$$$$:   26-block  2
+call    7 never executed
+        1:   27:            }
+        1:   27-block  0
+call    0 returned 1
+       19:   28:            break;
+       19:   28-block  0
+        -:   29:    }
+       24:   30:}
+       19:   30-block  0
+call    0 returned 19
+        5:   30-block  1
+call    1 returned 5
+        -:   31:/**
+        -:   32: * Functie care actualizeaza o activitate din lista de activitati.
+        -:   33: * @param titlu
+        -:   34: * @param descriere
+        -:   35: * @param tip
+        -:   36: * @param durata
+        -:   37: */
+function _ZN17ActivitateService22actualizare_activitateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_i called 7 returned 29% blocks executed 62%
+        7:   38:void ActivitateService::actualizare_activitate(const std::string &titlu, const std::string &descriere,const std::string &tip, int durata) {
+        7:   39:    Activitate a{titlu,descriere,tip,durata};
+        7:   39-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   39-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:   39-block  2
+call    6 returned 7
+branch  7 taken 7 (fallthrough)
+branch  8 taken 0 (throw)
+        7:   39-block  3
+call    9 returned 7
+call   10 returned 7
+call   11 returned 7
+call   12 returned 7
+    $$$$$:   39-block  4
+    $$$$$:   39-block  5
+call   13 never executed
+    $$$$$:   39-block  6
+    $$$$$:   39-block  7
+call   14 never executed
+    $$$$$:   39-block  8
+        7:   40:    switch (Activitate::validareActivitate(a)) {
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   40-block  0
+branch  3 taken 1
+branch  4 taken 1
+branch  5 taken 1
+branch  6 taken 1
+branch  7 taken 3
+        1:   41:        case 1:
+        3:   42:            throw ActivitateException("Titlu invalid!");
+        1:   42-block  0
+call    0 returned 1
+        1:   42-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   42-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+call    7 never executed
+        1:   43:        case 2:
+        3:   44:            throw ActivitateException("Descriere invalida!");
+        1:   44-block  0
+call    0 returned 1
+        1:   44-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   44-block  3
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+call    7 never executed
+        1:   45:        case 3:
+        3:   46:            throw ActivitateException("Tip invalid!");
+        1:   46-block  0
+call    0 returned 1
+        1:   46-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   46-block  3
+    $$$$$:   46-block  4
+    $$$$$:   46-block  5
+call    7 never executed
+        1:   47:        case 4:
+        3:   48:            throw ActivitateException("Durata invalida!");
+        1:   48-block  0
+call    0 returned 1
+        1:   48-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   48-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   48-block  3
+    $$$$$:   48-block  4
+    $$$$$:   48-block  5
+call    7 never executed
+        3:   49:        default:
+        -:   50:            try{
+        3:   51:                repo.actualizare(a);
+        3:   51-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1 (throw)
+        1:   52:            }catch (RepoException& e) {
+        1:   52-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   52-block  1
+call    2 returned 1
+        1:   53:                throw ActivitateException(e.getMessage());
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   53-block  0
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   53-block  1
+    $$$$$:   53-block  2
+call    7 never executed
+        1:   54:            }
+        1:   54-block  0
+call    0 returned 1
+        2:   55:            break;
+        2:   55-block  0
+        -:   56:    }
+        7:   57:}
+        2:   57-block  0
+call    0 returned 2
+        5:   57-block  1
+call    1 returned 5
+        -:   58:/**
+        -:   59: * Functie care sterge o activitate din lista de activitati.
+        -:   60: * @param titlu
+        -:   61: */
+function _ZN17ActivitateService19stergere_activitateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 50% blocks executed 73%
+        2:   62:void ActivitateService::stergere_activitate(const std::string &titlu){
+        -:   63:    try {
+        2:   64:        repo.stergere(titlu);
+        2:   64-block  0
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1 (throw)
+        1:   65:    } catch (RepoException& e) {
+        1:   65-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   65-block  1
+call    2 returned 1
+        1:   66:        throw ActivitateException(e.getMessage());
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   66-block  0
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   66-block  1
+    $$$$$:   66-block  2
+call    7 never executed
+        1:   67:    }
+        1:   67-block  0
+call    0 returned 1
+        1:   68:}
+        1:   68-block  0
+        -:   69:/**
+        -:   70: * Functie care filtreaza toate activitatile in functie de tip
+        -:   71: * @param tip
+        -:   72: * @return
+        -:   73: */
+function _ZN17ActivitateService12filtrare_tipERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 3 returned 100% blocks executed 90%
+        3:   74:VectorDinamic<Activitate> ActivitateService::filtrare_tip(const string& tip) {
+        3:   75:    VectorDinamic<Activitate> activitati;
+        3:   75-block  0
+call    0 returned 3
+       12:   76:    for (int i=0;i<repo.get_all().size();i++){
+        9:   76-block  0
+       12:   76-block  1
+call    0 returned 12
+call    1 returned 12
+branch  2 taken 9
+branch  3 taken 3 (fallthrough)
+        9:   77:        if (repo.get_all().get(i).get_tip() == tip){
+        9:   77-block  0
+call    0 returned 9
+call    1 returned 9
+call    2 returned 9
+branch  3 taken 9 (fallthrough)
+branch  4 taken 0 (throw)
+        9:   77-block  1
+call    5 returned 9
+call    6 returned 9
+branch  7 taken 3 (fallthrough)
+branch  8 taken 6
+    $$$$$:   77-block  2
+        3:   78:            activitati.add(repo.get_all().get(i));
+        3:   78-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+branch  3 taken 3 (fallthrough)
+branch  4 taken 0 (throw)
+        -:   79:        }
+        -:   80:    }
+        3:   81:    return activitati;
+        3:   81-block  0
+        3:   81-block  1
+    =====:   82:}
+    $$$$$:   82-block  0
+call    0 never executed
+        -:   83:/**
+        -:   84: * Functie care filtreaza toate activitatile in functie de descriere
+        -:   85: * @param descriere
+        -:   86: * @return
+        -:   87: */
+function _ZN17ActivitateService18filtrare_descriereERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 90%
+        1:   88:VectorDinamic<Activitate>ActivitateService::filtrare_descriere(const string &descriere) {
+        1:   89:    VectorDinamic<Activitate> activitati;
+        1:   89-block  0
+call    0 returned 1
+        4:   90:    for (int i=0;i<repo.get_all().size();i++){
+        3:   90-block  0
+        4:   90-block  1
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 3
+branch  3 taken 1 (fallthrough)
+        3:   91:        if (repo.get_all().get(i).get_descriere() == descriere){
+        3:   91-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+branch  3 taken 3 (fallthrough)
+branch  4 taken 0 (throw)
+        3:   91-block  1
+call    5 returned 3
+call    6 returned 3
+branch  7 taken 1 (fallthrough)
+branch  8 taken 2
+    $$$$$:   91-block  2
+        1:   92:            activitati.add(repo.get_all().get(i));
+        1:   92-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:   93:        }
+        -:   94:    }
+        1:   95:    return activitati;
+        1:   95-block  0
+        1:   95-block  1
+    =====:   96:}
+    $$$$$:   96-block  0
+call    0 never executed
+        -:   97:/**
+        -:   98: * Functie care sorteaza activitatile crescator in functie de titlu
+        -:   99: * @return
+        -:  100: */
+function _ZN17ActivitateService13sortare_titluEv called 1 returned 100% blocks executed 83%
+        1:  101:VectorDinamic<Activitate>ActivitateService:: sortare_titlu() {
+        1:  102:    VectorDinamic<Activitate> activitati_sortate=repo.get_all();
+        1:  102-block  0
+call    0 returned 1
+call    1 returned 1
+        4:  103:    for(int i=0;i<activitati_sortate.size();i++){
+        3:  103-block  0
+        4:  103-block  1
+call    0 returned 4
+branch  1 taken 3
+branch  2 taken 1 (fallthrough)
+        6:  104:        for(int j=i+1;j<activitati_sortate.size();j++){
+        3:  104-block  0
+        3:  104-block  1
+        6:  104-block  2
+call    0 returned 6
+branch  1 taken 3
+branch  2 taken 3 (fallthrough)
+        3:  105:            if(activitati_sortate.get(i).get_titlu()>activitati_sortate.get(j).get_titlu()){
+        3:  105-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:  105-block  1
+call    4 returned 3
+call    5 returned 3
+branch  6 taken 3 (fallthrough)
+branch  7 taken 0 (throw)
+        3:  105-block  2
+call    8 returned 3
+call    9 returned 3
+call   10 returned 3
+branch 11 taken 1 (fallthrough)
+branch 12 taken 2
+    $$$$$:  105-block  3
+    $$$$$:  105-block  4
+call   13 never executed
+    $$$$$:  105-block  5
+        1:  106:                std::swap(activitati_sortate.get(i),activitati_sortate.get(j));
+        1:  106-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:  107:            }
+        -:  108:        }
+        -:  109:    }
+        1:  110:    return activitati_sortate;
+        1:  110-block  0
+        1:  110-block  1
+    =====:  111:}
+    $$$$$:  111-block  0
+call    0 never executed
+        -:  112:/**
+        -:  113: * Functie care sorteaza activitatile crescator in functie de descriere
+        -:  114: * @return
+        -:  115: */
+function _ZN17ActivitateService17sortare_descriereEv called 1 returned 100% blocks executed 83%
+        1:  116:VectorDinamic<Activitate>ActivitateService:: sortare_descriere() {
+        1:  117:    VectorDinamic<Activitate> activitati_sortate=repo.get_all();
+        1:  117-block  0
+call    0 returned 1
+call    1 returned 1
+        4:  118:    for(int i=0;i<activitati_sortate.size();i++){
+        3:  118-block  0
+        4:  118-block  1
+call    0 returned 4
+branch  1 taken 3
+branch  2 taken 1 (fallthrough)
+        6:  119:        for(int j=i+1;j<activitati_sortate.size();j++){
+        3:  119-block  0
+        3:  119-block  1
+        6:  119-block  2
+call    0 returned 6
+branch  1 taken 3
+branch  2 taken 3 (fallthrough)
+        3:  120:            if(activitati_sortate.get(i).get_descriere()>activitati_sortate.get(j).get_descriere()){
+        3:  120-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:  120-block  1
+call    4 returned 3
+call    5 returned 3
+branch  6 taken 3 (fallthrough)
+branch  7 taken 0 (throw)
+        3:  120-block  2
+call    8 returned 3
+call    9 returned 3
+call   10 returned 3
+branch 11 taken 1 (fallthrough)
+branch 12 taken 2
+    $$$$$:  120-block  3
+    $$$$$:  120-block  4
+call   13 never executed
+    $$$$$:  120-block  5
+        1:  121:                std::swap(activitati_sortate.get(i),activitati_sortate.get(j));
+        1:  121-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:  122:            }
+        -:  123:        }
+        -:  124:    }
+        1:  125:    return activitati_sortate;
+        1:  125-block  0
+        1:  125-block  1
+    =====:  126:}
+    $$$$$:  126-block  0
+call    0 never executed
+        -:  127:/**
+        -:  128: * Functie care sorteaza activitatile crescator in functie de tip si durata
+        -:  129: * @return
+        -:  130: */
+function _ZN17ActivitateService18sortare_tip_durataEv called 1 returned 100% blocks executed 78%
+        1:  131:VectorDinamic<Activitate>ActivitateService:: sortare_tip_durata(){
+        1:  132:    VectorDinamic<Activitate> activitati_sortate=repo.get_all();
+        1:  132-block  0
+call    0 returned 1
+call    1 returned 1
+        4:  133:    for(int i=0;i<activitati_sortate.size();i++){
+        3:  133-block  0
+        4:  133-block  1
+call    0 returned 4
+branch  1 taken 3
+branch  2 taken 1 (fallthrough)
+        6:  134:        for(int j=i+1;j<activitati_sortate.size();j++){
+        3:  134-block  0
+        3:  134-block  1
+        6:  134-block  2
+call    0 returned 6
+branch  1 taken 3
+branch  2 taken 3 (fallthrough)
+        3:  135:            if(activitati_sortate.get(i).get_tip()>activitati_sortate.get(j).get_tip())
+        3:  135-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:  135-block  1
+call    4 returned 3
+call    5 returned 3
+branch  6 taken 3 (fallthrough)
+branch  7 taken 0 (throw)
+        3:  135-block  2
+call    8 returned 3
+call    9 returned 3
+call   10 returned 3
+branch 11 taken 1 (fallthrough)
+branch 12 taken 2
+    $$$$$:  135-block  3
+    $$$$$:  135-block  4
+call   13 never executed
+    $$$$$:  135-block  5
+        -:  136:            {
+        1:  137:                std::swap(activitati_sortate.get(i),activitati_sortate.get(j));
+        1:  137-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:  138:            }
+        2:  139:            else if(activitati_sortate.get(i).get_tip()==activitati_sortate.get(j).get_tip() && activitati_sortate.get(i).get_durata()>activitati_sortate.get(j).get_durata()){
+        2:  139-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  139-block  1
+call    4 returned 2
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:  139-block  2
+call    8 returned 2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  139-block  3
+call   11 returned 1
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  139-block  4
+call   15 returned 1
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  139-block  5
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0
+        1:  139-block  6
+        1:  139-block  7
+        2:  139-block  8
+branch 21 taken 2 (fallthrough)
+branch 22 taken 0
+        2:  139-block  9
+call   23 returned 2
+        2:  139-block 10
+branch 24 taken 2 (fallthrough)
+branch 25 taken 0
+        2:  139-block 11
+call   26 returned 2
+        2:  139-block 12
+branch 27 taken 1 (fallthrough)
+branch 28 taken 1
+    $$$$$:  139-block 13
+branch 29 never executed (fallthrough)
+branch 30 never executed
+    $$$$$:  139-block 14
+call   31 never executed
+    $$$$$:  139-block 15
+    $$$$$:  139-block 16
+branch 32 never executed (fallthrough)
+branch 33 never executed
+    $$$$$:  139-block 17
+call   34 never executed
+    $$$$$:  139-block 18
+        1:  140:                std::swap(activitati_sortate.get(i),activitati_sortate.get(j));
+        1:  140-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:  141:            }
+        -:  142:        }
+        -:  143:    }
+        1:  144:    return activitati_sortate;
+        1:  144-block  0
+        1:  144-block  1
+    =====:  145:}
+    $$$$$:  145-block  0
+call    0 never executed
+        -:  146:
+function _Z7testAddv called 1 returned 100% blocks executed 57%
+        1:  147:void testAdd(){
+        1:  148:    ActivitateRepo repo;
+        1:  148-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  149:    ActivitateService service(repo);
+        1:  149-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  150:    string titlu = "Baschet";
+        1:  150-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  150-block  1
+        2:  151:    string descriere = "Dribbling";
+        1:  151-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  151-block  1
+        1:  152:    string tip = "miscare";
+        1:  152-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  152-block  1
+        1:  153:    int durata = 2;
+        1:  154:    service.add_activitate(titlu, descriere, tip, durata);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  155:    assert(service.get_all().size() == 1);
+        1:  155-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  155-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  155-block  2
+call    6 never executed
+        1:  155-block  3
+        1:  155-block  4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:  155-block  5
+call    9 returned 1
+    $$$$$:  155-block  6
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:  155-block  7
+call   12 never executed
+    $$$$$:  155-block  8
+        1:  156:    titlu = "Fotbal";
+        1:  156-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  157:    service.add_activitate(titlu, descriere, tip, durata);
+        1:  157-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  158:    assert(service.get_all().size() == 2);
+        1:  158-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  158-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  158-block  2
+call    6 never executed
+        1:  158-block  3
+        1:  158-block  4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:  158-block  5
+call    9 returned 1
+    $$$$$:  158-block  6
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:  158-block  7
+call   12 never executed
+    $$$$$:  158-block  8
+        -:  159:    try {
+        1:  160:        service.add_activitate(titlu, descriere, tip, durata);
+        1:  160-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  161:    } catch(ActivitateException & except) {
+        1:  161-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  161-block  1
+call    2 returned 1
+        1:  162:        assert(except.get_msg() == "Activitatea exista deja!\n");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  162-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  162-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  162-block  2
+call    8 never executed
+        1:  162-block  3
+        1:  162-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  162-block  5
+call   11 returned 1
+    $$$$$:  162-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  162-block  7
+call   14 never executed
+    $$$$$:  162-block  8
+        1:  163:    }
+        1:  163-block  0
+call    0 returned 1
+    $$$$$:  163-block  1
+call    1 never executed
+        1:  164:    titlu = "";
+        1:  164-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  165:    try {
+        1:  166:        service.add_activitate(titlu, descriere, tip, durata);
+        1:  166-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  167:    } catch(ActivitateException & except) {
+        1:  167-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  167-block  1
+call    2 returned 1
+        1:  168:        assert(except.get_msg() == "Titlu invalid!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  168-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  168-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  168-block  2
+call    8 never executed
+        1:  168-block  3
+        1:  168-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  168-block  5
+call   11 returned 1
+    $$$$$:  168-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  168-block  7
+call   14 never executed
+    $$$$$:  168-block  8
+        1:  169:    }
+        1:  169-block  0
+call    0 returned 1
+    $$$$$:  169-block  1
+call    1 never executed
+        1:  170:    titlu = "Baschet";
+        1:  170-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  171:    descriere = "";
+        1:  171-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  172:    try {
+        1:  173:        service.add_activitate(titlu, descriere, tip, durata);
+        1:  173-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  174:    } catch(ActivitateException & except) {
+        1:  174-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  174-block  1
+call    2 returned 1
+        1:  175:        assert(except.get_msg() == "Descriere invalida!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  175-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  175-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  175-block  2
+call    8 never executed
+        1:  175-block  3
+        1:  175-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  175-block  5
+call   11 returned 1
+    $$$$$:  175-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  175-block  7
+call   14 never executed
+    $$$$$:  175-block  8
+        1:  176:    }
+        1:  176-block  0
+call    0 returned 1
+    $$$$$:  176-block  1
+call    1 never executed
+        1:  177:    descriere = "Dribbling";
+        1:  177-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  178:    tip = "";
+        1:  178-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  179:    try {
+        1:  180:        service.add_activitate(titlu, descriere, tip, durata);
+        1:  180-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  181:    } catch(ActivitateException & except) {
+        1:  181-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  181-block  1
+call    2 returned 1
+        1:  182:        assert(except.get_msg() == "Tip invalid!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  182-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  182-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  182-block  2
+call    8 never executed
+        1:  182-block  3
+        1:  182-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  182-block  5
+call   11 returned 1
+    $$$$$:  182-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  182-block  7
+call   14 never executed
+    $$$$$:  182-block  8
+        1:  183:    }
+        1:  183-block  0
+call    0 returned 1
+    $$$$$:  183-block  1
+call    1 never executed
+        1:  184:    tip = "miscare";
+        1:  184-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  185:    durata = -2;
+        -:  186:    try {
+        1:  187:        service.add_activitate(titlu, descriere, tip, durata);
+        1:  187-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  188:    } catch(ActivitateException & except) {
+        1:  188-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  188-block  1
+call    2 returned 1
+        1:  189:        assert(except.get_msg() == "Durata invalida!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  189-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  189-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  189-block  2
+call    8 never executed
+        1:  189-block  3
+        1:  189-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  189-block  5
+call   11 returned 1
+    $$$$$:  189-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  189-block  7
+call   14 never executed
+    $$$$$:  189-block  8
+        1:  190:    }
+        1:  190-block  0
+call    0 returned 1
+    $$$$$:  190-block  1
+call    1 never executed
+        1:  191:}
+        1:  191-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:  191-block  1
+call    5 never executed
+    $$$$$:  191-block  2
+call    6 never executed
+    $$$$$:  191-block  3
+call    7 never executed
+    $$$$$:  191-block  4
+call    8 never executed
+    $$$$$:  191-block  5
+call    9 never executed
+function _Z15testActualizarev called 1 returned 100% blocks executed 58%
+        1:  192:void testActualizare(){
+        1:  193:    ActivitateRepo repo;
+        1:  193-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  194:    ActivitateService service(repo);
+        1:  194-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  195:    string titlu = "Baschet";
+        1:  195-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  195-block  1
+        2:  196:    string descriere = "Dribbling";
+        1:  196-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  196-block  1
+        1:  197:    string tip = "miscare";
+        1:  197-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  197-block  1
+        1:  198:    int durata = 2;
+        1:  199:    service.add_activitate(titlu, descriere, tip, durata);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  200:    descriere = "Pase";
+        1:  200-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  201:    service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  201-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  202:    assert(service.get_all().get(0).get_descriere() == "Pase");
+        1:  202-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  202-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  202-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  202-block  3
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1
+    %%%%%:  202-block  4
+call   12 never executed
+        1:  202-block  5
+        1:  202-block  6
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0
+        1:  202-block  7
+call   15 returned 1
+        1:  202-block  8
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0
+        1:  202-block  9
+call   18 returned 1
+    $$$$$:  202-block 10
+branch 19 never executed (fallthrough)
+branch 20 never executed
+    $$$$$:  202-block 11
+call   21 never executed
+    $$$$$:  202-block 12
+    $$$$$:  202-block 13
+branch 22 never executed (fallthrough)
+branch 23 never executed
+    $$$$$:  202-block 14
+call   24 never executed
+    $$$$$:  202-block 15
+        1:  203:    descriere = "Dribbling";
+        1:  203-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  204:    tip = "miscare";
+        1:  204-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  205:    service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  205-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  206:    titlu = "Fotbal";
+        1:  206-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  207:    try {
+        1:  208:        service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  208-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  209:    } catch(ActivitateException & except) {
+        1:  209-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  209-block  1
+call    2 returned 1
+        1:  210:        assert(except.get_msg() == "Activitatea nu exista!\n");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  210-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  210-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  210-block  2
+call    8 never executed
+        1:  210-block  3
+        1:  210-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  210-block  5
+call   11 returned 1
+    $$$$$:  210-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  210-block  7
+call   14 never executed
+    $$$$$:  210-block  8
+        1:  211:    }
+        1:  211-block  0
+call    0 returned 1
+    $$$$$:  211-block  1
+call    1 never executed
+        1:  212:    titlu = "";
+        1:  212-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  213:    try {
+        1:  214:        service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  214-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  215:    } catch(ActivitateException & except) {
+        1:  215-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  215-block  1
+call    2 returned 1
+        1:  216:        assert(except.get_msg() == "Titlu invalid!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  216-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  216-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  216-block  2
+call    8 never executed
+        1:  216-block  3
+        1:  216-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  216-block  5
+call   11 returned 1
+    $$$$$:  216-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  216-block  7
+call   14 never executed
+    $$$$$:  216-block  8
+        1:  217:    }
+        1:  217-block  0
+call    0 returned 1
+    $$$$$:  217-block  1
+call    1 never executed
+        1:  218:    titlu = "Baschet";
+        1:  218-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  219:    descriere = "";
+        1:  219-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  220:    try {
+        1:  221:        service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  221-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  222:    } catch(ActivitateException & except) {
+        1:  222-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  222-block  1
+call    2 returned 1
+        1:  223:        assert(except.get_msg() == "Descriere invalida!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  223-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  223-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  223-block  2
+call    8 never executed
+        1:  223-block  3
+        1:  223-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  223-block  5
+call   11 returned 1
+    $$$$$:  223-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  223-block  7
+call   14 never executed
+    $$$$$:  223-block  8
+        1:  224:    }
+        1:  224-block  0
+call    0 returned 1
+    $$$$$:  224-block  1
+call    1 never executed
+        1:  225:    descriere = "Dribbling";
+        1:  225-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  226:    tip = "";
+        1:  226-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  227:    try {
+        1:  228:        service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  228-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  229:    } catch(ActivitateException & except) {
+        1:  229-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  229-block  1
+call    2 returned 1
+        1:  230:        assert(except.get_msg() == "Tip invalid!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  230-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  230-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  230-block  2
+call    8 never executed
+        1:  230-block  3
+        1:  230-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  230-block  5
+call   11 returned 1
+    $$$$$:  230-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  230-block  7
+call   14 never executed
+    $$$$$:  230-block  8
+        1:  231:    }
+        1:  231-block  0
+call    0 returned 1
+    $$$$$:  231-block  1
+call    1 never executed
+        1:  232:    tip = "miscare";
+        1:  232-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  233:    durata = -2;
+        -:  234:    try {
+        1:  235:        service.actualizare_activitate(titlu, descriere, tip, durata);
+        1:  235-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  236:    } catch(ActivitateException & except) {
+        1:  236-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  236-block  1
+call    2 returned 1
+        1:  237:        assert(except.get_msg() == "Durata invalida!");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  237-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  237-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  237-block  2
+call    8 never executed
+        1:  237-block  3
+        1:  237-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  237-block  5
+call   11 returned 1
+    $$$$$:  237-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  237-block  7
+call   14 never executed
+    $$$$$:  237-block  8
+        1:  238:    }
+        1:  238-block  0
+call    0 returned 1
+    $$$$$:  238-block  1
+call    1 never executed
+        1:  239:}
+        1:  239-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:  239-block  1
+call    5 never executed
+    $$$$$:  239-block  2
+call    6 never executed
+    $$$$$:  239-block  3
+call    7 never executed
+    $$$$$:  239-block  4
+call    8 never executed
+    $$$$$:  239-block  5
+call    9 never executed
+        -:  240:
+function _Z12testStergerev called 1 returned 100% blocks executed 55%
+        1:  241:void testStergere(){
+        1:  242:    ActivitateRepo repo;
+        1:  242-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  243:    ActivitateService service(repo);
+        1:  243-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  244:    string titlu = "Baschet";
+        1:  244-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  244-block  1
+        2:  245:    string descriere = "Dribbling";
+        1:  245-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  245-block  1
+        1:  246:    string tip = "miscare";
+        1:  246-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  246-block  1
+        1:  247:    int durata = 2;
+        1:  248:    service.add_activitate(titlu, descriere, tip, durata);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  249:    service.stergere_activitate(titlu);
+        1:  249-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  250:    assert(service.get_all().size() == 0);
+        1:  250-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  250-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  250-block  2
+call    6 never executed
+        1:  250-block  3
+        1:  250-block  4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:  250-block  5
+call    9 returned 1
+    $$$$$:  250-block  6
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:  250-block  7
+call   12 never executed
+    $$$$$:  250-block  8
+        -:  251:    try {
+        1:  252:        service.stergere_activitate(titlu);
+        1:  252-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:  253:    } catch(ActivitateException & except) {
+        1:  253-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  253-block  1
+call    2 returned 1
+        1:  254:        assert(except.get_msg() == "Activitatea nu exista!\n");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  254-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  254-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:  254-block  2
+call    8 never executed
+        1:  254-block  3
+        1:  254-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  254-block  5
+call   11 returned 1
+    $$$$$:  254-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:  254-block  7
+call   14 never executed
+    $$$$$:  254-block  8
+        1:  255:    }
+        1:  255-block  0
+call    0 returned 1
+    $$$$$:  255-block  1
+call    1 never executed
+        1:  256:}
+        1:  256-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:  256-block  1
+call    5 never executed
+    $$$$$:  256-block  2
+call    6 never executed
+    $$$$$:  256-block  3
+call    7 never executed
+    $$$$$:  256-block  4
+call    8 never executed
+    $$$$$:  256-block  5
+call    9 never executed
+        -:  257:
+function _Z11testSortarev called 1 returned 100% blocks executed 51%
+        1:  258:void testSortare(){
+        1:  259:    ActivitateRepo repo;
+        1:  259-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  260:    ActivitateService serv{repo};
+        1:  260-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  261:    serv.add_activitate("Baschet", "Dribbling", "miscare",2);
+        1:  261-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  261-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  261-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  261-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  261-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  261-block  5
+call   15 never executed
+    $$$$$:  261-block  6
+    $$$$$:  261-block  7
+    $$$$$:  261-block  8
+call   16 never executed
+    $$$$$:  261-block  9
+    $$$$$:  261-block 10
+    $$$$$:  261-block 11
+call   17 never executed
+    $$$$$:  261-block 12
+    $$$$$:  261-block 13
+        6:  262:    serv.add_activitate("Volei", "Pase", "miscare",2);
+        1:  262-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  262-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  262-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  262-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  262-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  262-block  5
+call   15 never executed
+    $$$$$:  262-block  6
+    $$$$$:  262-block  7
+    $$$$$:  262-block  8
+call   16 never executed
+    $$$$$:  262-block  9
+    $$$$$:  262-block 10
+    $$$$$:  262-block 11
+call   17 never executed
+    $$$$$:  262-block 12
+    $$$$$:  262-block 13
+        5:  263:    serv.add_activitate("Fotbal", "Serva", "miscare",2);
+        1:  263-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  263-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  263-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  263-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  263-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  263-block  5
+call   15 never executed
+    $$$$$:  263-block  6
+    $$$$$:  263-block  7
+    $$$$$:  263-block  8
+call   16 never executed
+    $$$$$:  263-block  9
+    $$$$$:  263-block 10
+    $$$$$:  263-block 11
+call   17 never executed
+    $$$$$:  263-block 12
+    $$$$$:  263-block 13
+        1:  264:    auto activitati = serv.sortare_titlu();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  265:    assert(activitati.size() == 3);
+        1:  265-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  265-block  1
+call    3 never executed
+        1:  265-block  2
+       1*:  266:    assert(activitati.get(0).get_titlu() == "Baschet");
+        1:  266-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  266-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  266-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  266-block  3
+call    9 never executed
+        1:  266-block  4
+        1:  266-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  266-block  6
+call   12 returned 1
+    $$$$$:  266-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  266-block  8
+call   15 never executed
+    $$$$$:  266-block  9
+       1*:  267:    assert(activitati.get(1).get_titlu() == "Fotbal");
+        1:  267-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  267-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  267-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  267-block  3
+call    9 never executed
+        1:  267-block  4
+        1:  267-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  267-block  6
+call   12 returned 1
+    $$$$$:  267-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  267-block  8
+call   15 never executed
+    $$$$$:  267-block  9
+       1*:  268:    assert(activitati.get(2).get_titlu() == "Volei");
+        1:  268-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  268-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  268-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  268-block  3
+call    9 never executed
+        1:  268-block  4
+        1:  268-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  268-block  6
+call   12 returned 1
+    $$$$$:  268-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  268-block  8
+call   15 never executed
+    $$$$$:  268-block  9
+        1:  269:}
+        1:  269-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  269-block  1
+call    3 never executed
+    $$$$$:  269-block  2
+call    4 never executed
+    $$$$$:  269-block  3
+call    5 never executed
+        -:  270:
+function _Z12testFiltrarev called 1 returned 100% blocks executed 51%
+        1:  271:void testFiltrare(){
+        1:  272:    ActivitateRepo repo;
+        1:  272-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  273:    ActivitateService serv{repo};
+        1:  273-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  274:    serv.add_activitate("Baschet", "Dribbling", "miscare",2);
+        1:  274-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  274-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  274-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  274-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  274-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  274-block  5
+call   15 never executed
+    $$$$$:  274-block  6
+    $$$$$:  274-block  7
+    $$$$$:  274-block  8
+call   16 never executed
+    $$$$$:  274-block  9
+    $$$$$:  274-block 10
+    $$$$$:  274-block 11
+call   17 never executed
+    $$$$$:  274-block 12
+    $$$$$:  274-block 13
+        6:  275:    serv.add_activitate("Fotbal", "Pase", "alergare",2);
+        1:  275-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  275-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  275-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  275-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  275-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  275-block  5
+call   15 never executed
+    $$$$$:  275-block  6
+    $$$$$:  275-block  7
+    $$$$$:  275-block  8
+call   16 never executed
+    $$$$$:  275-block  9
+    $$$$$:  275-block 10
+    $$$$$:  275-block 11
+call   17 never executed
+    $$$$$:  275-block 12
+    $$$$$:  275-block 13
+        6:  276:    serv.add_activitate("Volei", "Serva", "miscare",2);
+        1:  276-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  276-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  276-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  276-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  276-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  276-block  5
+call   15 never executed
+    $$$$$:  276-block  6
+    $$$$$:  276-block  7
+    $$$$$:  276-block  8
+call   16 never executed
+    $$$$$:  276-block  9
+    $$$$$:  276-block 10
+    $$$$$:  276-block 11
+call   17 never executed
+    $$$$$:  276-block 12
+    $$$$$:  276-block 13
+        1:  277:    auto activitati = serv.filtrare_tip("miscare");
+        1:  277-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  277-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  277-block  2
+call    6 returned 1
+    $$$$$:  277-block  3
+call    7 never executed
+    $$$$$:  277-block  4
+    $$$$$:  277-block  5
+       1*:  278:    assert(activitati.size() == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  278-block  0
+call    3 never executed
+        1:  278-block  1
+        1:  279:    activitati = serv.filtrare_tip("alergare");
+        1:  279-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  279-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  279-block  2
+call    6 returned 1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  279-block  3
+call    9 never executed
+    $$$$$:  279-block  4
+    $$$$$:  279-block  5
+    $$$$$:  279-block  6
+       1*:  280:    assert(activitati.size() == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  280-block  0
+call    3 never executed
+        1:  280-block  1
+        1:  281:    activitati = serv.filtrare_tip("inot");
+        1:  281-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  281-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  281-block  2
+call    6 returned 1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  281-block  3
+call    9 never executed
+    $$$$$:  281-block  4
+    $$$$$:  281-block  5
+    $$$$$:  281-block  6
+       1*:  282:    assert(activitati.size() == 0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  282-block  0
+call    3 never executed
+        1:  282-block  1
+        -:  283:
+        1:  284:}
+        1:  284-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  284-block  1
+call    3 never executed
+    $$$$$:  284-block  2
+call    4 never executed
+    $$$$$:  284-block  3
+call    5 never executed
+function _Z23testValideazaActivitatev called 1 returned 100% blocks executed 50%
+        1:  285:void testValideazaActivitate(){
+        1:  285-block  0
+        5:  286:    Activitate a{"Baschet", "Dribbling", "miscare",2};
+        1:  286-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  286-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  286-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  286-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:  286-block  4
+    $$$$$:  286-block  5
+    $$$$$:  286-block  6
+call   13 never executed
+    $$$$$:  286-block  7
+    $$$$$:  286-block  8
+    $$$$$:  286-block  9
+call   14 never executed
+    $$$$$:  286-block 10
+    $$$$$:  286-block 11
+       1*:  287:    assert(Activitate::validareActivitate(a) == 0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  287-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  287-block  1
+call    5 never executed
+        1:  287-block  2
+        5:  288:    a = Activitate{"", "Dribbling", "miscare",2};
+        1:  288-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  288-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  288-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  288-block  3
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  288-block  4
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+    $$$$$:  288-block  5
+call   17 never executed
+    $$$$$:  288-block  6
+call   18 never executed
+    $$$$$:  288-block  7
+    $$$$$:  288-block  8
+    $$$$$:  288-block  9
+call   19 never executed
+    $$$$$:  288-block 10
+    $$$$$:  288-block 11
+    $$$$$:  288-block 12
+call   20 never executed
+    $$$$$:  288-block 13
+    $$$$$:  288-block 14
+    $$$$$:  288-block 15
+       1*:  289:    assert(Activitate::validareActivitate(a) == 1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  289-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  289-block  1
+call    5 never executed
+        1:  289-block  2
+        5:  290:    a = Activitate{"Baschet", "", "miscare",2};
+        1:  290-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  290-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  290-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  290-block  3
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  290-block  4
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+    $$$$$:  290-block  5
+call   17 never executed
+    $$$$$:  290-block  6
+call   18 never executed
+    $$$$$:  290-block  7
+    $$$$$:  290-block  8
+    $$$$$:  290-block  9
+call   19 never executed
+    $$$$$:  290-block 10
+    $$$$$:  290-block 11
+    $$$$$:  290-block 12
+call   20 never executed
+    $$$$$:  290-block 13
+    $$$$$:  290-block 14
+    $$$$$:  290-block 15
+       1*:  291:    assert(Activitate::validareActivitate(a) == 2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  291-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  291-block  1
+call    5 never executed
+        1:  291-block  2
+        5:  292:    a = Activitate{"Baschet", "Dribbling", "",2};
+        1:  292-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  292-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  292-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  292-block  3
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  292-block  4
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+    $$$$$:  292-block  5
+call   17 never executed
+    $$$$$:  292-block  6
+call   18 never executed
+    $$$$$:  292-block  7
+    $$$$$:  292-block  8
+    $$$$$:  292-block  9
+call   19 never executed
+    $$$$$:  292-block 10
+    $$$$$:  292-block 11
+    $$$$$:  292-block 12
+call   20 never executed
+    $$$$$:  292-block 13
+    $$$$$:  292-block 14
+    $$$$$:  292-block 15
+       1*:  293:    assert(Activitate::validareActivitate(a) == 3);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  293-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  293-block  1
+call    5 never executed
+        1:  293-block  2
+        5:  294:    a = Activitate{"Baschet", "Dribbling", "miscare",-2};
+        1:  294-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  294-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  294-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  294-block  3
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  294-block  4
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+    $$$$$:  294-block  5
+call   17 never executed
+    $$$$$:  294-block  6
+call   18 never executed
+    $$$$$:  294-block  7
+    $$$$$:  294-block  8
+    $$$$$:  294-block  9
+call   19 never executed
+    $$$$$:  294-block 10
+    $$$$$:  294-block 11
+    $$$$$:  294-block 12
+call   20 never executed
+    $$$$$:  294-block 13
+    $$$$$:  294-block 14
+    $$$$$:  294-block 15
+       1*:  295:    assert(Activitate::validareActivitate(a) == 4);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  295-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  295-block  1
+call    5 never executed
+        1:  295-block  2
+        1:  296:}
+        1:  296-block  0
+call    0 returned 1
+    $$$$$:  296-block  1
+call    1 never executed
+function _Z21testFiltrareDescrierev called 1 returned 100% blocks executed 49%
+        1:  297:void testFiltrareDescriere(){
+        1:  298:    ActivitateRepo repo;
+        1:  298-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  299:    ActivitateService serv{repo};
+        1:  299-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  300:    serv.add_activitate("Baschet", "Dribbling", "miscare",2);
+        1:  300-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  300-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  300-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  300-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  300-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  300-block  5
+call   15 never executed
+    $$$$$:  300-block  6
+    $$$$$:  300-block  7
+    $$$$$:  300-block  8
+call   16 never executed
+    $$$$$:  300-block  9
+    $$$$$:  300-block 10
+    $$$$$:  300-block 11
+call   17 never executed
+    $$$$$:  300-block 12
+    $$$$$:  300-block 13
+        6:  301:    serv.add_activitate("Fotbal", "Pase", "alergare",2);
+        1:  301-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  301-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  301-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  301-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  301-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  301-block  5
+call   15 never executed
+    $$$$$:  301-block  6
+    $$$$$:  301-block  7
+    $$$$$:  301-block  8
+call   16 never executed
+    $$$$$:  301-block  9
+    $$$$$:  301-block 10
+    $$$$$:  301-block 11
+call   17 never executed
+    $$$$$:  301-block 12
+    $$$$$:  301-block 13
+        6:  302:    serv.add_activitate("Volei", "Serva", "miscare",2);
+        1:  302-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  302-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  302-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  302-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  302-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  302-block  5
+call   15 never executed
+    $$$$$:  302-block  6
+    $$$$$:  302-block  7
+    $$$$$:  302-block  8
+call   16 never executed
+    $$$$$:  302-block  9
+    $$$$$:  302-block 10
+    $$$$$:  302-block 11
+call   17 never executed
+    $$$$$:  302-block 12
+    $$$$$:  302-block 13
+        1:  303:    auto activitati = serv.filtrare_descriere("Dribbling");
+        1:  303-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  303-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  303-block  2
+call    6 returned 1
+    $$$$$:  303-block  3
+call    7 never executed
+    $$$$$:  303-block  4
+    $$$$$:  303-block  5
+       1*:  304:    assert(activitati.size() == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  304-block  0
+call    3 never executed
+        1:  304-block  1
+        1:  305:}
+        1:  305-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  305-block  1
+call    3 never executed
+    $$$$$:  305-block  2
+call    4 never executed
+    $$$$$:  305-block  3
+call    5 never executed
+function _Z20testSortareDescrierev called 1 returned 100% blocks executed 51%
+        1:  306:void testSortareDescriere(){
+        1:  307:    ActivitateRepo repo;
+        1:  307-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  308:    ActivitateService serv{repo};
+        1:  308-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  309:    serv.add_activitate("Baschet", "Dribbling", "miscare",2);
+        1:  309-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  309-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  309-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  309-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  309-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  309-block  5
+call   15 never executed
+    $$$$$:  309-block  6
+    $$$$$:  309-block  7
+    $$$$$:  309-block  8
+call   16 never executed
+    $$$$$:  309-block  9
+    $$$$$:  309-block 10
+    $$$$$:  309-block 11
+call   17 never executed
+    $$$$$:  309-block 12
+    $$$$$:  309-block 13
+        6:  310:    serv.add_activitate("Volei", "Serva", "miscare",2);
+        1:  310-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  310-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  310-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  310-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  310-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  310-block  5
+call   15 never executed
+    $$$$$:  310-block  6
+    $$$$$:  310-block  7
+    $$$$$:  310-block  8
+call   16 never executed
+    $$$$$:  310-block  9
+    $$$$$:  310-block 10
+    $$$$$:  310-block 11
+call   17 never executed
+    $$$$$:  310-block 12
+    $$$$$:  310-block 13
+        5:  311:    serv.add_activitate("Fotbal", "Pase", "miscare",2);
+        1:  311-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  311-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  311-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  311-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  311-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  311-block  5
+call   15 never executed
+    $$$$$:  311-block  6
+    $$$$$:  311-block  7
+    $$$$$:  311-block  8
+call   16 never executed
+    $$$$$:  311-block  9
+    $$$$$:  311-block 10
+    $$$$$:  311-block 11
+call   17 never executed
+    $$$$$:  311-block 12
+    $$$$$:  311-block 13
+        1:  312:    auto activitati = serv.sortare_descriere();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  313:    assert(activitati.size() == 3);
+        1:  313-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  313-block  1
+call    3 never executed
+        1:  313-block  2
+       1*:  314:    assert(activitati.get(0).get_descriere() == "Dribbling");
+        1:  314-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  314-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  314-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  314-block  3
+call    9 never executed
+        1:  314-block  4
+        1:  314-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  314-block  6
+call   12 returned 1
+    $$$$$:  314-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  314-block  8
+call   15 never executed
+    $$$$$:  314-block  9
+       1*:  315:    assert(activitati.get(1).get_descriere() == "Pase");
+        1:  315-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  315-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  315-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  315-block  3
+call    9 never executed
+        1:  315-block  4
+        1:  315-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  315-block  6
+call   12 returned 1
+    $$$$$:  315-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  315-block  8
+call   15 never executed
+    $$$$$:  315-block  9
+       1*:  316:    assert(activitati.get(2).get_descriere() == "Serva");
+        1:  316-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  316-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  316-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  316-block  3
+call    9 never executed
+        1:  316-block  4
+        1:  316-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  316-block  6
+call   12 returned 1
+    $$$$$:  316-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  316-block  8
+call   15 never executed
+    $$$$$:  316-block  9
+        1:  317:}
+        1:  317-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  317-block  1
+call    3 never executed
+    $$$$$:  317-block  2
+call    4 never executed
+    $$$$$:  317-block  3
+call    5 never executed
+function _Z20testSortareTipDuratav called 1 returned 100% blocks executed 54%
+        1:  318:void testSortareTipDurata() {
+        1:  319:    ActivitateRepo repo;
+        1:  319-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  320:    ActivitateService serv{repo};
+        1:  320-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  321:    serv.add_activitate("Baschet", "Dribbling", "miscare", 3);
+        1:  321-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  321-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  321-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  321-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  321-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  321-block  5
+call   15 never executed
+    $$$$$:  321-block  6
+    $$$$$:  321-block  7
+    $$$$$:  321-block  8
+call   16 never executed
+    $$$$$:  321-block  9
+    $$$$$:  321-block 10
+    $$$$$:  321-block 11
+call   17 never executed
+    $$$$$:  321-block 12
+    $$$$$:  321-block 13
+        6:  322:    serv.add_activitate("Volei", "Serva", "alergare", 1);
+        1:  322-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  322-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  322-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  322-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  322-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  322-block  5
+call   15 never executed
+    $$$$$:  322-block  6
+    $$$$$:  322-block  7
+    $$$$$:  322-block  8
+call   16 never executed
+    $$$$$:  322-block  9
+    $$$$$:  322-block 10
+    $$$$$:  322-block 11
+call   17 never executed
+    $$$$$:  322-block 12
+    $$$$$:  322-block 13
+        5:  323:    serv.add_activitate("Fotbal", "Pase", "miscare", 1);
+        1:  323-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  323-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  323-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  323-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  323-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:  323-block  5
+call   15 never executed
+    $$$$$:  323-block  6
+    $$$$$:  323-block  7
+    $$$$$:  323-block  8
+call   16 never executed
+    $$$$$:  323-block  9
+    $$$$$:  323-block 10
+    $$$$$:  323-block 11
+call   17 never executed
+    $$$$$:  323-block 12
+    $$$$$:  323-block 13
+        1:  324:    auto activitati = serv.sortare_tip_durata();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  325:    assert(activitati.size() == 3);
+        1:  325-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  325-block  1
+call    3 never executed
+        1:  325-block  2
+       1*:  326:    assert(activitati.get(0).get_tip() == "alergare");
+        1:  326-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  326-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  326-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  326-block  3
+call    9 never executed
+        1:  326-block  4
+        1:  326-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  326-block  6
+call   12 returned 1
+    $$$$$:  326-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  326-block  8
+call   15 never executed
+    $$$$$:  326-block  9
+       1*:  327:    assert(activitati.get(1).get_tip() == "miscare");
+        1:  327-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  327-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  327-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  327-block  3
+call    9 never executed
+        1:  327-block  4
+        1:  327-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  327-block  6
+call   12 returned 1
+    $$$$$:  327-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  327-block  8
+call   15 never executed
+    $$$$$:  327-block  9
+       1*:  328:    assert(activitati.get(2).get_tip() == "miscare");
+        1:  328-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  328-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  328-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  328-block  3
+call    9 never executed
+        1:  328-block  4
+        1:  328-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  328-block  6
+call   12 returned 1
+    $$$$$:  328-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  328-block  8
+call   15 never executed
+    $$$$$:  328-block  9
+       1*:  329:    assert(activitati.get(0).get_durata() == 1);
+        1:  329-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  329-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  329-block  2
+call    6 never executed
+        1:  329-block  3
+       1*:  330:    assert(activitati.get(1).get_durata() == 1);
+        1:  330-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  330-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  330-block  2
+call    6 never executed
+        1:  330-block  3
+       1*:  331:    assert(activitati.get(2).get_durata() == 3);
+        1:  331-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  331-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  331-block  2
+call    6 never executed
+        1:  331-block  3
+        1:  332:}
+        1:  332-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  332-block  1
+call    3 never executed
+    $$$$$:  332-block  2
+call    4 never executed
+    $$$$$:  332-block  3
+call    5 never executed
+function _Z7testAllv called 1 returned 100% blocks executed 100%
+        1:  333:void testAll()
+        -:  334:{
+        1:  335:    testSortareTipDurata();
+        1:  335-block  0
+call    0 returned 1
+        1:  336:    testSortareDescriere();
+call    0 returned 1
+        1:  337:    testFiltrareDescriere();
+call    0 returned 1
+        1:  338:    testValideazaActivitate();
+call    0 returned 1
+        1:  339:    testFiltrare();
+call    0 returned 1
+        1:  340:    testSortare();
+call    0 returned 1
+        1:  341:    RepoTestAll();
+call    0 returned 1
+        1:  342:    testAdd();
+call    0 returned 1
+        1:  343:    testActualizare();
+call    0 returned 1
+        1:  344:    testStergere();
+call    0 returned 1
+        1:  345:}

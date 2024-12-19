@@ -1,0 +1,59 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/repository.h
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include <utility>
+        -:    3:#include <vector>
+        -:    4:#include <stdexcept>
+        -:    5:#include <cassert>
+        -:    6:#include "Activitate.h"
+        -:    7:#include "vectordinamic.h"
+        -:    8:using std::vector;
+        -:    9:using std::exception;
+        -:   10:class RepoException : public exception{
+        -:   11:    string msg;
+        -:   12:public:
+        -:   13:    explicit RepoException(string m): msg{std::move(m)}{
+        -:   14:    }
+function _ZN13RepoException10getMessageB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   15:    string getMessage(){
+    #####:   16:        return msg;
+    %%%%%:   16-block  0
+call    0 never executed
+        -:   17:    }
+        -:   18:};
+        -:   19:
+        -:   20:class ActivitateRepo {
+        -:   21:private:
+        -:   22:    VectorDinamic<Activitate> activitati;
+        -:   23:public:
+        -:   24:
+        -:   25:    //ActivitateRepo(const ActivitateRepo& ot) = default;
+        -:   26:
+        -:   27:    //ActivitateRepo()=default;
+        -:   28:
+        -:   29:    void store(const Activitate& m);
+        -:   30:
+        -:   31:    void actualizare(const Activitate& m);
+        -:   32:
+        -:   33:    void stergere(const string& titlu);
+        -:   34:
+        -:   35:    /**
+        -:   36:     * Functie care returneaza toate activitatile din lista de activitati.
+        -:   37:     * @return
+        -:   38:     */
+function _ZN14ActivitateRepo7get_allEv called 0 returned 0% blocks executed 0%
+    #####:   39:    const VectorDinamic<Activitate>& get_all(){
+    #####:   40:        return activitati;
+    %%%%%:   40-block  0
+        -:   41:    }
+        -:   42:};
+        -:   43:
+        -:   44:void testRepo();
+        -:   45:
+        -:   46:void testRepoActualizare();
+        -:   47:
+        -:   48:void testRepoStergere();
+        -:   49:
+        -:   50:void RepoTestAll();

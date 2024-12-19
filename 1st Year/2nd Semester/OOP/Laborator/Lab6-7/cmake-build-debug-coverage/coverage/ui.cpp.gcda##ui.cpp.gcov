@@ -1,0 +1,1155 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/ui.cpp
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ui.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ui.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "ui.h"
+        -:    2:#include <iostream>
+        -:    3:using std::cin;
+        -:    4:using std::cout;
+function _ZN2ui16adaugaActivitateEv called 0 returned 0% blocks executed 0%
+    #####:    5:void ui::adaugaActivitate() {
+    #####:    6:    string titlu;
+    %%%%%:    6-block  0
+call    0 never executed
+    #####:    7:    string descriere;
+call    0 never executed
+    #####:    8:    string tip;
+call    0 never executed
+        -:    9:    int durata;
+    #####:   10:    cout << "Titlu: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   11:    cin >> titlu;
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   12:    cout << "\nDescriere: ";
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   13:    cin >> descriere;
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   14:    cout << "\nTip: ";
+    %%%%%:   14-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   15:    cin >> tip;
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   16:    cout << "\nDurata: ";
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   17:    cin >> durata;
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   18:    try {
+    #####:   19:        serv.add_activitate(titlu, descriere, tip, durata);
+    %%%%%:   19-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   20:        cout << "Activitate adaugata cu succes\n";
+    %%%%%:   20-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   21:    }
+    =====:   22:    catch (RepoException &ex) {
+    $$$$$:   22-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    $$$$$:   22-block  1
+call    2 never executed
+    =====:   23:        cout << ex.getMessage();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   23-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    $$$$$:   23-block  1
+call    6 never executed
+    $$$$$:   23-block  2
+call    7 never executed
+    $$$$$:   23-block  3
+    =====:   24:    }
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   24-block  0
+call    3 never executed
+    #####:   25:}
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:   25-block  1
+call    3 never executed
+    $$$$$:   25-block  2
+call    4 never executed
+    $$$$$:   25-block  3
+call    5 never executed
+function _ZN2ui22actualizeazaActivitateEv called 0 returned 0% blocks executed 0%
+    #####:   26:void ui::actualizeazaActivitate() {
+    #####:   27:    string titlu;
+    %%%%%:   27-block  0
+call    0 never executed
+    #####:   28:    string descriere;
+call    0 never executed
+    #####:   29:    string tip;
+call    0 never executed
+        -:   30:    int durata;
+    #####:   31:    cout << "Titlu: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   32:    cin >> titlu;
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   33:    cout << "\nDescriere noua: ";
+    %%%%%:   33-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   34:    cin >> descriere;
+    %%%%%:   34-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   35:    cout << "\nTip nou: ";
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   36:    cin >> tip;
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   37:    cout << "\nDurata noua: ";
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   38:    cin >> durata;
+    %%%%%:   38-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   39:    try {
+    #####:   40:        serv.actualizare_activitate(titlu, descriere, tip, durata);
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   41:        cout << "Activitate actualizata cu succes\n";
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   42:    }
+    =====:   43:    catch (RepoException &ex) {
+    $$$$$:   43-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    $$$$$:   43-block  1
+call    2 never executed
+    =====:   44:        cout << ex.getMessage();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   44-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    $$$$$:   44-block  1
+call    6 never executed
+    $$$$$:   44-block  2
+call    7 never executed
+    $$$$$:   44-block  3
+    =====:   45:    }
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   45-block  0
+call    3 never executed
+    #####:   46:}
+    %%%%%:   46-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:   46-block  1
+call    3 never executed
+    $$$$$:   46-block  2
+call    4 never executed
+    $$$$$:   46-block  3
+call    5 never executed
+function _ZN2ui16stergeActivitateEv called 0 returned 0% blocks executed 0%
+    #####:   47:void ui::stergeActivitate() {
+    #####:   48:    string titlu;
+    %%%%%:   48-block  0
+call    0 never executed
+    #####:   49:    cout << "Titlu: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   50:    cin >> titlu;
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   51:    try {
+    #####:   52:        serv.stergere_activitate(titlu);
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   53:        cout << "Activitate stearsa cu succes\n";
+    %%%%%:   53-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   54:    }
+    =====:   55:    catch (RepoException &ex) {
+    $$$$$:   55-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    $$$$$:   55-block  1
+call    2 never executed
+    =====:   56:        cout << ex.getMessage();
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   56-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    $$$$$:   56-block  1
+call    6 never executed
+    $$$$$:   56-block  2
+call    7 never executed
+    $$$$$:   56-block  3
+    =====:   57:    }
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:   57-block  0
+call    3 never executed
+    #####:   58:}
+    %%%%%:   58-block  0
+call    0 never executed
+    $$$$$:   58-block  1
+call    1 never executed
+function _ZN2ui18afiseazaActivitatiEv called 0 returned 0% blocks executed 0%
+    #####:   59:void ui::afiseazaActivitati() {
+    #####:   60:    auto activitati = serv.get_all();
+    %%%%%:   60-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   61:    if (activitati.size() == 0) {
+    %%%%%:   61-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   62:        cout << "Nu exista activitati!\n";
+    %%%%%:   62-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   63:    } else {
+    #####:   64:        for (const auto &activitate: activitati) {
+    %%%%%:   64-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   64-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:   64-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:   65:            cout << activitate.get_titlu() << " " << activitate.get_descriere() << " " << activitate.get_tip() << " "
+    %%%%%:   65-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   65-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   65-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   65-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   65-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   65-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   65-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   65-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   65-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:   65-block  9
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    $$$$$:   65-block 10
+call   33 never executed
+    $$$$$:   65-block 11
+    $$$$$:   65-block 12
+call   34 never executed
+    $$$$$:   65-block 13
+    $$$$$:   65-block 14
+call   35 never executed
+    $$$$$:   65-block 15
+    #####:   66:                 << activitate.get_durata() << "\n";
+    %%%%%:   66-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   66-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   66-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+        -:   67:        }
+        -:   68:    }
+    #####:   69:}
+    %%%%%:   69-block  0
+call    0 never executed
+    $$$$$:   69-block  1
+call    1 never executed
+function _ZN2ui26afiseazaActivitatiFiltrateEv called 0 returned 0% blocks executed 0%
+    #####:   70:void ui::afiseazaActivitatiFiltrate() {
+    #####:   71:    cout<<"1. Filtrare tip\n2. Filtrare descriere\n>>>";
+    %%%%%:   71-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   72:    int cmd1;
+    #####:   73:    cin>>cmd1;
+    %%%%%:   73-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   74:    if(cmd1==1){
+    %%%%%:   74-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   75:        string tip;
+    %%%%%:   75-block  0
+call    0 never executed
+    #####:   76:        cout<<"Tip: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   77:        cin>>tip;
+    %%%%%:   77-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   78:        auto activitati=serv.filtrare_tip(tip);
+    %%%%%:   78-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   79:        if(activitati.size()==0){
+    %%%%%:   79-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   80:            cout<<"Nu exista activitati!\n";
+    %%%%%:   80-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   81:        }else{
+    #####:   82:            for(const auto& activitate:activitati){
+    %%%%%:   82-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   82-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:   82-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:   83:                cout<<activitate.get_titlu()<<" "<<activitate.get_descriere()<<" "<<activitate.get_tip()<<" "<<activitate.get_durata()<<"\n";
+    %%%%%:   83-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   83-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   83-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   83-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   83-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   83-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   83-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   83-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   83-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:   83-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:   83-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:   83-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:   83-block 12
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:   83-block 13
+call   42 never executed
+    $$$$$:   83-block 14
+    $$$$$:   83-block 15
+call   43 never executed
+    $$$$$:   83-block 16
+    $$$$$:   83-block 17
+call   44 never executed
+    $$$$$:   83-block 18
+        -:   84:            }
+        -:   85:        }
+    #####:   86:    }
+    %%%%%:   86-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   86-block  1
+call    2 never executed
+    $$$$$:   86-block  2
+call    3 never executed
+    #####:   87:    if(cmd1==2){
+    %%%%%:   87-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   88:        string descriere;
+    %%%%%:   88-block  0
+call    0 never executed
+    #####:   89:        cout<<"Descriere: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   90:        cin>>descriere;
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   91:        auto activitati=serv.filtrare_descriere(descriere);
+    %%%%%:   91-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   92:        if(activitati.size()==0){
+    %%%%%:   92-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   93:            cout<<"Nu exista activitati!\n";
+    %%%%%:   93-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   94:        }else{
+    #####:   95:            for(const auto& activitate:activitati){
+    %%%%%:   95-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   95-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:   95-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:   96:                cout<<activitate.get_titlu()<<" "<<activitate.get_descriere()<<" "<<activitate.get_tip()<<" "<<activitate.get_durata()<<"\n";
+    %%%%%:   96-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   96-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   96-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   96-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   96-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:   96-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:   96-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:   96-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:   96-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:   96-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:   96-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:   96-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:   96-block 12
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:   96-block 13
+call   42 never executed
+    $$$$$:   96-block 14
+    $$$$$:   96-block 15
+call   43 never executed
+    $$$$$:   96-block 16
+    $$$$$:   96-block 17
+call   44 never executed
+    $$$$$:   96-block 18
+        -:   97:            }
+        -:   98:        }
+    #####:   99:    }
+    %%%%%:   99-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   99-block  1
+call    2 never executed
+    $$$$$:   99-block  2
+call    3 never executed
+    #####:  100:}
+    %%%%%:  100-block  0
+function _ZN2ui25afiseazaActivitatiSortateEv called 0 returned 0% blocks executed 0%
+    #####:  101:void ui::afiseazaActivitatiSortate() {
+    #####:  102:    cout<<"1. Sortare dupa titlu\n2. Sortare dupa descriere\n3. Sortare dupa tip si durata\n>>>";
+    %%%%%:  102-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  103:    int cmd1;
+    #####:  104:    cin>>cmd1;
+    %%%%%:  104-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  105:    if(cmd1==1){
+    %%%%%:  105-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  106:        auto activitati=serv.sortare_titlu();
+    %%%%%:  106-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  107:        if(activitati.size()==0){
+    %%%%%:  107-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:  108:            cout<<"Nu exista activitati!\n";
+    %%%%%:  108-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  109:        }else{
+    #####:  110:            for(const auto& activitate:activitati){
+    %%%%%:  110-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  110-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:  110-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:  111:                cout<<activitate.get_titlu()<<" "<<activitate.get_descriere()<<" "<<activitate.get_tip()<<" "<<activitate.get_durata()<<"\n";
+    %%%%%:  111-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  111-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  111-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  111-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  111-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  111-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  111-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  111-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  111-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  111-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  111-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  111-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:  111-block 12
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:  111-block 13
+call   42 never executed
+    $$$$$:  111-block 14
+    $$$$$:  111-block 15
+call   43 never executed
+    $$$$$:  111-block 16
+    $$$$$:  111-block 17
+call   44 never executed
+    $$$$$:  111-block 18
+        -:  112:            }
+        -:  113:        }
+    #####:  114:    }
+    %%%%%:  114-block  0
+call    0 never executed
+    $$$$$:  114-block  1
+call    1 never executed
+    #####:  115:    if(cmd1==2){
+    %%%%%:  115-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  116:        auto activitati=serv.sortare_descriere();
+    %%%%%:  116-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  117:        if(activitati.size()==0){
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:  118:            cout<<"Nu exista activitati!\n";
+    %%%%%:  118-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  119:        }else{
+    #####:  120:            for(const auto& activitate:activitati){
+    %%%%%:  120-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  120-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:  120-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:  121:                cout<<activitate.get_titlu()<<" "<<activitate.get_descriere()<<" "<<activitate.get_tip()<<" "<<activitate.get_durata()<<"\n";
+    %%%%%:  121-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  121-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  121-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  121-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  121-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  121-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  121-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  121-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  121-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  121-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  121-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  121-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:  121-block 12
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:  121-block 13
+call   42 never executed
+    $$$$$:  121-block 14
+    $$$$$:  121-block 15
+call   43 never executed
+    $$$$$:  121-block 16
+    $$$$$:  121-block 17
+call   44 never executed
+    $$$$$:  121-block 18
+        -:  122:            }
+        -:  123:        }
+    #####:  124:    }
+    %%%%%:  124-block  0
+call    0 never executed
+    $$$$$:  124-block  1
+call    1 never executed
+    #####:  125:    if(cmd1==3){
+    %%%%%:  125-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  126:        auto activitati=serv.sortare_tip_durata();
+    %%%%%:  126-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  127:        if(activitati.size()==0){
+    %%%%%:  127-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:  128:            cout<<"Nu exista activitati!\n";
+    %%%%%:  128-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  129:        }else{
+    #####:  130:            for(const auto& activitate:activitati){
+    %%%%%:  130-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  130-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:  130-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed (fallthrough)
+    #####:  131:                cout<<activitate.get_titlu()<<" "<<activitate.get_descriere()<<" "<<activitate.get_tip()<<" "<<activitate.get_durata()<<"\n";
+    %%%%%:  131-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  131-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  131-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  131-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  131-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  131-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  131-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  131-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  131-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  131-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  131-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+    %%%%%:  131-block 11
+call   33 never executed
+branch 34 never executed (fallthrough)
+branch 35 never executed (throw)
+    %%%%%:  131-block 12
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+branch 40 never executed (fallthrough)
+branch 41 never executed (throw)
+    $$$$$:  131-block 13
+call   42 never executed
+    $$$$$:  131-block 14
+    $$$$$:  131-block 15
+call   43 never executed
+    $$$$$:  131-block 16
+    $$$$$:  131-block 17
+call   44 never executed
+    $$$$$:  131-block 18
+        -:  132:            }
+        -:  133:        }
+    #####:  134:    }
+    %%%%%:  134-block  0
+call    0 never executed
+    $$$$$:  134-block  1
+call    1 never executed
+    #####:  135:}
+    %%%%%:  135-block  0
+function _ZN2ui9uiCautareEv called 0 returned 0% blocks executed 0%
+    #####:  136:void ui::uiCautare() {
+    #####:  137:    string titlu;
+    %%%%%:  137-block  0
+call    0 never executed
+    #####:  138:    cout << "Titlu: ";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  139:    cin >> titlu;
+    %%%%%:  139-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  140:    auto activitati = serv.get_all();
+    %%%%%:  140-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  141:    for (const auto &activitate: activitati) {
+    %%%%%:  141-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  141-block  1
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:  141-block  2
+call    5 never executed
+branch  6 never executed (fallthrough)
+branch  7 never executed (throw)
+    %%%%%:  141-block  3
+call    8 never executed
+branch  9 never executed
+branch 10 never executed (fallthrough)
+    #####:  142:        if (activitate.get_titlu() == titlu) {
+    %%%%%:  142-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  142-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed
+    $$$$$:  142-block  2
+    #####:  143:            cout << activitate.get_titlu() << " " << activitate.get_descriere() << " " << activitate.get_tip()
+    %%%%%:  143-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  143-block  1
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    $$$$$:  143-block  2
+call    6 never executed
+    $$$$$:  143-block  3
+    $$$$$:  143-block  4
+call    7 never executed
+    $$$$$:  143-block  5
+    $$$$$:  143-block  6
+call    8 never executed
+    $$$$$:  143-block  7
+    #####:  144:                 << " " << activitate.get_durata() << "\n";
+    %%%%%:  144-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  144-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  144-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:  144-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:  144-block  4
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  144-block  5
+call   15 never executed
+branch 16 never executed (fallthrough)
+branch 17 never executed (throw)
+    %%%%%:  144-block  6
+call   18 never executed
+branch 19 never executed (fallthrough)
+branch 20 never executed (throw)
+    %%%%%:  144-block  7
+call   21 never executed
+branch 22 never executed (fallthrough)
+branch 23 never executed (throw)
+    %%%%%:  144-block  8
+call   24 never executed
+branch 25 never executed (fallthrough)
+branch 26 never executed (throw)
+    %%%%%:  144-block  9
+call   27 never executed
+branch 28 never executed (fallthrough)
+branch 29 never executed (throw)
+    %%%%%:  144-block 10
+call   30 never executed
+branch 31 never executed (fallthrough)
+branch 32 never executed (throw)
+        -:  145:        }
+        -:  146:    }
+    #####:  147:}
+    %%%%%:  147-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  147-block  1
+call    2 never executed
+    $$$$$:  147-block  2
+call    3 never executed
+function _ZN2ui3runEv called 1 returned 100% blocks executed 25%
+        1:  148:void ui::run() {
+        -:  149:    while (true) {
+        -:  150:        cout << "1. Adauga\n2. Actualizare\n3. Sterge\n4. Print\n5. Filtrare\n"
+        1:  151:                "6. Sortare\n7. Cautare\n0. Exit\nComand:";
+        1:  151-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  152:        int cmd = 0;
+        1:  153:        cin >> cmd;
+        1:  153-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  154:        if (cmd == 0) {
+        1:  154-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  155:            break;
+        -:  156:        }
+    #####:  157:        if (cmd == 1) {
+    %%%%%:  157-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  158:            adaugaActivitate();
+    %%%%%:  158-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  159:        }
+    #####:  160:        if (cmd == 2) {
+    %%%%%:  160-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  161:            actualizeazaActivitate();
+    %%%%%:  161-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  162:        }
+    #####:  163:        if (cmd == 3) {
+    %%%%%:  163-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  164:            stergeActivitate();
+    %%%%%:  164-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  165:        }
+    #####:  166:        if (cmd == 4) {
+    %%%%%:  166-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  167:            afiseazaActivitati();
+    %%%%%:  167-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  168:        }
+    #####:  169:        if (cmd == 5) {
+    %%%%%:  169-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  170:            afiseazaActivitatiFiltrate();
+    %%%%%:  170-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  171:        }
+    #####:  172:        if (cmd == 6) {
+    %%%%%:  172-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  173:            afiseazaActivitatiSortate();
+    %%%%%:  173-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  174:        }
+    #####:  175:        if (cmd == 7) {
+    %%%%%:  175-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  176:            uiCautare();
+    %%%%%:  176-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  177:        }
+    #####:  178:    }
+    %%%%%:  178-block  0
+        1:  179:}
+        1:  179-block  0

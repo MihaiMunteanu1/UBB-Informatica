@@ -1,0 +1,64 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/main.cpp
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "repository.h"
+        -:    2:#include "ActivitateService.h"
+        -:    3:#include "ui.h"
+        -:    4:#include "vectordinamic.h"
+        -:    5:#include "testeVD.cpp"
+        -:    6:/**4. Inchiriere masini
+        -:    7:
+        -:    8:Creati o aplicatie pentru o firma de inchirieri auto. Fiecare masina are un numar de inmatriculare,
+        -:    9:model si categorie (mini, sport, suv, etc).
+        -:   10:Aplicatia permite:
+        -:   11:a) adaugare de masini
+        -:   12:b) actualizare masina existenta
+        -:   13:c) inchiriere masina/returnare masina
+        -:   14:d) Vizualizare masini dupa un criteru dat (categorie, model)
+        -:   15:e) Permite sortarea masinilor dupa: model sau categorie (crescator/descrescator)*/
+        -:   16:
+function main called 1 returned 100% blocks executed 67%
+        1:   17:int main(){
+        1:   18:    testeVectorDinamic<VectorDinamic<Activitate>>();
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19:    testAll();
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20:    ActivitateRepo repo;
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21:    ActivitateService srv{repo};
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:    ui ui{srv};
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:    ui.run();
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    return 0;
+        1:   25:}
+        1:   25-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:   25-block  1
+call    3 never executed
+    $$$$$:   25-block  2
+call    4 never executed
+    $$$$$:   25-block  3
+call    5 never executed

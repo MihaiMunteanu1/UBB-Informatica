@@ -1,0 +1,85 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/Activitate.h
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include <string>
+        -:    3:#include <iostream>
+        -:    4:#include <utility>
+        -:    5:using std::cout;
+        -:    6:using std::string;
+        -:    7:using std::exception;
+        -:    8:class ActivitateException : public exception{
+        -:    9:    string msg;
+        -:   10:public:
+        -:   11:    explicit ActivitateException(string msg) : msg{std::move(msg)} {
+        -:   12:    }
+        -:   13:    [[nodiscard]] string get_msg() const {
+        -:   14:        return msg;
+        -:   15:    }
+        -:   16:};
+        -:   17:class  Activitate {
+        -:   18:private:
+        -:   19:    string titlu;
+        -:   20:    string descriere;
+        -:   21:    string tip;
+        -:   22:    int durata;
+        -:   23:public:
+        -:   24:    [[nodiscard]] string get_titlu() const;
+        -:   25:    [[nodiscard]] string get_descriere() const;
+        -:   26:    [[nodiscard]] string get_tip() const;
+        -:   27:    [[nodiscard]] int get_durata() const;
+function _ZN10ActivitateC1Ev called 2245 returned 100% blocks executed 100%
+     2245:   28:    Activitate()=default;
+     2245:   28-block  0
+call    0 returned 2245
+call    1 returned 2245
+call    2 returned 2245
+        -:   29:    /**
+        -:   30:     * Constructor pentru clasa Activitate.
+        -:   31:     * @param titlu
+        -:   32:     * @param descriere
+        -:   33:     * @param tip
+        -:   34:     * @param durata
+        -:   35:     */
+function _ZN10ActivitateC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_i called 490 returned 100% blocks executed 100%
+      490:   36:    Activitate(string titlu, string descriere,string tip,int durata): titlu{std::move(titlu)},descriere{std::move(descriere)},tip{std::move(tip)},durata{durata}{
+      490:   36-block  0
+call    0 returned 490
+call    1 returned 490
+call    2 returned 490
+call    3 returned 490
+call    4 returned 490
+call    5 returned 490
+        -:   37:        ///cout<<"constructor\n";
+      490:   38:    }
+        -:   39:
+        -:   40:    /**
+        -:   41:     * Destructor pentru clasa Activitate.
+        -:   42:     */
+function _ZN10ActivitateD1Ev called 2739 returned 100% blocks executed 100%
+     2739:   43:    ~Activitate(){
+        -:   44:        ///cout<<"destructor\n";
+     2739:   45:    }
+     2739:   45-block  0
+call    0 returned 2739
+call    1 returned 2739
+call    2 returned 2739
+        -:   46:
+        -:   47:    /**
+        -:   48:     * Constructor de copiere pentru clasa Activitate.
+        -:   49:     * @param ot
+        -:   50:     */
+        -:   51:    Activitate(const Activitate& ot): titlu{ot.titlu},descriere{ot.descriere},tip{ot.tip},durata{ot.durata}{
+        -:   52:        ///cout<<"copy constructor\n";
+        -:   53:    }
+        -:   54:
+function _ZN10ActivitateaSERKS_ called 1649 returned 100% blocks executed 100%
+     1649:   55:    Activitate& operator=(const Activitate& ot)=default;
+     1649:   55-block  0
+call    0 returned 1649
+call    1 returned 1649
+call    2 returned 1649
+        -:   56:
+        -:   57:    static int validareActivitate(const Activitate& activitate);
+        -:   58:};

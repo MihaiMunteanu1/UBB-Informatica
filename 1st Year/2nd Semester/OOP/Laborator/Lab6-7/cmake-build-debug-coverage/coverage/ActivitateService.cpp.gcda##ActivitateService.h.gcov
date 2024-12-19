@@ -1,0 +1,71 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/ActivitateService.h
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\ActivitateService.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "repository.h"
+        -:    3:#include "Activitate.h"
+        -:    4:#include <string>
+        -:    5:using std::string;
+        -:    6:
+        -:    7:class ActivitateService{
+        -:    8:private:
+        -:    9:    ActivitateRepo repo;
+        -:   10:public:
+function _ZN17ActivitateServiceC1ER14ActivitateRepo called 0 returned 0% blocks executed 0%
+    #####:   11:    explicit ActivitateService(ActivitateRepo& r): repo{r}{
+    %%%%%:   11-block  0
+call    0 never executed
+    #####:   12:    }
+        -:   13:
+        -:   14:    ActivitateService(const ActivitateService& ot) = default;
+        -:   15:
+        -:   16:    ActivitateService()=default;
+        -:   17:
+        -:   18:    void add_activitate(const string& titlu,const string& descriere,const string& tip,int durata);
+        -:   19:
+        -:   20:    void actualizare_activitate(const string& titlu,const string& descriere,const string& tip,int durata);
+        -:   21:
+        -:   22:    void stergere_activitate(const string& titlu);
+        -:   23:
+        -:   24:    /**
+        -:   25:     * Functie care returneaza toate activitatile din lista de activitati.
+        -:   26:     * @return
+        -:   27:     */
+function _ZN17ActivitateService7get_allEv called 4 returned 100% blocks executed 100%
+        4:   28:    VectorDinamic<Activitate> get_all(){
+        4:   29:        return repo.get_all();
+        4:   29-block  0
+call    0 returned 4
+call    1 returned 4
+        -:   30:    }
+        -:   31:
+        -:   32:    VectorDinamic<Activitate> filtrare_tip(const string& model);
+        -:   33:
+        -:   34:    VectorDinamic<Activitate> filtrare_descriere(const string& descriere);
+        -:   35:
+        -:   36:    VectorDinamic<Activitate> sortare_titlu();
+        -:   37:
+        -:   38:    VectorDinamic<Activitate> sortare_descriere();
+        -:   39:
+        -:   40:    VectorDinamic<Activitate> sortare_tip_durata();
+        -:   41:
+        -:   42:};
+        -:   43:
+        -:   44:void testSortareTipDurata();
+        -:   45:
+        -:   46:void testFiltrareDescriere();
+        -:   47:
+        -:   48:void testValideazaActivitate();
+        -:   49:
+        -:   50:void testAdd();
+        -:   51:
+        -:   52:void testActualizare();
+        -:   53:
+        -:   54:void testAll();
+        -:   55:
+        -:   56:void testSortare();
+        -:   57:
+        -:   58:void testFiltrare();
+        -:   59:
+        -:   60:void testSortareDescriere();

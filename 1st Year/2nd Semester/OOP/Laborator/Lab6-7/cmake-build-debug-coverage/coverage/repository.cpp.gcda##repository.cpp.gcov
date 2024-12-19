@@ -1,0 +1,675 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-LAB-6-7BUUUN/repository.cpp
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\repository.cpp.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-LAB-6-7BUUUN\cmake-build-debug-coverage\CMakeFiles\OOP_LAB_6_7.dir\repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "repository.h"
+        -:    2:/**
+        -:    3: * Adauga o activitate in lista de activitati
+        -:    4: * @param a
+        -:    5: */
+function _ZN14ActivitateRepo5storeERK10Activitate called 24 returned 92% blocks executed 70%
+       24:    6:void ActivitateRepo::store(const Activitate& a){
+       41:    7:    for (const Activitate& A: activitati) {
+       24:    7-block  0
+call    0 returned 24
+call    1 returned 24
+       19:    7-block  1
+call    2 returned 19
+branch  3 taken 19 (fallthrough)
+branch  4 taken 0 (throw)
+       17:    7-block  2
+call    5 returned 17
+branch  6 taken 17 (fallthrough)
+branch  7 taken 0 (throw)
+       41:    7-block  3
+call    8 returned 41
+branch  9 taken 19
+branch 10 taken 22 (fallthrough)
+       19:    8:        if (A.get_titlu()==a.get_titlu()) {
+       19:    8-block  0
+call    0 returned 19
+branch  1 taken 19 (fallthrough)
+branch  2 taken 0 (throw)
+       19:    8-block  1
+call    3 returned 19
+branch  4 taken 19 (fallthrough)
+branch  5 taken 0 (throw)
+       19:    8-block  2
+call    6 returned 19
+call    7 returned 19
+call    8 returned 19
+branch  9 taken 2 (fallthrough)
+branch 10 taken 17
+    $$$$$:    8-block  3
+    $$$$$:    8-block  4
+call   11 never executed
+    $$$$$:    8-block  5
+        6:    9:            throw RepoException("Activitatea exista deja!\n");
+        2:    9-block  0
+call    0 returned 2
+        2:    9-block  1
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:    9-block  2
+call    4 returned 2
+call    5 returned 2
+call    6 returned 2
+    $$$$$:    9-block  3
+    $$$$$:    9-block  4
+    $$$$$:    9-block  5
+call    7 never executed
+        -:   10:        }
+        -:   11:    }
+       22:   12:    activitati.add(a);
+       22:   12-block  0
+call    0 returned 22
+       22:   13:}
+        -:   14:/**
+        -:   15: * Actualizeaza o activitate din lista de activitati
+        -:   16: * @param a
+        -:   17: */
+function _ZN14ActivitateRepo11actualizareERK10Activitate called 4 returned 75% blocks executed 71%
+        4:   18:void ActivitateRepo::actualizare(const Activitate& a){
+        5:   19:    for (auto& A: activitati) {
+        4:   19-block  0
+call    0 returned 4
+call    1 returned 4
+        4:   19-block  1
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   19-block  2
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        5:   19-block  3
+call    8 returned 5
+branch  9 taken 4
+branch 10 taken 1 (fallthrough)
+        4:   20:        if (A.get_titlu()==a.get_titlu()) {
+        4:   20-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   20-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   20-block  2
+call    6 returned 4
+call    7 returned 4
+call    8 returned 4
+branch  9 taken 3 (fallthrough)
+branch 10 taken 1
+    $$$$$:   20-block  3
+    $$$$$:   20-block  4
+call   11 never executed
+    $$$$$:   20-block  5
+        3:   21:            A = a;
+        3:   21-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   22:            return;
+        3:   22-block  0
+        3:   22-block  1
+        -:   23:        }
+        -:   24:    }
+        3:   25:    throw RepoException("Activitatea nu exista!\n");
+        1:   25-block  0
+call    0 returned 1
+        1:   25-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   25-block  2
+call    4 returned 1
+call    5 returned 1
+call    6 returned 0
+    $$$$$:   25-block  3
+    $$$$$:   25-block  4
+    $$$$$:   25-block  5
+call    7 never executed
+        -:   26:}
+        -:   27:/**
+        -:   28: * Sterge o activitate din lista de activitati
+        -:   29: * @param numar_inmatriculare
+        -:   30: */
+function _ZN14ActivitateRepo8stergereERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 50% blocks executed 74%
+        4:   31:void ActivitateRepo::stergere(const string& titlu){
+       4*:   32:    for (int i=0;i<activitati.size();i++){
+        4:   32-block  0
+    %%%%%:   32-block  1
+        4:   32-block  2
+call    0 returned 4
+branch  1 taken 2
+branch  2 taken 2 (fallthrough)
+        2:   33:        if (activitati.get(i).get_titlu() == titlu){
+        2:   33-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   33-block  1
+call    4 returned 2
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0
+    $$$$$:   33-block  2
+call    8 never executed
+        2:   34:            activitati.sterge(i);
+        2:   34-block  0
+call    0 returned 2
+        2:   35:            return;
+        2:   35-block  0
+        -:   36:        }
+        -:   37:    }
+        6:   38:    throw RepoException("Activitatea nu exista!\n");
+        2:   38-block  0
+call    0 returned 2
+        2:   38-block  1
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   38-block  2
+call    4 returned 2
+call    5 returned 2
+call    6 returned 0
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+    $$$$$:   38-block  5
+call    7 never executed
+        -:   39:}
+        -:   40:
+        -:   41:
+function _Z8testRepov called 1 returned 100% blocks executed 58%
+        1:   42:void testRepo(){
+        1:   43:    ActivitateRepo repo;
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   44:    Activitate a1("Baschet", "Dribbling", "miscare",2);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   44-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   44-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   44-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+    $$$$$:   44-block  6
+call   13 never executed
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+call   14 never executed
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+        1:   45:    repo.store(a1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46:    const auto& activitati = repo.get_all();
+        1:   46-block  0
+call    0 returned 1
+       1*:   47:    assert(activitati.size() == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   47-block  0
+call    3 never executed
+        1:   47-block  1
+       1*:   48:    assert(activitati.get(0).get_titlu() == "Baschet");
+        1:   48-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   48-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   48-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   48-block  3
+call    9 never executed
+        1:   48-block  4
+        1:   48-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   48-block  6
+call   12 returned 1
+    $$$$$:   48-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   48-block  8
+call   15 never executed
+    $$$$$:   48-block  9
+       1*:   49:    assert(activitati.get(0).get_descriere() == "Dribbling");
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   49-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   49-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   49-block  3
+call    9 never executed
+        1:   49-block  4
+        1:   49-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   49-block  6
+call   12 returned 1
+    $$$$$:   49-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   49-block  8
+call   15 never executed
+    $$$$$:   49-block  9
+       1*:   50:    assert(activitati.get(0).get_tip() == "miscare");
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   50-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   50-block  3
+call    9 never executed
+        1:   50-block  4
+        1:   50-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   50-block  6
+call   12 returned 1
+    $$$$$:   50-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   50-block  8
+call   15 never executed
+    $$$$$:   50-block  9
+       1*:   51:    assert(activitati.get(0).get_durata() == 2);
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   51-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   51-block  2
+call    6 never executed
+        1:   51-block  3
+       1*:   52:    assert(activitati.size()==1);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   52-block  1
+call    3 never executed
+        1:   52-block  2
+        -:   53:    try {
+        1:   54:        repo.store(a1);
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        1:   55:    } catch (RepoException& e) {
+        1:   55-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   55-block  1
+call    2 returned 1
+        1:   56:        assert(e.getMessage() == "Activitatea exista deja!\n");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   56-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:   56-block  2
+call    8 never executed
+        1:   56-block  3
+        1:   56-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   56-block  5
+call   11 returned 1
+    $$$$$:   56-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   56-block  7
+call   14 never executed
+    $$$$$:   56-block  8
+        1:   57:    }
+        1:   57-block  0
+call    0 returned 1
+    $$$$$:   57-block  1
+call    1 never executed
+        1:   58:}
+        1:   58-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   58-block  1
+call    2 never executed
+    $$$$$:   58-block  2
+call    3 never executed
+        -:   59:
+function _Z19testRepoActualizarev called 1 returned 100% blocks executed 58%
+        1:   60:void testRepoActualizare(){
+        1:   61:    ActivitateRepo repo;
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   62:    Activitate a1("Baschet", "Dribbling", "miscare",2);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   62-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   62-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:   62-block  4
+    $$$$$:   62-block  5
+    $$$$$:   62-block  6
+call   13 never executed
+    $$$$$:   62-block  7
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+call   14 never executed
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+        1:   63:    repo.store(a1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64:    repo.actualizare(a1);
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65:    const auto& activitati = repo.get_all();
+        1:   65-block  0
+call    0 returned 1
+       1*:   66:    assert(activitati.size() == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   66-block  0
+call    3 never executed
+        1:   66-block  1
+       1*:   67:    assert(activitati.get(0).get_titlu() == "Baschet");
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   67-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   67-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   67-block  3
+call    9 never executed
+        1:   67-block  4
+        1:   67-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   67-block  6
+call   12 returned 1
+    $$$$$:   67-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   67-block  8
+call   15 never executed
+    $$$$$:   67-block  9
+       1*:   68:    assert(activitati.get(0).get_descriere() == "Dribbling");
+        1:   68-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   68-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   68-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   68-block  3
+call    9 never executed
+        1:   68-block  4
+        1:   68-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   68-block  6
+call   12 returned 1
+    $$$$$:   68-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   68-block  8
+call   15 never executed
+    $$$$$:   68-block  9
+       1*:   69:    assert(activitati.get(0).get_tip() == "miscare");
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   69-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   69-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   69-block  3
+call    9 never executed
+        1:   69-block  4
+        1:   69-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:   69-block  6
+call   12 returned 1
+    $$$$$:   69-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:   69-block  8
+call   15 never executed
+    $$$$$:   69-block  9
+       1*:   70:    assert(activitati.get(0).get_durata() == 2);
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   70-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   70-block  2
+call    6 never executed
+        1:   70-block  3
+        1:   71:}
+        1:   71-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   71-block  1
+call    2 never executed
+    $$$$$:   71-block  2
+call    3 never executed
+        -:   72:
+function _Z16testRepoStergerev called 1 returned 100% blocks executed 57%
+        1:   73:void testRepoStergere(){
+        1:   74:    ActivitateRepo repo;
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   75:    Activitate a1("Baschet", "Dribbling", "miscare",2);
+        1:   75-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   75-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   75-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   75-block  3
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:   75-block  4
+    $$$$$:   75-block  5
+    $$$$$:   75-block  6
+call   13 never executed
+    $$$$$:   75-block  7
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+call   14 never executed
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+        1:   76:    repo.store(a1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   77:    repo.stergere("Baschet");
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   77-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   77-block  2
+call    6 returned 1
+    $$$$$:   77-block  3
+call    7 never executed
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+        1:   78:    const auto& activitati = repo.get_all();
+call    0 returned 1
+       1*:   79:    assert(activitati.size()==0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   79-block  0
+call    3 never executed
+        1:   79-block  1
+        -:   80:    try {
+       2*:   81:        repo.stergere("Baschet");
+        1:   81-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   81-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1 (throw)
+    %%%%%:   81-block  2
+call    6 never executed
+        1:   81-block  3
+call    7 returned 1
+        1:   81-block  4
+        1:   81-block  5
+        1:   82:    } catch (RepoException& e) {
+        1:   82-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   82-block  1
+call    2 returned 1
+        1:   83:        assert(e.getMessage() == "Activitatea nu exista!\n");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   83-block  1
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    $$$$$:   83-block  2
+call    8 never executed
+        1:   83-block  3
+        1:   83-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   83-block  5
+call   11 returned 1
+    $$$$$:   83-block  6
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   83-block  7
+call   14 never executed
+    $$$$$:   83-block  8
+        1:   84:    }
+        1:   84-block  0
+call    0 returned 1
+    $$$$$:   84-block  1
+call    1 never executed
+        1:   85:}
+        1:   85-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   85-block  1
+call    2 never executed
+    $$$$$:   85-block  2
+call    3 never executed
+function _Z11RepoTestAllv called 1 returned 100% blocks executed 100%
+        1:   86:void RepoTestAll(){
+        1:   87:    testRepo();
+        1:   87-block  0
+call    0 returned 1
+        1:   88:    testRepoActualizare();
+call    0 returned 1
+        1:   89:    testRepoStergere();
+call    0 returned 1
+        1:   90:}
