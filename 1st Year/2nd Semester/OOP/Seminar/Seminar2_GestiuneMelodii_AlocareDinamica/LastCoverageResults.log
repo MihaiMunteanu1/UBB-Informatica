@@ -1,0 +1,21 @@
+[2024-03-14 23:55:00] [info] Start Program:
+Path:"C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\x64\Debug\Seminar2_GestiuneMelodii_AlocareDinamica.exe"
+Arguments:
+Working directory: "C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\Seminar2_GestiuneMelodii_AlocareDinamica\"
+Modules: Selected: C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\x64\Debug\Seminar2_GestiuneMelodii_AlocareDinamica.exe Excluded: 
+Sources: Selected: C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\Seminar2_GestiuneMelodii_AlocareDinamica Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\DELL\AppData\Local\Temp\g5g52aom.5dt 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-03-14 23:55:00] [info] Module: C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\x64\Debug\Seminar2_GestiuneMelodii_AlocareDinamica.exe is selected because it matches selected pattern: C:\Users\DELL\source\repos\Seminar2_GestiuneMelodii_AlocareDinamica\x64\Debug\Seminar2_GestiuneMelodii_AlocareDinamica.exe
+[2024-03-14 23:55:00] [info] ----------------------------------------------------
+[2024-03-14 23:55:00] [info] Coverage binary generated in file: C:\Users\DELL\AppData\Local\Temp\g5g52aom.5dt
+[2024-03-14 23:55:00] [info] ----------------------------------------------------

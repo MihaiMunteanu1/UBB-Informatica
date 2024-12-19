@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/Seminar2_GestiuneMelodii_AlocareDinamica/cmake-build-debug/CMakeFiles/Seminar2_GestiuneMelodii_AlocareDinamica.dir
+C:/Users/munte/CLionProjects/Seminar2_GestiuneMelodii_AlocareDinamica/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/Seminar2_GestiuneMelodii_AlocareDinamica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
