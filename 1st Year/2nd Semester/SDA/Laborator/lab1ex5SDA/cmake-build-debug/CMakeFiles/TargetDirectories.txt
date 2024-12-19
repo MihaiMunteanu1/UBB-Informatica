@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/lab1ex5SDA/cmake-build-debug/CMakeFiles/lab1ex5.dir
+C:/Users/munte/CLionProjects/lab1ex5SDA/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/lab1ex5SDA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
