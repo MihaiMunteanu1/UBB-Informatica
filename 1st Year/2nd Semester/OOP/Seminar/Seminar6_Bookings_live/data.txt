@@ -1,0 +1,10 @@
+Spain,20-28 June,1200,600
+Norway,13-20 July,1500,750
+Greece,12-19 August,1000,400
+France,20-28 June,1300,650
+USA,13-20 July,2000,1800
+Spain,12-19 August,1100,550
+Norway,20-28 June,1400,700
+Greece,13-20 July,900,300
+France,12-19 August,1250,650
+USA,20-28 June,2100,1000
