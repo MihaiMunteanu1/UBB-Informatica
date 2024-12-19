@@ -1,0 +1,5 @@
+C:/Users/munte/CLionProjects/ProduseQT/cmake-build-debug/CMakeFiles/ProduseQT.dir
+C:/Users/munte/CLionProjects/ProduseQT/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/ProduseQT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/munte/CLionProjects/ProduseQT/cmake-build-debug/CMakeFiles/ProduseQT_autogen_timestamp_deps.dir
+C:/Users/munte/CLionProjects/ProduseQT/cmake-build-debug/CMakeFiles/ProduseQT_autogen.dir
