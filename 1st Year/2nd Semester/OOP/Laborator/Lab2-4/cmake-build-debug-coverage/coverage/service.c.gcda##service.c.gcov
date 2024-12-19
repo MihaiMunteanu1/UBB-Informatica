@@ -1,0 +1,406 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-lab2-4/service.c
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-lab2-4\cmake-build-debug-coverage\CMakeFiles\OOP_lab2_4.dir\service.c.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-lab2-4\cmake-build-debug-coverage\CMakeFiles\OOP_lab2_4.dir\service.c.gcda
+        -:    0:Runs:1
+        -:    1:#include<string.h>
+        -:    2:#include "service.h"
+        -:    3:#include "medicament.h"
+        -:    4:#include "myList.h"
+function createFarmacie called 12 returned 100% blocks executed 100%
+       12:    5:Farmacie createFarmacie()
+        -:    6:{
+        -:    7:    Farmacie listaMeds;
+       12:    8:    listaMeds.lista = createList();
+       12:    8-block  0
+call    0 returned 12
+       12:    9:    listaMeds.undoList=createList();
+call    0 returned 12
+        -:   10:    //aici pui cv de genul listaMeds.undoList = createList()
+       12:   11:    return listaMeds;
+        -:   12:}
+        -:   13:
+function Undo called 4 returned 100% blocks executed 100%
+        4:   14:int Undo(Farmacie* farmacie) {
+        4:   15:    if(farmacie->undoList->dimensiune == 0)
+        4:   15-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:   16:        return 0;
+        1:   16-block  0
+        3:   17:    List* l= delete(farmacie->undoList,farmacie->undoList->dimensiune-1);
+        3:   17-block  0
+call    0 returned 3
+        3:   18:    destroyList(farmacie->lista);
+call    0 returned 3
+        3:   19:    farmacie->lista = l;
+        3:   20:    return 1;
+        -:   21:}
+function destroyFarmacie called 12 returned 100% blocks executed 100%
+       12:   22:void destroyFarmacie(Farmacie* f)
+        -:   23:{
+       12:   24:    destroyList(f->lista);
+       12:   24-block  0
+call    0 returned 12
+       12:   25:    destroyUndoList(f->undoList);
+call    0 returned 12
+       12:   26:}
+        -:   27:
+        -:   28:/*Adauga  un medicament in lista.
+        -:   29: * Pre: list- de tip Farmacie*, id-int, nume - char*, concentratie-float
+        -:   30: * Post: 0 daca entitatea exista deja in lista, 1 altfel
+        -:   31: */
+function addEnt called 31 returned 100% blocks executed 100%
+       31:   32:int addEnt(Farmacie* list, int id, char* nume, float concentratie, int stoc)
+        -:   33:{
+       31:   34:    Medicament* e = createMedicament(id, nume, concentratie, stoc);
+       31:   34-block  0
+call    0 returned 31
+       31:   35:    if(valideazaMedicament(e) == 1)
+call    0 returned 31
+branch  1 taken 30 (fallthrough)
+branch  2 taken 1
+        -:   36:    {
+       30:   37:        List* toUndo= copyFarmacie(list->lista);
+       30:   37-block  0
+call    0 returned 30
+       30:   38:        addEntitate(list->undoList,toUndo);
+call    0 returned 30
+       30:   39:        addEntitate(list->lista,e);
+call    0 returned 30
+       30:   40:        return 1;
+        -:   41:    }
+        -:   42:    else
+        -:   43:    {
+        1:   44:        destroyMedicament(e);
+        1:   44-block  0
+call    0 returned 1
+        1:   45:        return 0;
+        -:   46:    }
+        -:   47:}
+        -:   48:/*Functie care sterge o entitate
+        -:   49: *Pre:list de tip Farmacie*, id de tip int
+        -:   50: * Post: 1 daca id-ul este in lista si a fost sters, 0 altfel
+        -:   51: */
+function deleteEnt called 3 returned 100% blocks executed 100%
+        3:   52:int deleteEnt(Farmacie* list, int id)
+        -:   53:{
+        -:   54:
+        3:   55:    if(checkId(list,id))
+        3:   55-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        -:   56:    {
+        2:   57:        List* toUndo= copyFarmacie(list->lista);
+        2:   57-block  0
+call    0 returned 2
+        2:   58:        addEntitate(list->undoList,toUndo);
+call    0 returned 2
+        2:   59:        deleteEntitate(list->lista,id);
+call    0 returned 2
+        2:   60:        return 1;
+        -:   61:    }
+        1:   62:    return 0;
+        1:   62-block  0
+        -:   63:}
+        -:   64:
+        -:   65:/*Face update la un medicament.
+        -:   66: * Pre: list- de tip Farmacie*, id-int, nume - char*, concentratie-float
+        -:   67: * Post: 0 daca entitatea exista deja in lista si s-a facut modificarea, 1 altfel
+        -:   68: */
+function updateEnt called 3 returned 100% blocks executed 100%
+        3:   69:int updateEnt(Farmacie* list, int id, char* nume, float concentratie)
+        -:   70:{
+        4:   71:    for(int i=0;i<list->lista->dimensiune;i++)
+        3:   71-block  0
+        1:   71-block  1
+        4:   71-block  2
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        -:   72:    {
+        3:   73:        if(getId(get(list->lista,i))==id)
+        3:   73-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 2 (fallthrough)
+branch  3 taken 1
+        -:   74:        {
+        -:   75:
+        2:   76:            int stoc = getStoc(get(list->lista,i));
+        2:   76-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   77:            Entitate e = createMedicament(id,nume,concentratie,stoc);
+call    0 returned 2
+        2:   78:            List* toUndo= copyFarmacie(list->lista);
+call    0 returned 2
+        2:   79:            addEntitate(list->undoList,toUndo);
+call    0 returned 2
+        2:   80:            updateMedicament(list->lista,e);
+call    0 returned 2
+        2:   81:            return 0;
+        -:   82:        }
+        -:   83:    }
+        1:   84:    return -1;
+        1:   84-block  0
+        -:   85:}
+        -:   86:
+        -:   87:/*Cauta daca un id este in lista*/
+function checkId called 5 returned 100% blocks executed 100%
+        5:   88:int checkId(Farmacie* list, int id)
+        -:   89:{
+        5:   90:    if(cauta(list->lista,id) != -1)
+        5:   90-block  0
+call    0 returned 5
+branch  1 taken 3 (fallthrough)
+branch  2 taken 2
+        3:   91:        return 1;
+        3:   91-block  0
+        2:   92:    return 0;
+        2:   92-block  0
+        -:   93:}
+        -:   94:
+        -:   95:/*Adauga un singur produs pe stoc*/
+function addStoc called 1 returned 100% blocks executed 100%
+        1:   96:void addStoc(Farmacie* list, int id)
+        -:   97:{
+        1:   98:    int poz = cauta(list->lista,id);
+        1:   98-block  0
+call    0 returned 1
+        1:   99:    Medicament* m = get(list->lista,poz);
+call    0 returned 1
+        1:  100:    List* toUndo= copyFarmacie(list->lista);
+call    0 returned 1
+        1:  101:    addEntitate(list->undoList,toUndo);
+call    0 returned 1
+        1:  102:    setStoc(m,m->stoc+1);
+call    0 returned 1
+        -:  103:
+        1:  104:}
+        -:  105:/*Dealoca tot*/
+function destroyAll called 11 returned 100% blocks executed 100%
+       11:  106:void destroyAll(Farmacie* list)
+        -:  107:{
+       11:  108:    destroyFarmacie(list);
+       11:  108-block  0
+call    0 returned 11
+       11:  109:}
+        -:  110:
+        -:  111:/*Functie care sorteaza medicamentele crescator dupa stocul lor. Returneaza o farmacie cu medicamentele ordonate*/
+function sortareStoc called 1 returned 100% blocks executed 100%
+        1:  112:List* sortareStoc(Farmacie* list)
+        -:  113:{
+        1:  114:    List* f = copyFarmacie(list->lista);
+        1:  114-block  0
+call    0 returned 1
+        5:  115:    for(int i=0; i<f->dimensiune-1;i++)
+        4:  115-block  0
+        5:  115-block  1
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+       14:  116:        for(int j=i+1; j<f->dimensiune;j++)
+        4:  116-block  0
+       10:  116-block  1
+       14:  116-block  2
+branch  0 taken 10
+branch  1 taken 4 (fallthrough)
+       10:  117:            if(getStoc(f->medicamente[i])> getStoc(f->medicamente[j]))
+       10:  117-block  0
+call    0 returned 10
+call    1 returned 10
+branch  2 taken 6 (fallthrough)
+branch  3 taken 4
+        -:  118:            {
+        6:  119:                Medicament* m1 = get(f,i);
+        6:  119-block  0
+call    0 returned 6
+        6:  120:                Medicament* m2 = get(f,j);
+call    0 returned 6
+        6:  121:                set(f,i,m2);
+call    0 returned 6
+        6:  122:                set(f,j,m1);
+call    0 returned 6
+        -:  123:            }
+        -:  124:
+        1:  125:    return f;
+        1:  125-block  0
+        -:  126:}
+        -:  127:
+        -:  128:/*Functie care sorteaza medicamentele alfabetic. Returneaza o farmacie cu medicamentele in ordine alfabetica.*/
+function sortareNume called 1 returned 100% blocks executed 100%
+        1:  129:List* sortareNume(Farmacie* list)
+        -:  130:{
+        1:  131:    List* f = copyFarmacie(list->lista);
+        1:  131-block  0
+call    0 returned 1
+        5:  132:    for(int i=0;i<f->dimensiune-1;i++)
+        4:  132-block  0
+        5:  132-block  1
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+       14:  133:        for(int j=i+1;j<f->dimensiune;j++)
+        4:  133-block  0
+       10:  133-block  1
+       14:  133-block  2
+branch  0 taken 10
+branch  1 taken 4 (fallthrough)
+       10:  134:            if(strcmp(getNume(f->medicamente[i]),getNume(f->medicamente[j]))>0)
+       10:  134-block  0
+call    0 returned 10
+call    1 returned 10
+branch  2 taken 6 (fallthrough)
+branch  3 taken 4
+        -:  135:            {
+        6:  136:                Medicament* m1 = get(f,i);
+        6:  136-block  0
+call    0 returned 6
+        6:  137:                Medicament* m2 = get(f,j);
+call    0 returned 6
+        6:  138:                set(f,i,m2);
+call    0 returned 6
+        6:  139:                set(f,j,m1);
+call    0 returned 6
+        -:  140:            }
+        1:  141:    return f;
+        1:  141-block  0
+        -:  142:}
+        -:  143:
+function filterstoc called 4 returned 100% blocks executed 100%
+        4:  144:int filterstoc(Entitate m,Entitate stoc)
+        -:  145:{
+        4:  146:    return getStoc(m) < *((int*)stoc);
+        4:  146-block  0
+call    0 returned 4
+        -:  147:}
+        -:  148:
+function filternume called 4 returned 100% blocks executed 100%
+        4:  149:int filternume(Entitate m,Entitate nume)
+        -:  150:{
+        4:  151:    return getNume(m)[0] == *((char*)nume);
+        4:  151-block  0
+call    0 returned 4
+        -:  152:}
+        -:  153:
+function filterconcentratie called 4 returned 100% blocks executed 100%
+        4:  154:int filterconcentratie(Entitate m, Entitate filtru)
+        -:  155:{
+        4:  156:    return getConcentratie(m) == *((float*)filtru);
+        4:  156-block  0
+call    0 returned 4
+        -:  157:}
+        -:  158:
+function filterFarmacie called 3 returned 100% blocks executed 100%
+        3:  159:List* filterFarmacie(List* list, filtreazaFunction f,Entitate filtru)
+        -:  160:{
+        3:  161:    List* filtred=createList();
+        3:  161-block  0
+call    0 returned 3
+       15:  162:    for(int i=0;i<list->dimensiune;i++)
+       12:  162-block  0
+       15:  162-block  1
+branch  0 taken 12
+branch  1 taken 3 (fallthrough)
+        -:  163:    {
+       12:  164:        Medicament* m = get(list,i);
+       12:  164-block  0
+call    0 returned 12
+       12:  165:        if(f(m,filtru))
+call    0 returned 12
+branch  1 taken 7 (fallthrough)
+branch  2 taken 5
+        -:  166:        {
+        7:  167:            Medicament* newMed = createMedicament(m->id,m->nume,m->concentratie,m->stoc);
+        7:  167-block  0
+call    0 returned 7
+        7:  168:            addEntitate(filtred,newMed);
+call    0 returned 7
+        -:  169:        }
+        -:  170:    }
+        3:  171:    return filtred;
+        3:  171-block  0
+        -:  172:}
+        -:  173:
+        -:  174:/*Functie care filtreaza farmacia. Returneaza o farmacie doar cu medicamentele care au stocul mai mic decat o valoare data*/
+function filterStoc called 4 returned 100% blocks executed 100%
+        4:  175:List* filterStoc(Farmacie* list, int val)
+        -:  176:{
+        4:  177:    List* f = copyFarmacie(list->lista);
+        4:  177-block  0
+call    0 returned 4
+        -:  178:
+       11:  179:    for(int i=0; i<f->dimensiune;i++)
+        7:  179-block  0
+       11:  179-block  1
+branch  0 taken 7
+branch  1 taken 4 (fallthrough)
+        -:  180:    {
+        7:  181:        Medicament* m = get(f,i);
+        7:  181-block  0
+call    0 returned 7
+        7:  182:        if(m->stoc>=val)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 5
+        2:  183:            deleteEntitate(f,m->id), i--;
+        2:  183-block  0
+call    0 returned 2
+        -:  184:    }
+        -:  185:
+        4:  186:    return f;
+        4:  186-block  0
+        -:  187:}
+        -:  188:
+        -:  189:/*Functie care filtreaza farmacia. Returneaza o farmacie doar cu medicamentele care incep cu litera data*/
+function filterNume called 1 returned 100% blocks executed 100%
+        1:  190:List* filterNume(Farmacie* list, char litera)
+        -:  191:{
+        1:  192:    List* f = copyFarmacie(list->lista);
+        1:  192-block  0
+call    0 returned 1
+        -:  193:
+        6:  194:    for(int i=0; i<f->dimensiune;i++)
+        5:  194-block  0
+        6:  194-block  1
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        -:  195:    {
+        5:  196:        Medicament* m = get(f,i);
+        5:  196-block  0
+call    0 returned 5
+        5:  197:        if(m->nume[0] != litera)
+branch  0 taken 3 (fallthrough)
+branch  1 taken 2
+        3:  198:            deleteEntitate(f,m->id), i--;
+        3:  198-block  0
+call    0 returned 3
+        -:  199:    }
+        -:  200:
+        1:  201:    return f;
+        1:  201-block  0
+        -:  202:}
+        -:  203:
+function filterConcentratie called 1 returned 100% blocks executed 100%
+        1:  204:List* filterConcentratie(Farmacie* list, float val)
+        -:  205:{
+        1:  206:    List* f = copyFarmacie(list->lista);
+        1:  206-block  0
+call    0 returned 1
+        -:  207:
+        6:  208:    for(int i=0; i<f->dimensiune;i++)
+        5:  208-block  0
+        6:  208-block  1
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        -:  209:    {
+        5:  210:        Medicament* m = get(f,i);
+        5:  210-block  0
+call    0 returned 5
+        5:  211:        if(m->concentratie != val)
+branch  0 taken 5 (fallthrough)
+branch  1 taken 0
+        5:  212:            deleteEntitate(f,m->id), i--;
+        5:  212-block  0
+call    0 returned 5
+        -:  213:    }
+        1:  214:    return f;
+        1:  214-block  0
+        -:  215:}

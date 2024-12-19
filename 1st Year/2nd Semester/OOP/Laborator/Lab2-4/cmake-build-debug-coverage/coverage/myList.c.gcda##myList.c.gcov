@@ -1,0 +1,257 @@
+        -:    0:Source:C:/Users/munte/CLionProjects/OOP-lab2-4/myList.c
+        -:    0:Graph:C:\Users\munte\CLionProjects\OOP-lab2-4\cmake-build-debug-coverage\CMakeFiles\OOP_lab2_4.dir\myList.c.gcno
+        -:    0:Data:C:\Users\munte\CLionProjects\OOP-lab2-4\cmake-build-debug-coverage\CMakeFiles\OOP_lab2_4.dir\myList.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "myList.h"
+        -:    2:#include <stdlib.h>
+        -:    3:
+        -:    4:
+        -:    5:/*Adauga un produs nou in farmacie.*/
+function addEntitate called 137 returned 100% blocks executed 100%
+      137:    6:void addEntitate(List* f, Entitate e)
+        -:    7:{
+      137:    8:    if (f->dimensiune < f->capacitate)
+      137:    8-block  0
+branch  0 taken 88 (fallthrough)
+branch  1 taken 49
+        -:    9:    {
+       88:   10:        f->medicamente[f->dimensiune] = e;
+       88:   11:        f->dimensiune += 1;
+       88:   11-block  0
+        -:   12:    }
+        -:   13:    else
+        -:   14:    {
+       49:   15:        asiguraCapacitate(f);
+       49:   15-block  0
+call    0 returned 49
+       49:   16:        addEntitate(f, e);
+call    0 returned 49
+        -:   17:    }
+        -:   18:
+      137:   19:}
+        -:   20:
+        -:   21:/*Functie care mareste capacitatea farmaciei.*/
+function asiguraCapacitate called 49 returned 100% blocks executed 100%
+       49:   22:void asiguraCapacitate(List* f)
+        -:   23:{
+        -:   24:
+       49:   25:    Entitate* capacitateNoua = malloc(sizeof(Entitate)*(f->capacitate * 2));
+        -:   26:    //copiaza elementele
+      148:   27:    for (int i = 0; i < f->dimensiune; i++)
+       49:   27-block  0
+      148:   27-block  1
+branch  0 taken 99
+branch  1 taken 49 (fallthrough)
+       99:   28:        capacitateNoua[i] = f->medicamente[i];
+       99:   28-block  0
+        -:   29:
+        -:   30:    //dealoca memoria
+       49:   31:    free(f->medicamente);
+       49:   32:    f->medicamente = capacitateNoua;
+       49:   33:    f->capacitate *= 2;
+        -:   34:
+       49:   35:}
+        -:   36:
+        -:   37:/*Sterge o un produs din farmacie.*/
+function deleteEntitate called 12 returned 100% blocks executed 100%
+       12:   38:int deleteEntitate(List* f, int id)
+        -:   39:{
+       12:   40:    int i = 0;
+       12:   41:    int ok = 1;
+       45:   42:    while(i<f->dimensiune)
+       12:   42-block  0
+       45:   42-block  1
+branch  0 taken 33
+branch  1 taken 12 (fallthrough)
+        -:   43:    {
+       33:   44:        Medicament* p = get(f, i);
+       33:   44-block  0
+call    0 returned 33
+       33:   45:        if (p->id == id)
+branch  0 taken 12 (fallthrough)
+branch  1 taken 21
+        -:   46:        {
+       12:   47:                destroyMedicament(p);
+       12:   47-block  0
+call    0 returned 12
+       38:   48:                for (int j = i; j < f->dimensiune - 1; j++)
+       38:   48-block  0
+branch  0 taken 26
+branch  1 taken 12 (fallthrough)
+       26:   49:                    f->medicamente[j] = f->medicamente[j + 1];
+       26:   49-block  0
+       12:   50:                f->dimensiune -= 1;
+       12:   51:                ok = 0;
+       12:   51-block  0
+        -:   52:        }
+        -:   53:
+       33:   54:        i++;
+       33:   54-block  0
+        -:   55:    }
+        -:   56:
+       12:   57:    return ok;
+       12:   57-block  0
+        -:   58:}
+        -:   59:
+function delete called 4 returned 100% blocks executed 100%
+        4:   60:Entitate delete(List* l, int poz)
+        -:   61:{
+        4:   62:    Entitate el = l->medicamente[poz];
+        5:   63:    for(int i=poz; i<l->dimensiune-1; i++)
+        4:   63-block  0
+        5:   63-block  1
+branch  0 taken 1
+branch  1 taken 4 (fallthrough)
+        -:   64:    {
+        1:   65:        l->medicamente[i]= l->medicamente[i+1];
+        1:   65-block  0
+        -:   66:    }
+        4:   67:    l->dimensiune--;
+        4:   68:    return el;
+        4:   68-block  0
+        -:   69:}
+        -:   70:
+        -:   71:/*Functie care creeaza o entitate List noua si returneaza pointerul la entitatea respectiva.*/
+function createList called 30 returned 100% blocks executed 100%
+       30:   72:List* createList()
+        -:   73:{
+        -:   74:
+       30:   75:    List* f = malloc(sizeof(List));
+       30:   76:    f->dimensiune = 0;
+       30:   77:    f->capacitate = 1;
+       30:   78:    f->medicamente = malloc(sizeof(Entitate) * f->capacitate);
+        -:   79:
+       30:   80:    return f;
+       30:   80-block  0
+        -:   81:}
+        -:   82:
+        -:   83:/*Primeste un pointer la entitatea List si dealoca memoria ocupata de entitate.*/
+function destroyList called 61 returned 100% blocks executed 100%
+       61:   84:void destroyList(List* f)
+        -:   85:{
+      190:   86:    for (int i = 0; i < f->dimensiune; i++)
+       61:   86-block  0
+      190:   86-block  1
+branch  0 taken 129
+branch  1 taken 61 (fallthrough)
+      129:   87:        destroyMedicament(f->medicamente[i]);
+      129:   87-block  0
+call    0 returned 129
+       61:   88:    f->dimensiune=0;
+       61:   89:    free(f->medicamente);
+       61:   90:    free(f);
+        -:   91:
+       61:   92:}
+function destroyUndoList called 12 returned 100% blocks executed 100%
+       12:   93:void destroyUndoList(List* f)
+        -:   94:{
+       44:   95:    for (int i = 0; i < f->dimensiune; i++)
+       12:   95-block  0
+       44:   95-block  1
+branch  0 taken 32
+branch  1 taken 12 (fallthrough)
+       32:   96:        destroyList(f->medicamente[i]);
+       32:   96-block  0
+call    0 returned 32
+       12:   97:    f->dimensiune=0;
+       12:   98:    free(f->medicamente);
+       12:   99:    free(f);
+        -:  100:
+       12:  101:}
+        -:  102:/*Functie care face update la un medicament.
+        -:  103: Primeste un pointer la medicamentul cu caracteristicile actualizate, distruge medicamentul
+        -:  104: vechi si il pune pe cel actualizat.
+        -:  105:*/
+function updateMedicament called 2 returned 100% blocks executed 100%
+        2:  106:int updateMedicament(List* f, Medicament* m)
+        -:  107:{
+        2:  108:    int ok = -1;
+        4:  109:    for (int i=0; i < f->dimensiune; i++)
+        2:  109-block  0
+        2:  109-block  1
+        4:  109-block  2
+branch  0 taken 2
+branch  1 taken 2 (fallthrough)
+        -:  110:    {
+        2:  111:        Medicament* p = get(f, i);
+        2:  111-block  0
+call    0 returned 2
+        2:  112:        if (p->id == m->id)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        -:  113:        {
+        -:  114:            //distrug medicamentul returnat de set
+        2:  115:            destroyMedicament(set(f,i,m));
+        2:  115-block  0
+call    0 returned 2
+call    1 returned 2
+        2:  116:            ok = 0;
+        -:  117:        }
+        -:  118:    }
+        2:  119:    return ok;
+        2:  119-block  0
+        -:  120:}
+        -:  121:/*Functie care primeste un int -id- si returneaza pozitia pe care se afla elementul sau -1 in caz contrar*/
+function cauta called 6 returned 100% blocks executed 100%
+        6:  122:int cauta(List* f, int id)
+        -:  123:{
+        -:  124:
+       13:  125:    for (int i = 0; i < f->dimensiune; i++)
+        6:  125-block  0
+        7:  125-block  1
+       13:  125-block  2
+branch  0 taken 11
+branch  1 taken 2 (fallthrough)
+        -:  126:    {
+       11:  127:        Medicament* p = get(f, i);
+       11:  127-block  0
+call    0 returned 11
+       11:  128:        if (p->id == id)
+branch  0 taken 4 (fallthrough)
+branch  1 taken 7
+        4:  129:            return i;
+        4:  129-block  0
+        -:  130:
+        -:  131:    }
+        2:  132:    return -1;
+        2:  132-block  0
+        -:  133:}
+        -:  134:
+        -:  135:
+        -:  136:/*Functie care returneaza elementul de pe o pozitie data*/
+function get called 124 returned 100% blocks executed 100%
+      124:  137:Entitate get(List* f, int i)
+        -:  138:{
+      124:  139:    return f->medicamente[i];
+      124:  139-block  0
+        -:  140:}
+        -:  141:
+        -:  142:/*Functie care pune pe o pozitie data o entitate data si returneaza fostul element de pe pozitia data.*/
+function set called 26 returned 100% blocks executed 100%
+       26:  143:Entitate set(List* f, int poz, Entitate e)
+        -:  144:{
+        -:  145:
+       26:  146:    Entitate rez = f->medicamente[poz];
+       26:  147:    f->medicamente[poz] = e;
+       26:  148:    return rez;
+       26:  148-block  0
+        -:  149:}
+        -:  150:
+function copyFarmacie called 43 returned 100% blocks executed 100%
+       43:  151:List* copyFarmacie(List* p)
+        -:  152:{
+       43:  153:    List* f = malloc(sizeof(List));
+       43:  154:    f->dimensiune = p->dimensiune;
+       43:  155:    f->capacitate = p->capacitate;
+       43:  156:    f->medicamente = malloc(sizeof (Medicament)*p->dimensiune);
+      132:  157:    for(int i=0; i< p->dimensiune;i++)
+       43:  157-block  0
+      132:  157-block  1
+branch  0 taken 89
+branch  1 taken 43 (fallthrough)
+       89:  158:        f->medicamente[i] = copyMedicament(p->medicamente[i]);
+       89:  158-block  0
+call    0 returned 89
+       43:  159:    return f;
+       43:  159-block  0
+        -:  160:}

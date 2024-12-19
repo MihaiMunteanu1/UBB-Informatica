@@ -1,0 +1,557 @@
+        -:    0:Source:/mnt/c/Users/Omen/CLionProjects/OOP-lab2-4/teste.c
+        -:    0:Graph:/mnt/c/Users/Omen/CLionProjects/OOP-lab2-4/cmake-build-wsl-profile-coverage/CMakeFiles/OOP_lab2_4.dir/teste.c.gcno
+        -:    0:Data:/mnt/c/Users/Omen/CLionProjects/OOP-lab2-4/cmake-build-wsl-profile-coverage/CMakeFiles/OOP_lab2_4.dir/teste.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "teste.h"
+        -:    2:#include "medicament.h"
+        -:    3:#include "myList.h"
+        -:    4:#include "service.h"
+        -:    5:#include <assert.h>
+        -:    6:#include <string.h>
+        -:    7:#include <stdio.h>
+        -:    8:
+function testValideazaMedicament called 1 returned 100% blocks executed 81%
+        1:    9:void testValideazaMedicament()
+        -:   10:{
+        1:   11:    int idRau = -1;
+        1:   12:    char* numeRau = "";
+        1:   13:    float concentratieRea = -1.0;
+        1:   14:    int stocRau = 0;
+        1:   15:    Medicament* o = createMedicament(19,numeRau,9,10);
+        1:   15-block  0
+call    0 returned 1
+       1*:   16:    assert(valideazaMedicament(o)==-1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   16-block  0
+call    3 never executed
+        -:   17:
+        1:   18:    Medicament* i = createMedicament(19,"ksdjn",-9,10);
+        1:   18-block  0
+call    0 returned 1
+       1*:   19:    assert(valideazaMedicament(i)==-1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   19-block  0
+call    3 never executed
+        -:   20:
+        1:   21:    Medicament* d = createMedicament(19,"sdkhb",9,-10);
+        1:   21-block  0
+call    0 returned 1
+       1*:   22:    assert(valideazaMedicament(d)==-1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   22-block  0
+call    3 never executed
+        -:   23:
+        -:   24:
+        1:   25:    Medicament *m = createMedicament(idRau,numeRau,concentratieRea,stocRau);
+        1:   25-block  0
+call    0 returned 1
+       1*:   26:    assert(valideazaMedicament(m)==-1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   26-block  0
+call    3 never executed
+        -:   27:
+        1:   28:    int idBun = 19;
+        1:   29:    char* numeBun = "nurofen";
+        1:   30:    float concentratieBuna = 0.88;
+        1:   31:    int stocBun = 7;
+        1:   32:    Medicament *p = createMedicament(idBun,numeBun,concentratieBuna,stocBun);
+        1:   32-block  0
+call    0 returned 1
+       1*:   33:    assert(valideazaMedicament(p)==1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   33-block  0
+call    3 never executed
+        -:   34:
+        1:   35:    destroyMedicament(m);
+        1:   35-block  0
+call    0 returned 1
+        1:   36:    destroyMedicament(p);
+call    0 returned 1
+        1:   37:    destroyMedicament(o);
+call    0 returned 1
+        1:   38:    destroyMedicament(i);
+call    0 returned 1
+        1:   39:    destroyMedicament(d);
+call    0 returned 1
+        -:   40:
+        1:   41:}
+        -:   42:
+function testUpdate called 1 returned 100% blocks executed 83%
+        1:   43:void testUpdate()
+        -:   44:{
+        1:   45:    Farmacie list = createFarmacie();
+        1:   45-block  0
+call    0 returned 1
+        1:   46:    List* f = list.lista;
+        1:   47:    Medicament* m = createMedicament(19,"nurofen",3,10);
+call    0 returned 1
+        1:   48:    setStoc(m,10);
+call    0 returned 1
+        1:   49:    addEntitate(f,m);
+call    0 returned 1
+        -:   50:
+       1*:   51:    assert(updateEnt(&list,20,"newname",9)==-1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   51-block  0
+call    3 never executed
+       1*:   52:    assert(updateEnt(&list,19,"newname",10)==0);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   52-block  1
+call    3 never executed
+        -:   53:
+        1:   54:    destroyAll(&list);
+        1:   54-block  0
+call    0 returned 1
+        -:   55:
+        1:   56:}
+function testCauta called 1 returned 100% blocks executed 82%
+        1:   57:void testCauta()
+        -:   58:{
+        1:   59:    Farmacie list = createFarmacie();
+        1:   59-block  0
+call    0 returned 1
+        1:   60:    List* f = list.lista;
+        1:   61:    Medicament* m = createMedicament(19,"nurofen",3,10);
+call    0 returned 1
+        1:   62:    addEntitate(f,m);
+call    0 returned 1
+       1*:   63:    assert(checkId(&list,19)==1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   63-block  0
+call    3 never executed
+       1*:   64:    assert(checkId(&list,30)==0);
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   64-block  1
+call    3 never executed
+        -:   65:
+        1:   66:    destroyAll(&list);
+        1:   66-block  0
+call    0 returned 1
+        1:   67:}
+        -:   68:
+function testAddEntitate called 1 returned 100% blocks executed 72%
+        1:   69:void testAddEntitate()
+        -:   70:{
+        1:   71:    Farmacie list = createFarmacie();
+        1:   71-block  0
+call    0 returned 1
+        -:   72:
+        1:   73:    addEnt(&list,19,"nurofen",3,10);
+call    0 returned 1
+        1:   74:    addEnt(&list,20,"paracetamol",4,10);
+call    0 returned 1
+        1:   75:    addEnt(&list,10,"ceva",10,2);
+call    0 returned 1
+       1*:   76:    assert(list.lista->dimensiune==3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   76-block  0
+call    2 never executed
+        1:   77:    Medicament* p = get(list.lista,0);
+        1:   77-block  0
+call    0 returned 1
+        -:   78:
+       1*:   79:    assert(19 == p->id);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   79-block  0
+call    2 never executed
+       1*:   80:    assert(10 == p->stoc);
+        1:   80-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   80-block  1
+call    2 never executed
+       1*:   81:    assert(3 == p->concentratie);
+        1:   81-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   81-block  1
+call    2 never executed
+        -:   82:
+       1*:   83:    assert(addEnt(&list,-12,"a",-1,0)==0);
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   83-block  1
+call    3 never executed
+        -:   84:
+        1:   85:    destroyAll(&list);
+        1:   85-block  0
+call    0 returned 1
+        -:   86:
+        1:   87:}
+        -:   88:
+function testDeleteEntitate called 1 returned 100% blocks executed 89%
+        1:   89:void testDeleteEntitate()
+        -:   90:{
+        1:   91:    Farmacie list = createFarmacie();
+        1:   91-block  0
+call    0 returned 1
+        1:   92:    List* f = list.lista;
+        1:   93:    Medicament* m = createMedicament(19,"nurofen",3,10);
+call    0 returned 1
+        1:   94:    Medicament* m1 = createMedicament(21,"ceva",8,10);
+call    0 returned 1
+        1:   95:    Medicament* m3 = createMedicament(22,"ceva",8,10);
+call    0 returned 1
+        1:   96:    Medicament* m4 = createMedicament(26,"ceva",8,10);
+call    0 returned 1
+        1:   97:    Medicament* m5 = createMedicament(23,"ceva",8,10);
+call    0 returned 1
+        1:   98:    addEntitate(f,m);
+call    0 returned 1
+        1:   99:    addEntitate(f,m3);
+call    0 returned 1
+        1:  100:    addEntitate(f,m1);
+call    0 returned 1
+        1:  101:    addEntitate(f,m4);
+call    0 returned 1
+        1:  102:    addEntitate(f,m5);
+call    0 returned 1
+       1*:  103:    assert(deleteEnt(&list,20)==0);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  103-block  0
+call    3 never executed
+       1*:  104:    assert(deleteEnt(&list,22)==1);
+        1:  104-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  104-block  1
+call    3 never executed
+        1:  105:    destroyAll(&list);
+        1:  105-block  0
+call    0 returned 1
+        1:  106:}
+        -:  107:
+function testAsiguraCapacitate called 1 returned 100% blocks executed 80%
+        1:  108:void testAsiguraCapacitate()
+        -:  109:{
+        1:  110:    List* f = createList();
+        1:  110-block  0
+call    0 returned 1
+        1:  111:    Medicament* m = createMedicament(19,"nurofen",3,10);
+call    0 returned 1
+        1:  112:    Medicament* m1 = createMedicament(20,"ceva",8,100);
+call    0 returned 1
+        1:  113:    Medicament* m2 = createMedicament(21,"altceva",1,19);
+call    0 returned 1
+        1:  114:    addEntitate(f,m);
+call    0 returned 1
+        1:  115:    addEntitate(f,m1);
+call    0 returned 1
+       1*:  116:    assert(f->capacitate==2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  116-block  0
+call    2 never executed
+        1:  117:    addEntitate(f,m2);
+        1:  117-block  0
+call    0 returned 1
+       1*:  118:    assert(f->capacitate==4);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  118-block  0
+call    2 never executed
+       1*:  119:    assert(f->dimensiune==3);
+        1:  119-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  119-block  1
+call    2 never executed
+        1:  120:    destroyList(f);
+        1:  120-block  0
+call    0 returned 1
+        -:  121:
+        1:  122:}
+        -:  123:
+function testAddStoc called 1 returned 100% blocks executed 89%
+        1:  124:void testAddStoc()
+        -:  125:{
+        1:  126:    Farmacie list = createFarmacie();
+        1:  126-block  0
+call    0 returned 1
+        -:  127:
+        1:  128:    addEnt(&list,19,"nurofen",9,10);
+call    0 returned 1
+        1:  129:    addStoc(&list,19);
+call    0 returned 1
+        1:  130:    Medicament* m = get(list.lista,0);
+call    0 returned 1
+       1*:  131:    assert(getStoc(m)==11);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  131-block  0
+call    3 never executed
+        -:  132:
+        1:  133:    destroyAll(&list);
+        1:  133-block  0
+call    0 returned 1
+        -:  134:
+        1:  135:}
+        -:  136:
+function testSortareStoc called 1 returned 100% blocks executed 89%
+        1:  137:void testSortareStoc()
+        -:  138:{
+        1:  139:    Farmacie list = createFarmacie();
+        1:  139-block  0
+call    0 returned 1
+        -:  140:
+        1:  141:    addEnt(&list,19,"nurofen",3,10);
+call    0 returned 1
+        1:  142:    addEnt(&list,21,"ceva",8,100);
+call    0 returned 1
+        1:  143:    addEnt(&list,22,"ceva",8,1);
+call    0 returned 1
+        1:  144:    addEnt(&list,26,"ceva",8,3);
+call    0 returned 1
+        1:  145:    addEnt(&list,23,"ceva",8,9);
+call    0 returned 1
+        -:  146:
+        1:  147:    List* f1 = sortareStoc(&list);
+call    0 returned 1
+        -:  148:
+       1*:  149:    assert(f1->dimensiune==5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  149-block  0
+call    2 never executed
+        -:  150:
+        5:  151:    for(int i=0; i<f1->dimensiune-1;i++)
+        1:  151-block  0
+        4:  151-block  1
+        5:  151-block  2
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+        -:  152:    {
+        4:  153:        Medicament* m1 = get(f1,i);
+        4:  153-block  0
+call    0 returned 4
+        4:  154:        Medicament* m2 = get(f1,i+1);
+call    0 returned 4
+       4*:  155:        assert(m1->stoc <= m2->stoc);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    %%%%%:  155-block  0
+call    2 never executed
+        -:  156:
+        -:  157:    }
+        -:  158:
+        1:  159:    destroyList(f1);
+        1:  159-block  0
+call    0 returned 1
+        1:  160:    destroyAll(&list);
+call    0 returned 1
+        1:  161:}
+        -:  162:
+function testSortareNume called 1 returned 100% blocks executed 89%
+        1:  163:void testSortareNume()
+        -:  164:{
+        1:  165:    Farmacie list = createFarmacie();
+        1:  165-block  0
+call    0 returned 1
+        -:  166:
+        1:  167:    addEnt(&list,19,"nurofen",3,10);
+call    0 returned 1
+        1:  168:    addEnt(&list,21,"ceva",8,100);
+call    0 returned 1
+        1:  169:    addEnt(&list,22,"aaa",8,1);
+call    0 returned 1
+        1:  170:    addEnt(&list,26,"cea",8,3);
+call    0 returned 1
+        1:  171:    addEnt(&list,23,"eva",8,9);
+call    0 returned 1
+        -:  172:
+        1:  173:    List* f1 = sortareNume(&list);
+call    0 returned 1
+        -:  174:
+       1*:  175:    assert(f1->dimensiune==5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  175-block  0
+call    2 never executed
+        -:  176:
+        5:  177:    for(int i=0; i<f1->dimensiune-1;i++)
+        1:  177-block  0
+        4:  177-block  1
+        5:  177-block  2
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+        -:  178:    {
+        4:  179:        Medicament* m1 = get(f1,i);
+        4:  179-block  0
+call    0 returned 4
+        4:  180:        Medicament* m2 = get(f1,i+1);
+call    0 returned 4
+       4*:  181:        assert((int)strcmp(m1->nume,m2->nume) < 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    %%%%%:  181-block  0
+call    2 never executed
+        -:  182:
+        -:  183:    }
+        -:  184:
+        1:  185:    destroyList(f1);
+        1:  185-block  0
+call    0 returned 1
+        1:  186:    destroyAll(&list);
+call    0 returned 1
+        1:  187:}
+        -:  188:
+function testFilterStoc called 1 returned 100% blocks executed 81%
+        1:  189:void testFilterStoc()
+        -:  190:{
+        1:  191:    Farmacie list = createFarmacie();
+        1:  191-block  0
+call    0 returned 1
+        -:  192:
+        1:  193:    addEnt(&list,19,"nurofen",3,10);
+call    0 returned 1
+        1:  194:    addEnt(&list,21,"ceva",8,100);
+call    0 returned 1
+        1:  195:    addEnt(&list,22,"aaa",8,1);
+call    0 returned 1
+        1:  196:    addEnt(&list,26,"cea",8,3);
+call    0 returned 1
+        1:  197:    addEnt(&list,23,"eva",8,9);
+call    0 returned 1
+        -:  198:
+        1:  199:    List* f1 = filterStoc(&list, 10);
+call    0 returned 1
+        -:  200:
+       1*:  201:    assert(f1->dimensiune == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  201-block  0
+call    2 never executed
+       1*:  202:    assert(getStoc(f1->medicamente[0]) == 1);
+        1:  202-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  202-block  1
+call    3 never executed
+       1*:  203:    assert(getStoc(f1->medicamente[1]) == 3);
+        1:  203-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  203-block  1
+call    3 never executed
+       1*:  204:    assert(getStoc(f1->medicamente[2]) == 9);
+        1:  204-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  204-block  1
+call    3 never executed
+        -:  205:
+        1:  206:    destroyList(f1);
+        1:  206-block  0
+call    0 returned 1
+        1:  207:    destroyAll(&list);
+call    0 returned 1
+        1:  208:}
+        -:  209:
+function testFilterNume called 1 returned 100% blocks executed 83%
+        1:  210:void testFilterNume()
+        -:  211:{
+        1:  212:    Farmacie list = createFarmacie();
+        1:  212-block  0
+call    0 returned 1
+        -:  213:
+        1:  214:    addEnt(&list,19,"nurofen",3,10);
+call    0 returned 1
+        1:  215:    addEnt(&list,21,"ceva",8,100);
+call    0 returned 1
+        1:  216:    addEnt(&list,22,"aaa",8,1);
+call    0 returned 1
+        1:  217:    addEnt(&list,26,"cea",8,3);
+call    0 returned 1
+        1:  218:    addEnt(&list,23,"eva",8,9);
+call    0 returned 1
+        -:  219:
+        1:  220:    List* f1 = filterNume(&list, 'c');
+call    0 returned 1
+        -:  221:
+       1*:  222:    assert(f1->dimensiune == 2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  222-block  0
+call    2 never executed
+       1*:  223:    assert(getId(f1->medicamente[0]) == 21);
+        1:  223-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  223-block  1
+call    3 never executed
+       1*:  224:    assert(getId(f1->medicamente[1]) == 26);
+        1:  224-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  224-block  1
+call    3 never executed
+        -:  225:
+        1:  226:    destroyList(f1);
+        1:  226-block  0
+call    0 returned 1
+        1:  227:    destroyAll(&list);
+call    0 returned 1
+        1:  228:}
+function runAllTests called 1 returned 100% blocks executed 100%
+        1:  229:void runAllTests()
+        -:  230:{
+        1:  231:    testValideazaMedicament();
+        1:  231-block  0
+call    0 returned 1
+        1:  232:    testCauta();
+call    0 returned 1
+        1:  233:    testAddEntitate();
+call    0 returned 1
+        1:  234:    testDeleteEntitate();
+call    0 returned 1
+        1:  235:    testUpdate();
+call    0 returned 1
+        1:  236:    testAsiguraCapacitate();
+call    0 returned 1
+        1:  237:    testAddStoc();
+call    0 returned 1
+        1:  238:    testSortareNume();
+call    0 returned 1
+        1:  239:    testSortareStoc();
+call    0 returned 1
+        1:  240:    testFilterNume();
+call    0 returned 1
+        1:  241:    testFilterStoc();
+call    0 returned 1
+        -:  242:
+        1:  243:}
+        -:  244:
+        -:  245:
