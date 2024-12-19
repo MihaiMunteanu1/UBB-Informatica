@@ -1,0 +1,5 @@
+C:/Users/munte/CLionProjects/TractoareQT/cmake-build-debug/CMakeFiles/TractoareQT.dir
+C:/Users/munte/CLionProjects/TractoareQT/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/TractoareQT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/munte/CLionProjects/TractoareQT/cmake-build-debug/CMakeFiles/TractoareQT_autogen_timestamp_deps.dir
+C:/Users/munte/CLionProjects/TractoareQT/cmake-build-debug/CMakeFiles/TractoareQT_autogen.dir
