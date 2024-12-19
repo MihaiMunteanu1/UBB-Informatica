@@ -1,0 +1,10 @@
+<html><body>
+<table border="1" style="width:100 % ">
+<tr>
+<td>Ski</td>
+<td>Slalom</td>
+<td>miscare</td>
+<td>2</td>
+</tr>
+</table>
+</body></html>
