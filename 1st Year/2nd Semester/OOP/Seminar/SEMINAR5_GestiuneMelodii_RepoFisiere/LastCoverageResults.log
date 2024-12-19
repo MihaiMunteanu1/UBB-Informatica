@@ -1,0 +1,21 @@
+[2022-04-21 17:20:41] [info] Start Program:
+Path:"C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\x64\Debug\SEMINAR5_GestiuneMelodii_RepoFisiere.exe"
+Arguments:
+Working directory: "C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\SEMINAR5_GestiuneMelodii_RepoFisiere\"
+Modules: Selected: C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\x64\Debug\SEMINAR5_GestiuneMelodii_RepoFisiere.exe Excluded: 
+Sources: Selected: C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\SEMINAR5_GestiuneMelodii_RepoFisiere Excluded: UI.cpp main.cpp 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Ana\AppData\Local\Temp\2zvdt2r3.r0m 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2022-04-21 17:20:41] [info] Module: C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\x64\Debug\SEMINAR5_GestiuneMelodii_RepoFisiere.exe is selected because it matches selected pattern: C:\Users\Ana\source\repos\SEMINAR5_GestiuneMelodii_RepoFisiere\x64\Debug\SEMINAR5_GestiuneMelodii_RepoFisiere.exe
+[2022-04-21 17:20:42] [info] ----------------------------------------------------
+[2022-04-21 17:20:42] [info] Coverage binary generated in file: C:\Users\Ana\AppData\Local\Temp\2zvdt2r3.r0m
+[2022-04-21 17:20:42] [info] ----------------------------------------------------
