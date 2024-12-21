@@ -1,0 +1,100 @@
+1,Andrei,Scoala Gimnaziala “Horea”
+2,Maria,Scoala Gimnaziala "Octavian Goga"
+3,Ioana,Liceul Teoretic "Lucian Blaga"
+4,Alex,Scoala Gimnaziala "Ioan Bob"
+5,Denisa,Scoala Gimnaziala "Ion Creanga"
+6,Ionut,Colegiul National Pedagogic "Gheorghe Lazar"
+7,Elena,Scoala Gimnaziala Internationala SPECTRUM
+8,Robert,Colegiul National „Emil Racovita”
+9,Daniela,Colegiul National "George Cosbuc"
+10,Cristina,Scoala Gimnaziala "Ion Agarbiceanu"
+11,Florin,Liceul Teoretic "Avram Iancu"
+12,Teodora,Scoala Gimnaziala "Constantin Brancusi"
+13,Vlad,Liceul Teoretic "Onisifor Ghibu"
+14,Roxana,Liceul Teoretic "Onisifor Ghibu"
+15,Mihai,Liceul cu Program Sportiv Cluj-Napoca
+16,Sofia,Liceul Teoretic "Nicolae Balcescu"
+17,Stefan,Liceul Teoretic "Gheorghe Sincai"
+18,Diana,Scoala "Nicolae Titulescu"
+19,Victor,Scoala Gimnaziala "Liviu Rebreanu"
+20,Ana,Scoala Gimnaziala "Iuliu Hatieganu"
+21,Luca,Liceul Teoretic "Bathory Istvan"
+22,Cosmin,Colegiul National "George Baritiu"
+23,Raluca,Liceul Teoretic "Apaczai Csere Janos"
+24,Adrian,Seminarul Teologic Ortodox
+25,Ioan,Liceul de Informatica "Tiberiu Popoviciu"
+26,Monica,Scoala Gimnaziala „Alexandru Vaida – Voevod"
+27,George,Liceul Teoretic ELF
+28,Larisa,Scoala Gimnaziala "Gheorghe Sincai" Floresti
+29,Andreea,Scoala Gimnaziala “Horea”
+30,Paul,Scoala Gimnaziala "Octavian Goga"
+31,Alina,Liceul Teoretic "Lucian Blaga"
+32,Marius,Scoala Gimnaziala "Ioan Bob"
+33,Bianca,Scoala Gimnaziala "Ion Creanga"
+34,Dragos,Colegiul National Pedagogic "Gheorghe Lazar"
+35,Claudia,Scoala Gimnaziala Internationala SPECTRUM
+36,Alexandra,Colegiul National „Emil Racovita”
+37,Eduard,Colegiul National "George Cosbuc"
+38,Ramona,Scoala Gimnaziala "Ion Agarbiceanu"
+39,Dorin,Liceul Teoretic "Avram Iancu"
+40,Lavinia,Scoala Gimnaziala "Constantin Brancusi"
+41,Andra,Liceul Teoretic "Onisifor Ghibu"
+42,Tudor,Liceul Teoretic "Onisifor Ghibu"
+43,Marian,Liceul cu Program Sportiv Cluj-Napoca
+44,Catalina,Liceul Teoretic "Nicolae Balcescu"
+45,Sebastian,Liceul Teoretic "Gheorghe Sincai"
+46,Iulia,Scoala "Nicolae Titulescu"
+47,Cristian,Scoala Gimnaziala "Liviu Rebreanu"
+48,Irina,Scoala Gimnaziala "Iuliu Hatieganu"
+49,Nicoleta,Liceul Teoretic "Bathory Istvan"
+50,Lucian,Colegiul National "George Baritiu"
+51,Andrei,Liceul Teoretic "Apaczai Csere Janos"
+52,Oana,Seminarul Teologic Ortodox
+53,Florina,Liceul de Informatica "Tiberiu Popoviciu"
+54,Sergiu,Scoala Gimnaziala „Alexandru Vaida – Voevod"
+55,Petru,Liceul Teoretic ELF
+56,Daria,Scoala Gimnaziala "Gheorghe Sincai" Floresti
+57,Cezar,Scoala Gimnaziala “Horea”
+58,Delia,Scoala Gimnaziala "Octavian Goga"
+59,Valentin,Liceul Teoretic "Lucian Blaga"
+60,Andreea,Scoala Gimnaziala "Ioan Bob"
+61,Miruna,Scoala Gimnaziala "Ion Creanga"
+62,Ioan,Colegiul National Pedagogic "Gheorghe Lazar"
+63,Alin,Scoala Gimnaziala Internationala SPECTRUM
+64,Ilinca,Colegiul National „Emil Racovita”
+65,Razvan,Colegiul National "George Cosbuc"
+66,Luminita,Scoala Gimnaziala "Ion Agarbiceanu"
+67,Vasile,Liceul Teoretic "Avram Iancu"
+68,Carla,Scoala Gimnaziala "Constantin Brancusi"
+69,Emanuel,Liceul Teoretic "Onisifor Ghibu"
+70,Georgiana,Liceul Teoretic "Onisifor Ghibu"
+71,Norbert,Liceul cu Program Sportiv Cluj-Napoca
+72,Daniela,Liceul Teoretic "Nicolae Balcescu"
+73,Antonia,Liceul Teoretic "Gheorghe Sincai"
+74,Ciprian,Scoala "Nicolae Titulescu"
+75,Darius,Scoala Gimnaziala "Liviu Rebreanu"
+76,Roxana,Scoala Gimnaziala "Iuliu Hatieganu"
+77,Teofil,Liceul Teoretic "Bathory Istvan"
+78,Nina,Colegiul National "George Baritiu"
+79,Octavian,Liceul Teoretic "Apaczai Csere Janos"
+80,Viorel,Seminarul Teologic Ortodox
+81,Mircea,Liceul de Informatica "Tiberiu Popoviciu"
+82,Sofia,Scoala Gimnaziala „Alexandru Vaida – Voevod"
+83,Evelina,Liceul Teoretic ELF
+84,Ionut,Scoala Gimnaziala "Gheorghe Sincai" Floresti
+85,Nicoleta,Scoala Gimnaziala “Horea”
+86,Andreea,Scoala Gimnaziala "Octavian Goga"
+87,Mihnea,Liceul Teoretic "Lucian Blaga"
+88,Larisa,Scoala Gimnaziala "Ioan Bob"
+89,Bogdan,Scoala Gimnaziala "Ion Creanga"
+90,Anamaria,Colegiul National Pedagogic "Gheorghe Lazar"
+91,Robert,Scoala Gimnaziala Internationala SPECTRUM
+92,Cosmina,Colegiul National „Emil Racovita”
+93,Grigore,Colegiul National "George Cosbuc"
+94,Dorina,Scoala Gimnaziala "Ion Agarbiceanu"
+95,Albert,Liceul Teoretic "Avram Iancu"
+96,Melania,Scoala Gimnaziala "Constantin Brancusi"
+97,Alexandru,Liceul Teoretic "Onisifor Ghibu"
+98,Lavinia,Liceul Teoretic "Onisifor Ghibu"
+99,Sorin,Liceul cu Program Sportiv Cluj-Napoca
+100,Carina,Liceul Teoretic "Nicolae Balcescu"
