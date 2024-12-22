@@ -1,0 +1,8 @@
+1,20.02,08:00,FP,normal
+2,29.01,09:00,LC,restanta
+3,12.01,20:00,ASC,restanta
+4,29.01,08:00,Sport,normal
+5,31.01,12:00,Analiza,normal
+6,14.02,10:30,Algebra,normal
+7,15.02,14:00,Algebra,restanta
+18,12.02,19:00,ASC,normal
