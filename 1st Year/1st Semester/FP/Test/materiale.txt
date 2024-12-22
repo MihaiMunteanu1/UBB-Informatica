@@ -1,0 +1,5 @@
+1,cuie,cm,10,4
+2,lemne,m,20,15
+3,paleti,m,60,50
+4,beton,m,300,40
+5,ciment,m,100,50
