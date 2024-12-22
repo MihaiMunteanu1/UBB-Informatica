@@ -1,0 +1,9 @@
+1,Jurnal,Stiri,10,Informatii
+2,Reportaj,Informare,11,Viata la sat
+3,Divertisment,Film,13,5 Sense
+4,Survivor,Emisiune,4,Actiune
+5,Vocea Romaniei,Emisiune,4,Muzica
+6,HBO,Film,24,Filme
+7,Disney,Desene,5,Desene
+8,DigiSport,Informare,6,Sport
+10,History,Informare,10,Filme
