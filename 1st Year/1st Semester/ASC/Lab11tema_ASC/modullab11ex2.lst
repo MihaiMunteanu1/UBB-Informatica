@@ -1,0 +1,25 @@
+     1                                  bits 32 
+     2                                   
+     3                                  global transformare
+     4                                  %ifndef  _MODULLAB11EX2_ASM_ 
+     5                                  %define  _MODULLAB11EX2_ASM_ 
+     6                                  segment code use32 class=code
+     7                                      transformare:
+     8 00000000 FC                              cld
+     9 00000001 B800000000                      mov eax,0
+    10                                          repeta:
+    11 00000006 AC                                  lodsb
+    12 00000007 3C00                                cmp al,0
+    13 00000009 740E                                je sfarsit
+    14 0000000B 2C30                                sub al,'0'
+    15 0000000D B300                                mov bl,0
+    16 0000000F 88C3                                mov bl,al
+    17 00000011 666BC00A                            imul ax,10
+    18 00000015 00D8                                add al,bl
+    19 00000017 EBED                                jmp repeta  
+    20                                          sfarsit:
+    21 00000019 AB                              stosd
+    22 0000001A C3                              ret  
+    23                                      
+    24                                  %endif
+    25                                      
