@@ -1,0 +1,10 @@
+1,A,Z,Altele,300
+2,B,Z,Drama,200
+3,C,Z,Satira,300
+4,D,X,Altele,400
+5,E,X,Comedie,500
+6,F,X,Drama,600
+7,G,Y,Satira,700
+8,A,Y,Altele,800
+9,I,X,Comedie,800
+10,J,Z,Drama,900
