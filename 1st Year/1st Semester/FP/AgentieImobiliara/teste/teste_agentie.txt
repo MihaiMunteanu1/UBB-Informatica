@@ -1,0 +1,10 @@
+1,str xyz 16,Cluj,500.0,350.0
+2,str abc 18,Cluj,400.0,200.0
+3,str def 20,Cluj,800.0,300.0
+4,str klo 1,Oradea,400.0,100.0
+5,str qwe 30,Oradea,500.0,150.0
+6,str njo 4,Sibiu,300.0,100.0
+7,str mko 8,Sibiu,550.0,225.0
+8,str plm 1,Bucuresti,900,400
+9,str mnm 10,Bucuresti,700.0,550.0
+10,str iop 22,Bucuresti,600.0,450.0
