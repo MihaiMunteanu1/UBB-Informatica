@@ -1,0 +1,7 @@
+3,paine,7
+4,chips,10
+5,tigari,27
+6,heets,21
+7,lion,3
+8,kinder,7
+9,guma,2
