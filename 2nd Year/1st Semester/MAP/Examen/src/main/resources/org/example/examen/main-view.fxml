@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="438.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.examen.controller.MainController">
+   <children>
+      <TableView fx:id="tableAnimale" layoutX="31.0" layoutY="51.0" prefHeight="200.0" prefWidth="276.0">
+        <columns>
+          <TableColumn fx:id="numeAnimal" prefWidth="81.11108207702637" text="Nume" />
+          <TableColumn fx:id="centruId" prefWidth="91.3333740234375" text="CentreId" />
+            <TableColumn fx:id="typeAnimal" prefWidth="101.55558776855469" text="Type" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelText" layoutX="31.0" layoutY="14.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelProcent" layoutX="581.0" layoutY="16.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboType" layoutX="316.0" layoutY="51.0" onAction="#handleComboChanged" prefWidth="150.0" promptText="Animal Type" />
+      <Button layoutX="316.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleRequest" prefHeight="26.0" prefWidth="131.0" text="RequestTransfer" />
+   </children>
+</AnchorPane>
