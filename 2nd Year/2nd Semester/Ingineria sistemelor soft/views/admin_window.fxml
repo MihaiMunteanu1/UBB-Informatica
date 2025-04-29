@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="665.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="97.0" stroke="BLACK" strokeType="INSIDE" width="665.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10526315867900848" green="0.10071475058794022" blue="0.10071475058794022" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="278.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="104.0" text="Loged in as:" />
+      <Label layoutX="85.0" layoutY="104.0" text="Name" />
+      <TextField layoutX="437.0" layoutY="142.0" promptText="Name" />
+      <TextField layoutX="437.0" layoutY="220.0" promptText="Stoc" />
+      <ComboBox layoutX="436.0" layoutY="179.0" prefWidth="150.0" promptText="Type" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" />
+      <TextField layoutX="437.0" layoutY="257.0" promptText="Price" />
+      <Button layoutX="425.0" layoutY="309.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="64.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="Add" />
+      <Button layoutX="530.0" layoutY="309.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="64.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="Update" />
+      <Button layoutX="594.0" layoutY="433.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="47.0">
+               <image>
+                  <Image url="@../../Downloads/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView layoutX="26.0" layoutY="177.0" prefHeight="263.0" prefWidth="359.0">
+         <columns>
+            <TableColumn prefWidth="148.4444522857666" text="Name" />
+            <TableColumn prefWidth="75.5555419921875" text="Type" />
+            <TableColumn prefWidth="65.33332824707031" text="Stoc" />
+            <TableColumn prefWidth="71.11114501953125" text="Price" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="47.0" fitWidth="52.0" layoutX="26.0" layoutY="131.0">
+         <image>
+            <Image url="@../../Downloads/pills-bottle.png" />
+         </image>
+      </ImageView>
+      <ComboBox layoutX="78.0" layoutY="142.0" prefWidth="150.0" promptText="Select type" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" />
+      <Button layoutX="166.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="Delete drug" />
+   </children>
+</AnchorPane>
