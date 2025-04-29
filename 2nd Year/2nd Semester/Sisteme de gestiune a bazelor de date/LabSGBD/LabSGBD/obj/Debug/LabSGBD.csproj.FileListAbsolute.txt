@@ -1,0 +1,15 @@
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\LabSGBD.exe.config
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\LabSGBD.exe
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\LabSGBD.pdb
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.csproj.AssemblyReference.cache
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.Form1.resources
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.Properties.Resources.resources
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.csproj.GenerateResource.cache
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.csproj.CoreCompileInputs.cache
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.exe
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.pdb
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\System.Data.SqlClient.dll
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\bin\Debug\System.Data.SqlClient.xml
+C:\Users\munte\source\repos\LabSGBD\LabSGBD\obj\Debug\LabSGBD.csproj.Up2Date
