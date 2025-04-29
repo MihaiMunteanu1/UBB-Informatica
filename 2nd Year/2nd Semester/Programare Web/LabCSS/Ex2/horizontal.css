@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    height: 150px;
+}
+
+.header-text{
+    padding: 55px 0;
+}
+
+
+.lista{
+    background-color: yellow;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    width: 280px;
+    border-left: 2px solid black;
+    float: left;
+}
+
+.main-view {
+    background-color: green;
+    height: 300px;
+}
+
+.main-text{
+    padding: 140px 0;
+}
+
+footer{
+    background-color: pink;
+    height: 50px;
+}
+
+.footer-text{
+    padding: 17px 0;
+}
+
+

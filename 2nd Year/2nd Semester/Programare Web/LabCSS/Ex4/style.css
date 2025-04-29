@@ -1,0 +1,81 @@
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+div a {
+    width: 84px;
+    height: 84px;
+    background-image: url(sprite.png);
+}
+
+#img1{
+    background-position: 0px 0px
+}
+#img1:hover {
+    background-position: 0px -84px
+}
+
+#img2{
+    background-position: -84px 0px
+}
+#img2:hover {
+    background-position: -84px -84px
+}
+
+#img3{
+    background-position: -168px 0px
+}
+#img3:hover {
+    background-position: -168px -84px
+}
+
+#img4{
+    background-position: -252px 0px
+}
+#img4:hover {
+    background-position: -252px -84px
+}
+
+#img5{
+    background-position: -336px 0px
+}
+#img5:hover {
+    background-position: -336px -84px
+}
+
+#img6{
+    background-position: -420px 0px
+}
+#img6:hover {
+    background-position: -420px -84px
+}
+
+#img7{
+    background-position: -504px 0px
+}
+#img7:hover {
+    background-position: -504px -84px
+}
+
+#img8{
+    background-position: -588px 0px
+}
+#img8:hover {
+    background-position: -588px -84px
+}
+
+#img9{
+    background-position: -672px 0px
+}
+#img9:hover {
+    background-position: -672px -84px
+}
+
+#img10{
+    background-position: -754px 0px
+}
+#img10:hover {
+    background-position: -754px -84px
+}

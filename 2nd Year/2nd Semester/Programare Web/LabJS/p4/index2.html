@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 120px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #c7bdbd;
+            cursor: pointer;
+        }
+        tr th:first-child {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabel">
+        <thead>
+            <tr>
+                <th>Fructe</th>
+                <td>Mere</td>
+                <td>Pere</td>
+                <td>Banane</td>
+            </tr>
+            <tr>
+                <th>Pret</th>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>Cantitate</th>
+                <td>8</td>
+                <td>6</td>
+                <td>10</td>
+            </tr>
+        </thead>
+    </table>
+
+    <script>
+        function sorteaza(rowIndex, tableId) {
+           
+            var table = document.getElementById(tableId);
+            var rows = [];
+            var allRows = table.querySelectorAll('thead tr');
+            for (var i = 0; i < allRows.length; i++) {
+                rows.push(allRows[i]);
+            }
+
+            var dir;
+            if (table.dataset.sortDir === 'asc') {
+                dir = 'desc';
+            } else {
+                dir = 'asc';
+            }
+            table.dataset.sortDir = dir;
+
+            // Obține valorile din rândul selectat
+            var selectedRow = rows[rowIndex];
+            var values = [];
+            var cells = selectedRow.querySelectorAll('td');
+            for (var i = 0; i < cells.length; i++) {
+                values.push(cells[i]);
+            }
+
+            var indices = [];
+            for (var i = 0; i < values.length; i++) {
+                indices.push(i);
+            }
+
+            // Sortează indicii pe baza valorilor
+            indices.sort(function (a, b) {
+                var aText = values[a].textContent.trim();
+                var bText = values[b].textContent.trim();
+
+                var aValue;
+                if (isNaN(parseFloat(aText))) {
+                    aValue = aText.toLowerCase();
+                } else {
+                    aValue = parseFloat(aText);
+                }
+
+                var bValue;
+                if (isNaN(parseFloat(bText))) {
+                    bValue = bText.toLowerCase();
+                } else {
+                    bValue = parseFloat(bText);
+                }
+
+                if (aValue < bValue) {
+                    if (dir === 'asc') {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                }
+                if (aValue > bValue) {
+                    if (dir === 'asc') {
+                        return 1;
+                    } else {
+                        return -1;
+                    }
+                }
+                return 0;
+            });
+
+            // Reordonează celulele din fiecare rând
+            rows.forEach(row => {
+                var cells = Array.from(row.querySelectorAll('td'));
+                indices.forEach((index, i) => {
+                    row.appendChild(cells[index]);
+                });
+            });
+        }
+
+        document.querySelectorAll('#tabel thead th').forEach((header, index) => {
+            header.addEventListener('click', () => sorteaza(index, 'tabel'));
+        });
+    </script>
+</body>
+</html>

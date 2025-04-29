@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    select {
+        width: 300px;
+        height: 300px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div style="display: flex;">
+
+        <select id="lista1" size=3  ondblclick="muta('lista1', 'lista2')" >
+            <option>S1</option>
+            <option>S2</option>
+            <option>S3</option>
+        </select>
+
+        <select id="lista2" size=3 ondblclick="muta('lista2', 'lista1')" style=" margin-left: 10px;">
+            <option>D1</option>
+            <option>D2</option>
+            <option>D3</option>
+        </select>
+    </div>
+
+
+    <script>
+        function muta(sursaS, destinatieS) {
+            var sursa = document.getElementById(sursaS);
+            var destinatie = document.getElementById(destinatieS);
+            var optiuneSelectata = sursa.options[sursa.selectedIndex];
+            sursa.remove(sursa.selectedIndex);
+            destinatie.add(optiuneSelectata);
+        }
+    </script>
+    
+</body>
+</html>

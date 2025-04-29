@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    height: 150px;
+}
+
+.header-text{
+    padding: 55px 0;
+}
+
+.listaMain{
+    display: flex;
+}
+
+.lista{
+    background-color: yellow;
+    list-style-type: none;
+    width: 16%;
+}
+
+li {
+    border-bottom: 2px solid;
+}
+
+.main-view {
+    background-color: green;
+    width: 90%;
+}
+
+.main-text{
+    padding: 140px 0;
+}
+
+footer{
+    background-color: pink;
+    height: 50px;
+}
+
+.footer-text{
+    padding: 17px 0;
+}
+
+

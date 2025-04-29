@@ -1,0 +1,33 @@
+body {
+    border: 1px solid black;
+    display: flex;
+    width: 500px;
+}
+
+.color { 
+    background-color: white;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    list-style-type: none;
+    background-color: #00ffff; 
+    padding: 14px; 
+}
+
+img {
+    height: 200px;
+    width: 165px;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+body{
+    border: 1px solid black;
+    display: flex;
+    width: 450px;
+}
+
+.color{
+    background-color: yellow;
+}
+
+
+
+li {
+    float: left;
+    display: flex;
+    margin: 5px;
+    list-style-type: none;
+}
+
+
+img {
+    height: 200px;
+    width: 165px;
+}
+
+p{
+    margin: 0 30px;
+    padding: 90px 0px;
+}

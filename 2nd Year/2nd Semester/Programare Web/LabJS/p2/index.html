@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .invalid {
+            border: 2px solid red;
+    }
+    .invalid_mesaj{
+        color: red;
+    }
+    .valid_mesaj{
+        color: green;
+    }
+</style>
+<body>
+    <form id="form" style="width: 330px; border: 2px solid black; padding: 10px;">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" style="margin-left: 42px;"><br>
+        <label for="datan">Data nasterii:</label>
+        <input type="date" id="datan" style="margin-top: 10px;"><br>
+        <label for="varsta">Varsta:</label>
+        <input type="number" id="varsta" style="margin-left: 40px; margin-top: 10px;"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" style="margin-left: 41px;margin-top: 10px;"><br><br>
+        <input type="button" value="Send" onclick="validare()">
+        <p id="mesaj"></p>
+    </form>
+    <script>
+        function validare(){
+            var nume = document.getElementById("nume");
+            var dataNasterii = document.getElementById('datan');
+            var varsta = document.getElementById('varsta');
+            var email = document.getElementById('email');
+            var mesaj = document.getElementById('mesaj');
+
+            nume.classList.remove('invalid');
+            dataNasterii.classList.remove('invalid');
+            varsta.classList.remove('invalid');
+            email.classList.remove('invalid');
+            
+            mesaj.textContent = 'Campurile: ';
+            mesaj.classList.remove('invalid_mesaj');
+            mesaj.classList.remove('valid_mesaj');
+
+
+            if(!nume.value){
+                nume.classList.add('invalid');
+                mesaj.textContent += '\'nume\' ';
+            }
+
+            if (!dataNasterii.value) {
+                dataNasterii.classList.add('invalid');
+                mesaj.textContent += '\'data nasterii\' ';
+            }
+            
+            if (!varsta.value || varsta.value <= 0) {
+                varsta.classList.add('invalid');
+                mesaj.textContent += '\'varsta\' ';
+            }
+            
+            if (!email.value) {
+                email.classList.add('invalid');
+                mesaj.textContent += '\'email\' ';
+
+            }
+
+            if( mesaj.textContent != 'Campurile: ' ){
+                mesaj.textContent += ' nu sunt completate corect.';
+                mesaj.classList.add('invalid_mesaj');
+            }
+            else{
+                mesaj.textContent = 'Datele sunt completate corect!';
+                mesaj.classList.add('valid_mesaj');
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

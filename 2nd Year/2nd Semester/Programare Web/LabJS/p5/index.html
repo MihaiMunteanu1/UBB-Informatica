@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        li {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #lista li:first-child {
+            display: flex;
+        }
+        a {
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        img {
+            width: 600px;
+            height: 600px;
+            padding-bottom: 10px;
+        }
+        #prev, #next {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #prev {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ol id="lista">
+            <li>
+                <img src="apple.png"><a href="https://www.apple.com/ro/">Link 1</a></li>
+            <li>
+                <img src="bananas.png"><a href="https://www.simplyrecipes.com/recipes/banana_bread/">Link 2</a></li>
+            <li>
+                <img src="cherries.png"><a href="https://www.healthline.com/nutrition/cherries-benefits">Link 3</a></li>
+            <li>
+                <img src="grapes.png"><a href="https://www.medicalnewstoday.com/articles/271156">Link 4</a></li>
+        </ol>
+    </div>
+    <div id="buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        var listItems = document.querySelectorAll('#lista li');
+        var currentIndex = 0;
+        var numItems = listItems.length;
+        var intervalNo;
+
+        function showNextItem() {
+            listItems[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % numItems;
+            listItems[currentIndex].style.display = 'flex';
+            resetInterval();
+        }
+
+        function showPrevItem() {
+            listItems[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex - 1 + numItems) % numItems;
+            listItems[currentIndex].style.display = 'flex';
+            resetInterval();
+        }
+
+        document.getElementById('next').addEventListener('click', showNextItem);
+        document.getElementById('prev').addEventListener('click', showPrevItem);
+
+        function resetInterval() {
+            clearInterval(intervalNo);
+            intervalNo = setInterval(showNextItem, 5000);
+        }
+
+        resetInterval();
+
+    </script>
+</body>
+</html>

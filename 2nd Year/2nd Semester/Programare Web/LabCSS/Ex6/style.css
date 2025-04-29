@@ -1,0 +1,24 @@
+input{
+    background-image: url("img.png");
+    width: 517px;
+    height: 25px;
+    background-size: 26px;
+    border: none;
+    font-family: "Arial";
+    font-size: smaller;
+    letter-spacing: 2.5ch;
+}
+
+
+#cnp {
+    width: 334px;
+    margin: 14px;
+}   
+
+#nume{
+    margin: 12px;
+}
+
+#prenume{
+    margin: 5px;
+}
