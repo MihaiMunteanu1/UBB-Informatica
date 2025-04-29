@@ -1,0 +1,96 @@
+Invatarea nesupervizata
+-----------------------
+
+clustering (gruparea datelor)
+----------
+
+
+()  ()  ()   -> similaritate in cluster  -> distanta euclidiana/Manhattan/Jaccard/Hamming
+c1  c2  c3   -> disimilaritate cu ceilalti clusteri
+
+tipuri:
+--------------
+-> ierarhic -> aglomerativ
+	    -> diviziv
+
+-> partitional -> k-means
+
+
+max similaritate
+min distanta
+
+
+
+Silhoutte[-1, 1]
+
+Dunn index
+Davies-Bouldin
+
+
+
+
+K - means
+----------
+
+k - nr clusteri ( k = 2, ..)
+		    o determinam
+			     -> centroid: random (NU) / euristici-> alegem explicit 2 obiecte
+d(obj, c1) =
+d(obj, c2) = 
+
+c` = media obiectelor din cluster 
+
+k = 2
+	( centroid 2 )     ( centroid 1 )
+
+
+exemplu:
+
+x |y
+----
+2  3
+3  1
+4  2
+11 5
+12 6
+7  5
+8  4
+8  6
+
+9 obiecte, sa aplicam k-means, k=2
+k1 = p2(3,1), k2=p8(8,4)
+
+(p2,..)   ( p8,..)
+
+folosim ca similaritate: distanta euclidiana
+
+luam distanta euclidiana pentru fiecare punct sa vedem in ce cluster se afla
+
+
+d(P1,P2) = 2.23 -> asta e cea mai mica, il punem pe P1 in primul clustered
+d(P1,P8) = 6.08
+
+
+d(P3,P1) = 1,41 -> cel mai mic, il punem pe P3 in primul clustered 
+d(P3,P8) = 4,47
+
+PAS 1: Clustered assignment
+PAS 2: Update centroids
+PAS 3: Repeat step 1,2 until STOP
+
+Centroizii nu o sa fie P1,P2,.. ci o sa fie media aritmetica a lor
+=> K1` = (3, 2)
+=> K2` = (14, 5)
+
+
+CUM STIM SA ALEGEM K?
+   
+
+
+
+
+
+
+
+
+

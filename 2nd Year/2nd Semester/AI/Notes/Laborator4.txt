@@ -1,0 +1,120 @@
+Invatare supervizata
+
+-> training (x, y)
+	... nr. iteratii( epoci)
+
+-> testing (x, ?)
+
+
+- regresie     -> output(y) ∈ interval continuu
+	       -> prediction
+
+- clasificare  -> outpuy(y) ∈ discret
+		      	     [red, blue, white]
+			       eticheta
+
+ex. Regresie:
+   2023 -> 30 real
+  	-> 15 predicted
+
+MAE = ( E(i=1,n) |real-computered| ) / n
+-> mean absolute error
+
+errors -> 0 => better prediction
+
+RMSE = rad( ( E(i=1,n) (real-computered)^2 ) / n )
+-> root mean square error
+
+!Conteaza foarte mult volumul de date
+
+
+.............................................................................
+
+ex. Clasificare: !!( ETICHETE )!!
+
+
+exemplu Clasificare Binara ( doar 2 etichete )
+
+-> diabet
+-> non-diabet
+
+Glicemia  | Interpretare
+-------------------------
+   80     |    ND
+   70     |    ND
+   130    |    D
+-------------------------
+   82     |    ?
+
+impartim aplicatia in:
+ (A) Positive (Diabet)
+ (B) Negative (Non-Diabet)
+
+
+		   C O M P U T E D
+-------------------------------------------------	
+A |	    | Positive         | Negative	
+C |----------------------------------------------
+T |Positive | TruePositive(TP) |   FN
+U |----------------------------------------------
+A |Negative |    FP            |  TrueNegative(TN)
+L |
+
+
+accuracy = ( TP + TN ) / ( TP + TN + FP + FN )
+
+	 = noCorrectClasification / noClasification
+
+-> accuracy represents the overall performance of classification model
+-> peste 0.75% - 0.80% -> bine
+
+
+precision = ( TP ) / ( TP + FP )
+
+   -> precision indicates how accurate the positive predictions are: 
+
+recall = ( TP ) / ( TP + FN )
+  
+   -> recall indicates the coverage of actual positive sample
+
+
+.............................................................................
+
+Clasificare multi-clasa
+	- nr etichete > 2
+
+->  one  vs  all
+	   Labels = {poor, medium, rich}
+ p vs others  ---
+ p      N 	|
+ m vs others	| avg.
+ r vs others  ---
+
+
+-> prag
+      cu praguri (threshold)
+  Note
+	<5 - Rejected
+	[5,8] - avg
+	[8,10] - excelent	
+.............................................................................
+
+
+
+   MIND   MAP   ( CONCEPTELE DE ASTAZI )
+
+Evaluare problemei de invatare supervizata  => regresie  -> MAE
+							 -> RMSE
+
+					    => clasificare -> accuracy
+							   -> precision
+							   -> recall
+							   -> TP, TN, FN, FP
+
+
+
+
+
+
+
+

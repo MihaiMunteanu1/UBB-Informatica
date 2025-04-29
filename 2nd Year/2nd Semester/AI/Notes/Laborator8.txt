@@ -1,0 +1,29 @@
+Text mining
+------------
+
+Preprocesari:
+	- eliminare semnelor de punctuatie, caracterelor speciale
+	- eliminare 'STOP WORDS': articole, pronume, prepozitii
+	-> convertire 'slang words' -> wtf, omg, lol
+	-> stemming --> taiere sufixe, prefixe: cleaning -> clean
+	-> convertirea formelor contrase: don`t -> do not
+
+ex: Ana are mere si Mihai are doar mere  ==> Ana mere pere Mihai mere
+
+
+Modele
+-------
+
+-> vector de frecventa -> CountVectorizer
+	ana, mere, pere, mihai
+	 1     2     1     1    => [1, 2, 1, 1]
+
+-> Bag of words:  
+	(ana, mere, pere, mihai)
+	(................)
+
+
+-> n - gram   -> Bigram (ana, mere), (mere, pere), (pere, mihai)
+			 (1,   2),      (2,  1),      (1, 1)
+
+-> TF-IDF

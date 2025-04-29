@@ -1,0 +1,5 @@
+ANN:
+----------
+input_size: nr de caracteristici de intrare 
+weight:     matrice de ponderi aleatoare pentru conexiunile din stratul de intrare spre stratul ascuns
+bias:       vectorul de bias pentru stratul ascuns, inițializat cu zerouri. Fiecare neuron ascuns are un bias asociat; inițializarea cu 0 este comună

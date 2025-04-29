@@ -1,0 +1,65 @@
+
+
+Regresie  liniara
+
+(x, y)   --> f : x -> y
+    |          f(x) = y
+  continuu       x_nou => f(x_nou) = ?
+
+
+f(x) = a*x + b
+f(x) = a0 + a1*x1 + ... + an*xn
+
+-> trebuie sa obtin coeficientii <-
+
+
+METODA CELOR MAI MICI PATRATE (LeastSquare)
+
+-> nr ore insorite intr-o zi
+-> nr beri consumate pe o zi la o terasa
+
+Nr | Nr ore(x) | Nr beri(y) | x^2  |  x*y
+--------------------------------------------   ----- validation
+1  |    2      |  4         |	4  |   8	}
+--------------------------------------------    }
+2  | 	3      |  5	    |	9  |  15 	}
+--------------------------------------------	} - training
+3  |	5      |  7	    |	25 |  35	}
+--------------------------------------------	}
+4  |	7      |  10	    |	49 |  70       ----- validation
+--------------------------------------------
+5  |	9      |  15	    |	81 |  135	  
+
+
+? beri -> 8h
+
+1. x^2, xy
+
+2. sx, sy, sxx, sxy
+
+sx=26, sy=41, sxx=168, sxy = 263
+
+3. calculam a,b (w1, w0)
+    n=5
+
+=> a = 1,51
+=> b = 0,3
+
+f(x) = 1,51 * x + 0.3
+
+4. x=8
+ => f(x) = 1.51 * 8 + 0.3
+	 = 12.38
+
+
+
+
+
+
+
+
+
+
+
+
+
