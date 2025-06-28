@@ -1,0 +1,9 @@
+daca pun mutation mare atunci creste si fitness
+daca pun population mai mare creste si fitness
+
+
+
+mutation 0.1 -> 0.06, 8 com
+mutation 0.7 -> 0.08
+
+crossover mic - mai putine comunitati
