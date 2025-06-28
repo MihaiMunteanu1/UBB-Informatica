@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptJ.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="getPlecari()">
+    <div class="container">
+        <div>
+            <p>Statii plecare:</p>
+            <select id="orasPlecare" multiple onchange="getSosiri(this.value)">
+            </select>
+        </div>
+        <div>
+            <p>Statii sosire:</p>
+            <select id="orasSosire" multiple >
+            </select>
+        </div>
+    </div>
+</body>
+</html>
