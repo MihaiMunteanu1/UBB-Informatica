@@ -1,0 +1,20 @@
+Recapitulare
+
+Machine Learning
+	- supervizata   : - regresie    - algoritmi:  metoda celor mai mici patrate, GD
+				        - evaluare : MAE(regresie), RMSE
+
+			: - clasificare - algoritmi - regresie logistica, SVM, decision tree, ANN/CNN -> neuron, fct de activare, back/fwd propagation
+													 relu, regresie liniara
+					- evaluare: acc,prec,recall
+  
+
+	- nesupervizata ( nu avem etichete) : clustering : k-means
+
+
+Cautare
+	- neinformata: BFS, DFS
+	- informata: - Greedy
+		     - Alg Evolutivi: mutatie, crossover, selectie, generatie, populatie,individ: fitness
+				- steady state
+				- generational

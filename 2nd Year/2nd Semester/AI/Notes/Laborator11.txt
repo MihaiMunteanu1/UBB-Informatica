@@ -1,0 +1,84 @@
+Algoritmi evolutivi: - generational   :  G(t) -> G(t+1)      (inlocuieste)
+-------------------- - steady - state :  best -> worst(t-1)
+
+Metode de cautare:
+- neinformate:-> BFS, DFS (oricum ar fi trebuie sa exploram tot spatial de solutie)
+- informate: folosim o euristica(tehnica/ informatie din problema mea):-> Greedy
+
+
+-> individ ( o potentiala solutie a problemei de cautare)
+-> populatie ( mai multi individ)
+-> fitness ( calitate a indivizilor, imi zice cat de buna e solutia in problema de cautare)
+-> selectie a indivizilor pe baza fitnessului
+-> aplicam incrucisarea ( crossover)
+-> aplicam mutatia
+-> STOP, criteriu de oprire
+
+
+G(t)
+ __	selectie  	     i1   i2   crossover   descendent    mutatie
+( .)   ------------------->  ()   ()  ---------->    (  )   --------------> inapoi la G(t): inlocuieste pe cel mai slab
+(. )   pe baza fitnessului						    generational G(t+1)
+----
+
+
+
+Intrebare examen!
+
+Ce tip de operator: incrucisare? : operator binar		
+		    mutatia?     : operator unar
+
+
+Reprezentare/Codificare indivizilor
+-----------------------------------   ( vectori )
+
+-> binara: |0 |1  |1 |0 |1 | (1 inseamna ca am pus, 0 ca nu)
+            5 10  15 50 100		-> problema rucsac
+
+-> intreaga:            -> plata sumei
+	    |3 |2 |	( cate monede de 5,10,20 bani avem)
+	     5  10 20
+
+-> real: |3.2 | 5.4
+
+-> permutare: | 2 | 4 | 1 | 3 | -> care orase am vizitat
+
+-> categoriala( etichete): |r|v|g|a|  ->problema colorarii hartilor
+
+
+-------------------------------------------------------
+In functi de problema obtinem fitnessul, nu e fix
+Apoi facem selectie pe baza fitnessului
+Dupa ce ii avem pe cei doi, facem crossover
+Dupa ce avem descendent, aplicam mutatia
+------------------------------------------------------
+
+
+Selectie | -> proporionala
+---------| -> ruleta ( random )
+	   -> ranguri ( dam noi valori)
+	   -> turnir
+
+
+Crossover | -> cu n puncte de taietura (cutting points)
+----------|
+
+       |
+i1: 1 0| 0 1     (i1)(i2)
+i2: 0 1| 0 0   =>1 0 0 0   => mutatie 1 0 0 0 => 0 1 1 1
+       |			  
+
+Mutatie: random resetting: 1 2 3 4 => 1 5 7 4 (ideea ii sa schimbam continutul informational)  
+
+
+
+EX examen: - plata unei sume: ce tip de reprezentare? ce tip de fitness?
+	   - sau da 2 indivizi si sa aplicam crossover sau mutatie 	
+
+
+
+Algoritmi
+-> A C O ( Ant Colony Optimization )
+-> P S O (Particle Swarm Optimization )
+
+
