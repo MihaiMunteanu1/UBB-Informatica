@@ -1,0 +1,11 @@
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleA.CB28C8CC.Up2Date
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\munte\source\repos\Lab4SGBD\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config

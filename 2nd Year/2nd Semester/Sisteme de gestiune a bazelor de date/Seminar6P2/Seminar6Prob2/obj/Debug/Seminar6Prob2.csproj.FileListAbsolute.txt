@@ -1,0 +1,11 @@
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\bin\Debug\Seminar6Prob2.exe.config
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\bin\Debug\Seminar6Prob2.exe
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\bin\Debug\Seminar6Prob2.pdb
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.csproj.AssemblyReference.cache
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.Form1.resources
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.Properties.Resources.resources
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.csproj.GenerateResource.cache
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.csproj.CoreCompileInputs.cache
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.exe
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.pdb
+C:\Users\munte\source\repos\Seminar6Prob2\Seminar6Prob2\obj\Debug\Seminar6Prob2.exe.config
