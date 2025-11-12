@@ -60,7 +60,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
     </td>
     </td>
     <td align="center" width="150">
-      <a href=https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20Dinamice">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20Dinamice">
         <img src="https://cdn-icons-png.flaticon.com/512/3771/3771454.png" alt="Geometrie" width="64" height="64" />
       </a>
       <br>Sisteme Dinamice
