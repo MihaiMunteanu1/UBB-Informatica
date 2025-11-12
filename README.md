@@ -10,35 +10,18 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Fundamentele-Programarii">
+      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Fundamentele-Programarii](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/FP)">
         <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Fundamentele Programarii" width="64" height="64" />
       </a>
       <br>Fundamentele Programării
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Arhitectura-Sistemelor-de-Calcul">
+      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Arhitectura-Sistemelor-de-Calcul](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/ASC)">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Arhitectura Sistemelor de Calcul" width="64" height="64" />
       </a>
       <br>Arhitectura Sistemelor de Calcul
     </td>
-    <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Logica-Computationala">
-        <img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" alt="Logica Computationala" width="64" height="64" />
-      </a>
-      <br>Logica Computațională
-    </td>
-    <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Algebra">
-        <img src="https://cdn-icons-png.flaticon.com/512/3771/3771439.png" alt="Algebra" width="64" height="64" />
-      </a>
-      <br>Algebră
-    </td>
-    <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Analiza-Matematica">
-        <img src="https://cdn-icons-png.flaticon.com/512/3771/3771463.png" alt="Analiza Matematica" width="64" height="64" />
-      </a>
-      <br>Analiză Matematică
-    </td>
+    
   </tr>
 </table>
 
@@ -230,28 +213,3 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 
 ---
 
-## 🚀 Tehnologii folosite
-
-<p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" width="50"/>
-  <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" width="50"/>
-  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java" width="50"/>
-  <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Web" width="50"/>
-  <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Database" width="50"/>
-</p>
-
----
-
-## 📝 Despre Repository
-
-Acest repository conține toate proiectele și laboratoarele realizate în timpul studiilor la Facultatea de Matematică și Informatică, Universitatea Babeș-Bolyai Cluj-Napoca, specializarea Informatică.
-
-### Structura:
-- Fiecare semestru are propriul său folder
-- Materiile sunt organizate pe semestre
-- Fiecare materie conține laboratoare și proiecte
-- Documentația și README-uri pentru fiecare proiect
-
----
-
-*Actualizat: Noiembrie 2025*
