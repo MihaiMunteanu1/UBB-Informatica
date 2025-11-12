@@ -17,7 +17,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/ASC">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Arhitectura Sistemelor de Calcul" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/373445/assembly.svg" alt="Arhitectura Sistemelor de Calcul" width="64" height="64" />
       </a>
       <br>Arhitectura Sistemelor de Calcul
     </td>
