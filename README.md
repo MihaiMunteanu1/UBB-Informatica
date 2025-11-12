@@ -16,7 +16,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
       <br>Fundamentele Programării
     </td>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul1/Arhitectura-Sistemelor-de-Calcul](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/ASC)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/ASC">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Arhitectura Sistemelor de Calcul" width="64" height="64" />
       </a>
       <br>Arhitectura Sistemelor de Calcul
@@ -29,38 +29,38 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Programare-Orientata-pe-Obiecte](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/OOP)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/OOP">
         <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Programare Orientata pe Obiecte" width="64" height="64" />
       </a>
       <br>Programare Orientată pe Obiecte
     </td>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Structuri-de-Date-si-Algoritmi](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/SDA)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/SDA">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="Structuri de Date si Algoritmi" width="64" height="64" />
       </a>
       <br>Structuri de Date și Algoritmi
     </td>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Algoritmica-Grafelor](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Algoritmica%20Grafelor)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Algoritmica%20Grafelor">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Algoritmica Grafelor" width="64" height="64" />
       </a>
       <br>Algoritmică Grafelor
     </td>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Sisteme-de-Operare](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20de%20Operare)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20de%20Operare">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Sisteme de Operare" width="64" height="64" />
       </a>
       <br>Sisteme de Operare
     </td>
     <td align="center" width="150">
-      <a href="[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Geometrie](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Geometrie)">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Geometrie">
         <img src="https://cdn-icons-png.flaticon.com/512/3771/3771454.png" alt="Geometrie" width="64" height="64" />
       </a>
       <br>Geometrie
     </td>
     </td>
     <td align="center" width="150">
-      <a href="[[https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul2/Geometrie](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Geometrie)](https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20Dinamice)">
+      <a href=https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20Dinamice">
         <img src="https://cdn-icons-png.flaticon.com/512/3771/3771454.png" alt="Geometrie" width="64" height="64" />
       </a>
       <br>Sisteme Dinamice
