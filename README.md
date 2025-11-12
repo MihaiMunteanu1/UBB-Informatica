@@ -82,25 +82,25 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
       <br>Metode Avansate de Programare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Baze-de-Date">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Baze%20de%20date">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Baze de Date" width="64" height="64" />
       </a>
       <br>Baze de Date
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Programare-Logica-si-Functionala">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/PLF">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Programare Logica si Functionala" width="64" height="64" />
       </a>
       <br>Programare Logică și Funcțională
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Retele-de-Calculatoare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Retele%20de%20calculatoare">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Retele de Calculatoare" width="64" height="64" />
       </a>
       <br>Rețele de Calculatoare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Probabilitati-si-Statistica">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Probabilitati%20si%20statistica">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="Probabilitati si Statistica" width="64" height="64" />
       </a>
       <br>Probabilități și Statistică
