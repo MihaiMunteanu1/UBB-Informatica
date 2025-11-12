@@ -119,25 +119,25 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/AI">
-        <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Inteligenta Artificiala" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/255801/ai-ai.svg" alt="Inteligenta Artificiala" width="64" height="64" />
       </a>
       <br>Inteligență Artificială
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Programare%20Web">
-        <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Programare Web" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/301542/web-analysis-chart.svg" alt="Programare Web" width="64" height="64" />
       </a>
       <br>Programare Web
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Ingineria%20sistemelor%20soft">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Ingineria Sistemelor Soft" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/135149/software.svg" alt="Ingineria Sistemelor Soft" width="64" height="64" />
       </a>
       <br>Ingineria Sistemelor Soft
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Medii%20de%20proiectare%20si%20programare">
-        <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Medii de Proiectare si Programare" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/277463/programming-monitor.svg" alt="Medii de Proiectare si Programare" width="64" height="64" />
       </a>
       <br>Medii de Proiectare și Programare
     </td>
@@ -153,19 +153,19 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/LFTC">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Limbaje Formale si Tehnici de Compilare" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/502440/computer.svg" alt="Limbaje Formale si Tehnici de Compilare" width="64" height="64" />
       </a>
       <br>Limbaje Formale și Tehnici de Compilare
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/PPD">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Programare Paralela si Distribuita" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/530263/distributed.svg" alt="Programare Paralela si Distribuita" width="64" height="64" />
       </a>
       <br>Programare Paralelă și Distribuită
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/PDM">
-        <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Mobile Programming" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/530452/mobile-app.svg" alt="Mobile Programming" width="64" height="64" />
       </a>
       <br>Programare pentru Dispozitive Mobile
     </td>
