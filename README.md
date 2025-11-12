@@ -1,4 +1,4 @@
-## UBB Informatica - University Projects
+# UBB Informatica - University Projects
 
 Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolyai Cluj-Napoca.
 
@@ -76,31 +76,31 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul3/Metode-Avansate-de-Programare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/MAP">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Metode Avansate de Programare" width="64" height="64" />
       </a>
       <br>Metode Avansate de Programare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul3/Baze-de-Date">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Baze-de-Date">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Baze de Date" width="64" height="64" />
       </a>
       <br>Baze de Date
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul3/Programare-Logica-si-Functionala">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Programare-Logica-si-Functionala">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Programare Logica si Functionala" width="64" height="64" />
       </a>
       <br>Programare Logică și Funcțională
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul3/Retele-de-Calculatoare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Retele-de-Calculatoare">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Retele de Calculatoare" width="64" height="64" />
       </a>
       <br>Rețele de Calculatoare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul3/Probabilitati-si-Statistica">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/1st%20Semester/Probabilitati-si-Statistica">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="Probabilitati si Statistica" width="64" height="64" />
       </a>
       <br>Probabilități și Statistică
@@ -112,31 +112,31 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul4/Sisteme-de-Gestiune-a-Bazelor-de-Date">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Sisteme-de-Gestiune-a-Bazelor-de-Date">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Sisteme de Gestiune a Bazelor de Date" width="64" height="64" />
       </a>
       <br>Sisteme de Gestiune a Bazelor de Date
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul4/Inteligenta-Artificiala">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Inteligenta-Artificiala">
         <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Inteligenta Artificiala" width="64" height="64" />
       </a>
       <br>Inteligență Artificială
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul4/Programare-Web">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Programare-Web">
         <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Programare Web" width="64" height="64" />
       </a>
       <br>Programare Web
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul4/Ingineria-Sistemelor-Soft">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Ingineria-Sistemelor-Soft">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Ingineria Sistemelor Soft" width="64" height="64" />
       </a>
       <br>Ingineria Sistemelor Soft
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul4/Medii-de-Proiectare-si-Programare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Medii-de-Proiectare-si-Programare">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Medii de Proiectare si Programare" width="64" height="64" />
       </a>
       <br>Medii de Proiectare și Programare
@@ -152,31 +152,31 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul5/Limbaje-Formale-si-Tehnici-de-Compilare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/1st%20Semester/Limbaje-Formale-si-Tehnici-de-Compilare">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Limbaje Formale si Tehnici de Compilare" width="64" height="64" />
       </a>
       <br>Limbaje Formale și Tehnici de Compilare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul5/Programare-Paralela-si-Distribuita">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/1st%20Semester/Programare-Paralela-si-Distribuita">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Programare Paralela si Distribuita" width="64" height="64" />
       </a>
       <br>Programare Paralelă și Distribuită
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul5/Optimizare">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/1st%20Semester/Optimizare">
         <img src="https://cdn-icons-png.flaticon.com/512/3771/3771463.png" alt="Optimizare" width="64" height="64" />
       </a>
       <br>Optimizare
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul5/Securitatea-Informatiei">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/1st%20Semester/Securitatea-Informatiei">
         <img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" alt="Securitatea Informatiei" width="64" height="64" />
       </a>
       <br>Securitatea Informației
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul5/Mobile-Programming">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/1st%20Semester/Mobile-Programming">
         <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Mobile Programming" width="64" height="64" />
       </a>
       <br>Programare pentru Dispozitive Mobile
@@ -188,13 +188,13 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 <table>
   <tr>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul6/Lucrare-de-Licenta">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/2nd%20Semester/Lucrare-de-Licenta">
         <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Lucrare de Licenta" width="64" height="64" />
       </a>
       <br>Lucrare de Licență
     </td>
     <td align="center" width="150">
-      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/Semestrul6/Stagiu-de-Practica">
+      <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/3rd%20Year/2nd%20Semester/Stagiu-de-Practica">
         <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Stagiu de Practica" width="64" height="64" />
       </a>
       <br>Stagiu de Practică
@@ -219,4 +219,3 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
 - **Altele**: 5.4%
 
 ---
-
