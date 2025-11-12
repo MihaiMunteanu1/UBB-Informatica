@@ -1,0 +1,4 @@
+C:/Users/munte/CLionProjects/PPD/Lab2Tema/cmake-build-debug/CMakeFiles/Lab2Tema.dir
+C:/Users/munte/CLionProjects/PPD/Lab2Tema/cmake-build-debug/CMakeFiles/Lab2Test.dir
+C:/Users/munte/CLionProjects/PPD/Lab2Tema/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/PPD/Lab2Tema/cmake-build-debug/CMakeFiles/rebuild_cache.dir
