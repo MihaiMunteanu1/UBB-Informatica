@@ -48,7 +48,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
     </td>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/Sisteme%20de%20Operare">
-        <img src="https://www.svgrepo.com/show/217517/server-servers.svg" alt="Sisteme de Operare" width="64" height="64" />
+        <img src="https://www.svgrepo.com/show/373280/linux-opened.svg" alt="Sisteme de Operare" width="64" height="64" />
       </a>
       <br>Sisteme de Operare
     </td>
