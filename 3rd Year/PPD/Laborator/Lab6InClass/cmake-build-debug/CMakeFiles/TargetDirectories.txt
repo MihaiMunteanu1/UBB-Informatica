@@ -1,0 +1,3 @@
+C:/Users/munte/CLionProjects/PPD/Lab6InClass/cmake-build-debug/CMakeFiles/Lab6InClass.dir
+C:/Users/munte/CLionProjects/PPD/Lab6InClass/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/munte/CLionProjects/PPD/Lab6InClass/cmake-build-debug/CMakeFiles/rebuild_cache.dir
