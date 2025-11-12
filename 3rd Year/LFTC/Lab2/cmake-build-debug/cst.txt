@@ -1,0 +1,91 @@
+8
+q0 qSign q0Zero qDec qHexPrefix qHex qBinPrefix qBin
+25
+0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F x X -
+83
+q0 0 q0Zero
+q0 1 qDec
+q0 2 qDec
+q0 3 qDec
+q0 4 qDec
+q0 5 qDec
+q0 6 qDec
+q0 7 qDec
+q0 8 qDec
+q0 9 qDec
+q0 - qSign
+qSign 0 q0Zero
+qSign 1 qDec
+qSign 2 qDec
+qSign 3 qDec
+qSign 4 qDec
+qSign 5 qDec
+qSign 6 qDec
+qSign 7 qDec
+qSign 8 qDec
+qSign 9 qDec
+q0Zero b qBinPrefix
+q0Zero B qBinPrefix
+q0Zero x qHexPrefix
+q0Zero X qHexPrefix
+qDec 0 qDec
+qDec 1 qDec
+qDec 2 qDec
+qDec 3 qDec
+qDec 4 qDec
+qDec 5 qDec
+qDec 6 qDec
+qDec 7 qDec
+qDec 8 qDec
+qDec 9 qDec
+qHexPrefix 0 qHex
+qHexPrefix 1 qHex
+qHexPrefix 2 qHex
+qHexPrefix 3 qHex
+qHexPrefix 4 qHex
+qHexPrefix 5 qHex
+qHexPrefix 6 qHex
+qHexPrefix 7 qHex
+qHexPrefix 8 qHex
+qHexPrefix 9 qHex
+qHexPrefix a qHex
+qHexPrefix b qHex
+qHexPrefix c qHex
+qHexPrefix d qHex
+qHexPrefix e qHex
+qHexPrefix f qHex
+qHexPrefix A qHex
+qHexPrefix B qHex
+qHexPrefix C qHex
+qHexPrefix D qHex
+qHexPrefix E qHex
+qHexPrefix F qHex
+qHex 0 qHex
+qHex 1 qHex
+qHex 2 qHex
+qHex 3 qHex
+qHex 4 qHex
+qHex 5 qHex
+qHex 6 qHex
+qHex 7 qHex
+qHex 8 qHex
+qHex 9 qHex
+qHex a qHex
+qHex b qHex
+qHex c qHex
+qHex d qHex
+qHex e qHex
+qHex f qHex
+qHex A qHex
+qHex B qHex
+qHex C qHex
+qHex D qHex
+qHex E qHex
+qHex F qHex
+qBinPrefix 0 qBin
+qBinPrefix 1 qBin
+qBin 0 qBin
+qBin 1 qBin
+q0
+4
+q0Zero qDec qHex qBin

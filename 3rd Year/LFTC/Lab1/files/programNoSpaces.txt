@@ -1,0 +1,2 @@
+#include <iostream>
+using namespace std;intp3(){int suma<-0;int n;int nr;citeste(n);loop(n>0){citeste(nr);suma<-suma+x;n<-n-1;}aaaaaaaaaaaa11111111111 scrie(suma);}
