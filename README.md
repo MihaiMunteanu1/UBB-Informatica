@@ -11,7 +11,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/1st%20Semester/FP">
-        <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Fundamentele Programarii" width="64" height="64" />
+        <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="Fundamentele Programarii" width="64" height="64" />
       </a>
       <br>Fundamentele Programării
     </td>
@@ -30,7 +30,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/1st%20Year/2nd%20Semester/OOP">
-        <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" alt="Programare Orientata pe Obiecte" width="64" height="64" />
+        <img src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg" alt="Programare Orientata pe Obiecte" width="64" height="64" />
       </a>
       <br>Programare Orientată pe Obiecte
     </td>
@@ -113,7 +113,7 @@ Toate proiectele din facultatea de Informatică de la Universitatea Babeș-Bolya
   <tr>
     <td align="center" width="150">
       <a href="https://github.com/MihaiMunteanu1/UBB-Informatica/tree/main/2nd%20Year/2nd%20Semester/Sisteme%20de%20gestiune%20a%20bazelor%20de%20date">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Sisteme de Gestiune a Bazelor de Date" width="64" height="64" />
+        <img src="https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="Sisteme de Gestiune a Bazelor de Date" width="64" height="64" />
       </a>
       <br>Sisteme de Gestiune a Bazelor de Date
     </td>
